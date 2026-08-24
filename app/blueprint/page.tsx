@@ -160,7 +160,7 @@ export default function BlueprintPage() {
                 </p>
                 <div style={{ "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "14px", "marginTop": "40px" }}>
                   {" "}
-                  <Link href="/blueprint-application/" className="scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+                  <Link href="/blueprint-application/" className="bp-scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                     {"Apply for the Credit Danny Blueprint"}
                   </Link>
                   {" "}
@@ -277,7 +277,7 @@ export default function BlueprintPage() {
             </div>
             <div style={{ "position": "relative", "display": "flex", "alignItems": "center", "gap": "14px" }}>
               {" "}
-              <button type="button" aria-label="Previous" className="scp1" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1), color 220ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 220ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <button type="button" aria-label="Previous" className="bp-scp1" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1), color 220ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 220ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M14.5 5.5 8 12l6.5 6.5" />
@@ -488,7 +488,7 @@ export default function BlueprintPage() {
               <div style={{ "position": "absolute", "top": "0px", "bottom": "0px", "left": "60px", "width": "110px", "background": "linear-gradient(270deg, rgba(5, 6, 8, 0), rgba(5, 6, 8, 0.92))", "pointerEvents": "none" }} className="bp-fade" />
               <div style={{ "position": "absolute", "top": "0px", "bottom": "0px", "right": "60px", "width": "110px", "background": "linear-gradient(90deg, rgba(5, 6, 8, 0), rgba(5, 6, 8, 0.92))", "pointerEvents": "none" }} className="bp-fade" />
               {" "}
-              <button type="button" aria-label="Next" className="scp1" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1), color 220ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 220ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <button type="button" aria-label="Next" className="bp-scp1" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1), color 220ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 220ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M9.5 5.5 16 12l-6.5 6.5" />
@@ -834,7 +834,7 @@ export default function BlueprintPage() {
               </p>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(250px, 1fr))", "gap": "20px" }}>
-              <div className="scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "30px", "lineHeight": "0.8", "color": "var(--color-blue-400)", "marginBottom": "22px" }}>
                   {"Step 1"}
                 </div>
@@ -845,7 +845,7 @@ export default function BlueprintPage() {
                   {"Meet directly with Credit Danny in person or virtually. No middlemen involved."}
                 </p>
               </div>
-              <div className="scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "30px", "lineHeight": "0.8", "color": "var(--color-blue-400)", "marginBottom": "22px" }}>
                   {"Step 2"}
                 </div>
@@ -858,7 +858,7 @@ export default function BlueprintPage() {
                   {"This allows Danny to securely review your 3-bureau credit reports and begin building a personalized strategy for your credit transformation."}
                 </p>
               </div>
-              <div className="scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "30px", "lineHeight": "0.8", "color": "var(--color-blue-400)", "marginBottom": "22px" }}>
                   {"Step 3"}
                 </div>
@@ -869,7 +869,7 @@ export default function BlueprintPage() {
                   {"During your private consultation, Danny will review your credit profile, identify key issues impacting your score, and map out a tailored strategy for your transformation."}
                 </p>
               </div>
-              <div className="scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "30px", "lineHeight": "0.8", "color": "var(--color-blue-400)", "marginBottom": "22px" }}>
                   {"Step 4"}
                 </div>
@@ -968,7 +968,7 @@ export default function BlueprintPage() {
                   </p>
                 </div>
               </div>
-              <div className="scp3" style={{ "background": "linear-gradient(200deg, rgb(12, 112, 195), rgb(0, 36, 63))", "borderRadius": "25px", "padding": "44px 38px", "boxShadow": "rgba(255, 255, 255, 0) 0px 0px 0px 1px inset, rgba(11, 113, 195, 0.24) 0px 8px 32px, rgba(0, 173, 238, 0.16) 0px 2px 12px", "transition": "box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), transform 280ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp3" style={{ "background": "linear-gradient(200deg, rgb(12, 112, 195), rgb(0, 36, 63))", "borderRadius": "25px", "padding": "44px 38px", "boxShadow": "rgba(255, 255, 255, 0) 0px 0px 0px 1px inset, rgba(11, 113, 195, 0.24) 0px 8px 32px, rgba(0, 173, 238, 0.16) 0px 2px 12px", "transition": "box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), transform 280ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "justifyContent": "center", "gap": "14px", "marginBottom": "18px" }}>
                   {" "}
                   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1006,7 +1006,7 @@ export default function BlueprintPage() {
               </div>
               <TrustindexWidget src="https://cdn.trustindex.io/loader.js?28cdc397833c7456b6762a5982e" />
               {" "}
-              <Link href="/transformations/" className="scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "borderWidth": "medium", "borderStyle": "none", "borderColor": "currentcolor", "borderImage": "none", "padding": "18px 34px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <Link href="/transformations/" className="bp-scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "borderWidth": "medium", "borderStyle": "none", "borderColor": "currentcolor", "borderImage": "none", "padding": "18px 34px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {"See Our Credit Transformations"}
               </Link>
               {" "}
@@ -1029,7 +1029,7 @@ export default function BlueprintPage() {
               </p>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(250px, 1fr))", "gap": "20px" }} className="bp-key">
-              <div className="bp-keycard scp4" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-keycard bp-scp4" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "20px" }} className="bp-keyrow">
                   {" "}
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1049,7 +1049,7 @@ export default function BlueprintPage() {
                 </p>
                 <div style={{ "height": "2px", "marginTop": "auto", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255), rgba(0, 173, 238, 0.35))" }} />
               </div>
-              <div className="bp-keycard scp4" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-keycard bp-scp4" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "20px" }} className="bp-keyrow">
                   {" "}
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1067,7 +1067,7 @@ export default function BlueprintPage() {
                 </p>
                 <div style={{ "height": "2px", "marginTop": "auto", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255), rgba(0, 173, 238, 0.35))" }} />
               </div>
-              <div className="bp-keycard scp4" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-keycard bp-scp4" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "20px" }} className="bp-keyrow">
                   {" "}
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1084,7 +1084,7 @@ export default function BlueprintPage() {
                 </p>
                 <div style={{ "height": "2px", "marginTop": "auto", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255), rgba(0, 173, 238, 0.35))" }} />
               </div>
-              <div className="bp-keycard scp4" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-keycard bp-scp4" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "20px" }} className="bp-keyrow">
                   {" "}
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1169,7 +1169,7 @@ export default function BlueprintPage() {
                   </div>
                 </div>
                 {" "}
-                <Link href="/blueprint-application/" className="bp-invest-cta scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "17px 33px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+                <Link href="/blueprint-application/" className="bp-invest-cta bp-scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "17px 33px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                   {"Apply for the Blueprint"}
                 </Link>
                 {" "}
@@ -1418,7 +1418,7 @@ export default function BlueprintPage() {
           </div>
           <div style={{ "position": "relative", "maxWidth": "1280px", "margin": "0px auto", "padding": "48px 40px 0px", "display": "flex", "justifyContent": "center" }}>
             {" "}
-            <Link href="/transformations/" className="scp5" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "var(--color-blue-600)", "background": "rgb(255, 255, 255)", "border": "1px solid rgb(255, 255, 255)", "padding": "17px 33px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+            <Link href="/transformations/" className="bp-scp5" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "var(--color-blue-600)", "background": "rgb(255, 255, 255)", "border": "1px solid rgb(255, 255, 255)", "padding": "17px 33px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
               {"See Our Credit Transformations"}
             </Link>
             {" "}
@@ -1432,8 +1432,8 @@ export default function BlueprintPage() {
             <h2 style={{ "margin": "0px auto 56px", "maxWidth": "100%", "textAlign": "center", "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "clamp(36px, 4.2vw, 58px)", "lineHeight": "0.96", "color": "rgb(255, 255, 255)", "whiteSpace": "nowrap" }} className="bp-nowrap">
               {"When Your Credit Stops Being The Obstacle"}
             </h2>
-            <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(230px, 1fr))", "gap": "28px" }}>
-              <div className="scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+            <div className="bp-otherside-grid" style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(230px, 1fr))", "gap": "28px" }}>
+              <div className="bp-scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <img loading="lazy" decoding="async" src="/assets/img/pasted-1785927618851-0.png" alt="" style={{ "width": "104px", "height": "104px", "objectFit": "contain", "display": "block", "margin": "0px auto 16px" }} />
                 {" "}
@@ -1441,7 +1441,7 @@ export default function BlueprintPage() {
                   {"Finally being able to say “yes” when the right home comes along"}
                 </p>
               </div>
-              <div className="scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <img loading="lazy" decoding="async" src="/assets/img/pasted-1785927825554-0.png" alt="" style={{ "width": "104px", "height": "104px", "objectFit": "contain", "display": "block", "margin": "0px auto 16px" }} />
                 {" "}
@@ -1449,7 +1449,7 @@ export default function BlueprintPage() {
                   {"Choosing the car you want instead of settling for what you’re approved for"}
                 </p>
               </div>
-              <div className="scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <img loading="lazy" decoding="async" src="/assets/img/pasted-1785927886660-0.png" alt="" style={{ "width": "104px", "height": "104px", "objectFit": "contain", "display": "block", "margin": "0px auto 16px" }} />
                 {" "}
@@ -1457,7 +1457,7 @@ export default function BlueprintPage() {
                   {"Accessing real funding when your business is ready to grow"}
                 </p>
               </div>
-              <div className="scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <img loading="lazy" decoding="async" src="/assets/img/pasted-1785927902909-0.png" alt="" style={{ "width": "104px", "height": "104px", "objectFit": "contain", "display": "block", "margin": "0px auto 16px" }} />
                 {" "}
@@ -1465,7 +1465,7 @@ export default function BlueprintPage() {
                   {"Using credit as a tool instead of letting it control your life"}
                 </p>
               </div>
-              <div className="scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="bp-scp6" style={{ "background": "radial-gradient(125% 125% at 0% 0%, rgb(8, 23, 31) 0%, rgb(6, 10, 12) 45%, rgb(5, 5, 5) 100%)", "border": "1px solid rgba(0, 173, 238, 0.16)", "borderRadius": "24px", "padding": "30px 28px", "textAlign": "center", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <img loading="lazy" decoding="async" src="/assets/img/pasted-1785927911370-0.png" alt="" style={{ "width": "104px", "height": "104px", "objectFit": "contain", "display": "block", "margin": "0px auto 16px" }} />
                 {" "}
@@ -1491,7 +1491,7 @@ export default function BlueprintPage() {
               {"Submit your application for the Credit Danny Blueprint today."}
             </p>
             {" "}
-            <Link href="/blueprint-application/" className="scp7" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "24px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(0, 0, 0)", "background": "rgb(255, 255, 255)", "border": "1px solid rgb(0, 0, 0)", "padding": "20px 39px", "borderRadius": "10px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+            <Link href="/blueprint-application/" className="bp-scp7" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "24px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(0, 0, 0)", "background": "rgb(255, 255, 255)", "border": "1px solid rgb(0, 0, 0)", "padding": "20px 39px", "borderRadius": "10px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
               {"Apply for the Credit Danny Blueprint"}
             </Link>
             {" "}
@@ -1510,7 +1510,7 @@ export default function BlueprintPage() {
               </span>
             </div>
             {" "}
-            <Link href="/blueprint-application/" className="scp8" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "16px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "12px 27px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+            <Link href="/blueprint-application/" className="bp-scp8" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "16px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "12px 27px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
               {"Apply Now"}
             </Link>
             {" "}

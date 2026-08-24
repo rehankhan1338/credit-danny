@@ -729,8 +729,16 @@ a{color:inherit;}
    sits around (0,3,4) -- body + the kit class + `a` + two :not()s that each take
    their argument's specificity -- so a plain `.cd-email{color:...}` at (0,1,0)
    would lose to it. It would have looked correct in the static preview, where
-   no kit CSS exists, and rendered muted grey on the live page. */
-body.elementor-kit-27255861
+   no kit CSS exists, and rendered muted grey on the live page.
+
+   .cd-team scopes it to THIS page's body. Page CSS is global in the single
+   root layout: once a client-side navigation has loaded this file, it stays
+   in the document, and every page's body carries elementor-kit-27255861, so
+   without the page class this rule forced color:inherit onto other pages'
+   links too (measured: the mentorship hero nav chips went white -> black
+   after navigating here first). BodyClass swaps cd-team out pre-paint on
+   navigation, so the rule stops matching the moment the page changes. */
+body.cd-team.elementor-kit-27255861
 a:not(.elementor a):not(.elementor-location-footer a):not(.cd-email){
   color:inherit;}
 /* Elementor's footer is a full-bleed block; the page's own max-width wrappers

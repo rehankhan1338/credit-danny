@@ -175,7 +175,7 @@ export default function PlansPage() {
                 </span>
               </h3>
               <div style={{ "display": "grid", "gridTemplateColumns": "1fr 1fr 1fr", "gap": "24px" }} className="pl-grid3">
-                <div className="pl-lift pl-glass pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
+                <div className="pl-lift pl-glass pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
                   <div style={{ "display": "flex", "gap": "14px", "alignItems": "center" }}>
                     <div style={{ "fontSize": "28px", "lineHeight": "1", "flexShrink": "0" }}>
                       {"👤"}
@@ -190,7 +190,7 @@ export default function PlansPage() {
                     {"Your file is personally managed by Credit Danny from start to finish, giving you direct access to the expert behind more than 10,000 credit transformations nationwide."}
                   </div>
                 </div>
-                <div className="pl-lift pl-glass pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
+                <div className="pl-lift pl-glass pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
                   <div style={{ "display": "flex", "gap": "14px", "alignItems": "center" }}>
                     <div style={{ "fontSize": "28px", "lineHeight": "1", "flexShrink": "0" }}>
                       {"⚖️"}
@@ -205,7 +205,7 @@ export default function PlansPage() {
                     {"Every dispute strategy is supported by our dedicated legal team, allowing us to take a more comprehensive and strategic approach than traditional credit repair companies."}
                   </div>
                 </div>
-                <div className="pl-lift pl-glass pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
+                <div className="pl-lift pl-glass pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
                   <div style={{ "display": "flex", "gap": "14px", "alignItems": "center" }}>
                     <div style={{ "fontSize": "28px", "lineHeight": "1", "flexShrink": "0" }}>
                       {"⚡"}
@@ -220,7 +220,7 @@ export default function PlansPage() {
                     {"Your file receives our highest level of priority, allowing us to move as quickly and strategically as possible while keeping you informed every step of the way."}
                   </div>
                 </div>
-                <div className="pl-lift pl-glass pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
+                <div className="pl-lift pl-glass pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
                   <div style={{ "display": "flex", "gap": "14px", "alignItems": "center" }}>
                     <div style={{ "fontSize": "28px", "lineHeight": "1", "flexShrink": "0" }}>
                       {"🎯"}
@@ -235,7 +235,7 @@ export default function PlansPage() {
                     {"Whether you're preparing to buy a home, qualify for business funding, finance your dream car, or simply rebuild your financial future, every action is customized around your specific goals."}
                   </div>
                 </div>
-                <div className="pl-lift pl-glass pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
+                <div className="pl-lift pl-glass pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
                   <div style={{ "display": "flex", "gap": "14px", "alignItems": "center" }}>
                     <div style={{ "fontSize": "28px", "lineHeight": "1", "flexShrink": "0" }}>
                       {"🔒"}
@@ -250,7 +250,7 @@ export default function PlansPage() {
                     {"To protect the quality of our service, we only accept a limited number of Blueprint clients. This ensures every client receives the personal attention and accountability they deserve."}
                   </div>
                 </div>
-                <div className="pl-lift pl-glass pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
+                <div className="pl-lift pl-glass pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "30px 28px", "display": "flex", "flexDirection": "column", "gap": "12px" }}>
                   <div style={{ "display": "flex", "gap": "14px", "alignItems": "center" }}>
                     <div style={{ "fontSize": "28px", "lineHeight": "1", "flexShrink": "0" }}>
                       {"🛡️"}
@@ -266,7 +266,7 @@ export default function PlansPage() {
               </div>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "1.15fr 0.85fr", "gap": "24px", "alignItems": "stretch" }} className="pl-grid2">
-              <div className="pl-lift pl-glass pl-card-lg pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "40px 44px", "display": "flex", "flexDirection": "column", "gap": "20px" }}>
+              <div className="pl-lift pl-glass pl-card-lg pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "40px 44px", "display": "flex", "flexDirection": "column", "gap": "20px" }}>
                 <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "32px", "lineHeight": "1", "color": "rgb(255, 255, 255)" }}>
                   {"Everything Included"}
                 </h3>
@@ -416,7 +416,7 @@ export default function PlansPage() {
                 </div>
               </div>
               {" "}
-              <Link href="/blueprint-application/" className="pl-cta-ghost pl-cta scp1" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "letterSpacing": "0.2px", "fontSize": "24px", "padding": "14px 30px", "borderRadius": "10px", "background": "rgb(255, 255, 255)", "color": "var(--color-blue-600)", "textDecoration": "none", "boxShadow": "rgba(12, 112, 195, 0.5) 0px 0px 24px", "transition": "background 200ms ease-out, color 200ms ease-out, box-shadow 200ms ease-out" }}>
+              <Link href="/blueprint-application/" className="pl-cta-ghost pl-cta" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "letterSpacing": "0.2px", "fontSize": "24px", "padding": "14px 30px", "borderRadius": "10px", "background": "rgb(255, 255, 255)", "color": "var(--color-blue-600)", "textDecoration": "none", "boxShadow": "rgba(12, 112, 195, 0.5) 0px 0px 24px", "transition": "background 200ms ease-out, color 200ms ease-out, box-shadow 200ms ease-out" }}>
                 <span>
                   {"Apply for the Credit Danny Blueprint"}
                 </span>
@@ -454,7 +454,7 @@ export default function PlansPage() {
               </div>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "1fr 1fr 1fr", "gap": "24px", "alignItems": "stretch" }} className="pl-grid3">
-              <div className="pl-lift pl-glass pl-card pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "34px 32px", "display": "flex", "flexDirection": "column", "gap": "18px" }}>
+              <div className="pl-lift pl-glass pl-card pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "34px 32px", "display": "flex", "flexDirection": "column", "gap": "18px" }}>
                 <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "24px", "lineHeight": "1", "color": "rgb(255, 255, 255)" }}>
                   {"Why Clients Love It"}
                 </div>
@@ -497,7 +497,7 @@ export default function PlansPage() {
                   </div>
                 </div>
               </div>
-              <div className="pl-lift pl-glass pl-card pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "34px 32px", "display": "flex", "flexDirection": "column", "gap": "18px" }}>
+              <div className="pl-lift pl-glass pl-card pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "34px 32px", "display": "flex", "flexDirection": "column", "gap": "18px" }}>
                 <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "24px", "lineHeight": "1", "color": "rgb(255, 255, 255)" }}>
                   {"Everything Included"}
                 </div>
@@ -591,7 +591,7 @@ export default function PlansPage() {
             </div>
             <div className="pl-cta-stack" style={{ "display": "flex", "justifyContent": "center" }}>
               {" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://link.creditdanny.com/payment-link/6a23442771a0aa761e463451" className="pl-cta-ghost pl-cta scp2" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "letterSpacing": "0.2px", "fontSize": "24px", "padding": "14px 30px", "borderRadius": "10px", "background": "rgb(255, 255, 255)", "color": "var(--color-blue-600)", "textDecoration": "none", "boxShadow": "rgba(12, 112, 195, 0.5) 0px 0px 24px", "transition": "background 200ms ease-out, color 200ms ease-out, box-shadow 200ms ease-out" }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://link.creditdanny.com/payment-link/6a23442771a0aa761e463451" className="pl-cta-ghost pl-cta" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "letterSpacing": "0.2px", "fontSize": "24px", "padding": "14px 30px", "borderRadius": "10px", "background": "rgb(255, 255, 255)", "color": "var(--color-blue-600)", "textDecoration": "none", "boxShadow": "rgba(12, 112, 195, 0.5) 0px 0px 24px", "transition": "background 200ms ease-out, color 200ms ease-out, box-shadow 200ms ease-out" }}>
                 {"Start My Credit Transformation"}
               </a>
               <Link href="/accelerator/" className="pl-learn">
@@ -623,7 +623,7 @@ export default function PlansPage() {
               </div>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "1.15fr 0.85fr", "gap": "24px", "alignItems": "stretch" }} className="pl-grid2">
-              <div className="pl-lift pl-glass pl-card pl-reveal scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "34px 32px", "display": "flex", "flexDirection": "column", "gap": "18px" }}>
+              <div className="pl-lift pl-glass pl-card pl-reveal" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "padding": "34px 32px", "display": "flex", "flexDirection": "column", "gap": "18px" }}>
                 <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "24px", "lineHeight": "1", "color": "rgb(255, 255, 255)" }}>
                   {"Everything Included"}
                 </div>
@@ -701,7 +701,7 @@ export default function PlansPage() {
             </div>
             <div className="pl-cta-stack" style={{ "display": "flex", "justifyContent": "center" }}>
               {" "}
-              <Link href="/sponsorship-apply/" className="pl-cta-solid pl-cta scp2" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "letterSpacing": "0.2px", "fontSize": "24px", "padding": "14px 30px", "borderRadius": "10px", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "textDecoration": "none", "boxShadow": "rgba(12, 112, 195, 0.5) 0px 0px 24px", "transition": "background 200ms ease-out, color 200ms ease-out, box-shadow 200ms ease-out" }}>
+              <Link href="/sponsorship-apply/" className="pl-cta-solid pl-cta" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "letterSpacing": "0.2px", "fontSize": "24px", "padding": "14px 30px", "borderRadius": "10px", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "textDecoration": "none", "boxShadow": "rgba(12, 112, 195, 0.5) 0px 0px 24px", "transition": "background 200ms ease-out, color 200ms ease-out, box-shadow 200ms ease-out" }}>
                 {"Apply for Sponsorship"}
               </Link>
               <Link href="/sponsorship/" className="pl-learn">
@@ -947,7 +947,7 @@ export default function PlansPage() {
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "1fr 1fr 1fr", "gap": "24px" }} className="pl-grid3 pl-reveal">
               <div style={{ "display": "flex", "flexDirection": "column", "gap": "10px", "alignItems": "stretch" }} className="pl-reveal">
-                <div className="pl-lift pl-glass scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
+                <div className="pl-lift pl-glass" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
                   <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                     <div style={{ "textAlign": "center" }}>
                       <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "44px", "color": "rgb(255, 255, 255)" }}>
@@ -983,7 +983,7 @@ export default function PlansPage() {
                 </div>
               </div>
               <div style={{ "display": "flex", "flexDirection": "column", "gap": "10px", "alignItems": "stretch" }} className="pl-reveal">
-                <div className="pl-lift pl-glass scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
+                <div className="pl-lift pl-glass" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
                   <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                     <div style={{ "textAlign": "center" }}>
                       <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "44px", "color": "rgb(255, 255, 255)" }}>
@@ -1019,7 +1019,7 @@ export default function PlansPage() {
                 </div>
               </div>
               <div style={{ "display": "flex", "flexDirection": "column", "gap": "10px", "alignItems": "stretch" }} className="pl-reveal">
-                <div className="pl-lift pl-glass scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
+                <div className="pl-lift pl-glass" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
                   <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                     <div style={{ "textAlign": "center" }}>
                       <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "44px", "color": "rgb(255, 255, 255)" }}>
@@ -1055,7 +1055,7 @@ export default function PlansPage() {
                 </div>
               </div>
               <div style={{ "display": "flex", "flexDirection": "column", "gap": "10px", "alignItems": "stretch" }} className="pl-reveal">
-                <div className="pl-lift pl-glass scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
+                <div className="pl-lift pl-glass" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
                   <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                     <div style={{ "textAlign": "center" }}>
                       <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "44px", "color": "rgb(255, 255, 255)" }}>
@@ -1091,7 +1091,7 @@ export default function PlansPage() {
                 </div>
               </div>
               <div style={{ "display": "flex", "flexDirection": "column", "gap": "10px", "alignItems": "stretch" }} className="pl-reveal">
-                <div className="pl-lift pl-glass scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
+                <div className="pl-lift pl-glass" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
                   <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                     <div style={{ "textAlign": "center" }}>
                       <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "44px", "color": "rgb(255, 255, 255)" }}>
@@ -1127,7 +1127,7 @@ export default function PlansPage() {
                 </div>
               </div>
               <div style={{ "display": "flex", "flexDirection": "column", "gap": "10px", "alignItems": "stretch" }} className="pl-reveal">
-                <div className="pl-lift pl-glass scp0" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
+                <div className="pl-lift pl-glass" style={{ "background": "linear-gradient(165deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.035) 45%, rgba(255, 255, 255, 0.06) 100%)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "25px", "boxShadow": "rgba(255, 255, 255, 0.15) 0px 1px 0px inset, rgba(0, 0, 0, 0.45) 0px 20px 50px", "transition": "transform 300ms cubic-bezier(0.16, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.16, 0.84, 0.44, 1)", "padding": "24px 16px", "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "6px", "boxSizing": "border-box" }}>
                   <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                     <div style={{ "textAlign": "center" }}>
                       <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "44px", "color": "rgb(255, 255, 255)" }}>

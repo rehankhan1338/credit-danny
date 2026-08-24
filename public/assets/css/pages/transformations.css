@@ -803,9 +803,9 @@ a:hover{color:var(--color-blue-400)}
 ::selection{background:#0C70C3;color:#fff}
 @keyframes cd-pulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(0,173,238,.6),0 0 6px 1px rgba(0,173,238,.7)}50%{transform:scale(1.35);box-shadow:0 0 0 6px rgba(0,173,238,0),0 0 14px 3px rgba(0,173,238,.95)}}
 
-.scp0:hover{color: rgb(0, 173, 238) !important}
-.scp1:hover{transform: translateY(-6px) !important;border-color: rgba(0, 173, 238, 0.6) !important}
-.scp2:hover{background: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important}
+.ct-scp0:hover{color: rgb(0, 173, 238) !important}
+.ct-scp1:hover{transform: translateY(-6px) !important;border-color: rgba(0, 173, 238, 0.6) !important}
+.ct-scp2:hover{background: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important}
 /* ----------------------------------------------- the body scroll box ----- */
 /* The export ships `body{overflow-x:hidden}`, and per spec when one axis is not
    `visible` the other computes to `auto`. That makes BODY its own scroll

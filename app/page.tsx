@@ -251,11 +251,11 @@ export default function HomePage() {
             </div>
             <div style={{ "display": "flex", "gap": "14px", "flexWrap": "wrap", "justifyContent": "center", "marginTop": "26px" }}>
               {" "}
-              <Link href="/get-started/" className="scp4" style={{ "display": "inline-flex", "alignItems": "center", "boxSizing": "border-box", "height": "52px", "padding": "0px 34px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "18px", "letterSpacing": "0.03em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 14px 34px", "cursor": "pointer" }}>
+              <Link href="/get-started/" className="hm-scp4" style={{ "display": "inline-flex", "alignItems": "center", "boxSizing": "border-box", "height": "52px", "padding": "0px 34px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "18px", "letterSpacing": "0.03em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 14px 34px", "cursor": "pointer" }}>
                 {"Start Your Credit Review"}
               </Link>
               {" "}
-              <a href="#plans" className="scp3" style={{ "display": "inline-flex", "alignItems": "center", "boxSizing": "border-box", "height": "52px", "padding": "0px 34px", "borderRadius": "10px", "border": "1px solid rgb(255, 255, 255)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "18px", "letterSpacing": "0.03em", "textTransform": "uppercase", "cursor": "pointer" }}>
+              <a href="#plans" className="hm-scp3" style={{ "display": "inline-flex", "alignItems": "center", "boxSizing": "border-box", "height": "52px", "padding": "0px 34px", "borderRadius": "10px", "border": "1px solid rgb(255, 255, 255)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "18px", "letterSpacing": "0.03em", "textTransform": "uppercase", "cursor": "pointer" }}>
                 {"See Our Plans"}
               </a>
               {" "}
@@ -269,43 +269,43 @@ export default function HomePage() {
               {"Inside"}
             </span>
             {" "}
-            <a href="#results" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#results" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"Results"}
             </a>
             {" "}
-            <a href="#why" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#why" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"About"}
             </a>
             {" "}
-            <a href="#remove" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#remove" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"Solutions"}
             </a>
             {" "}
-            <a href="#danny" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#danny" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"Danny"}
             </a>
             {" "}
-            <a href="#impact" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#impact" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"Impact"}
             </a>
             {" "}
-            <a href="#reviews" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#reviews" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"Reviews"}
             </a>
             {" "}
-            <a href="#plans" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#plans" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"Plans"}
             </a>
             {" "}
-            <a href="#guarantee" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#guarantee" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"Guarantee"}
             </a>
             {" "}
-            <a href="#stories" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#stories" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"Transformations"}
             </a>
             {" "}
-            <a href="#faq" className="scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
+            <a href="#faq" className="hm-scp5" style={{ "padding": "7px 16px", "border": "1px solid rgba(255, 255, 255, 0.18)", "borderRadius": "999px", "color": "rgba(255, 255, 255, 0.85)", "transition": "background 0.18s, color 0.18s, border-color 0.18s", "cursor": "pointer" }}>
               {"FAQ"}
             </a>
             {" "}
@@ -351,7 +351,7 @@ export default function HomePage() {
             </div>
           </div>
           <div style={{ "maxWidth": "1280px", "margin": "56px auto 0px", "display": "grid", "gridTemplateColumns": "repeat(4, 1fr)", "gap": "20px" }} className="cd-quad">
-            <div className="scp6" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "28px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "8px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp6" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "28px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "8px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               <div style={{ "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "10px" }}>
                 <svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#00ADEE" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" style={{ "flex": "0 0 auto" }}>
                   <path d="M16 19v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 4 17.5V19" />
@@ -369,7 +369,7 @@ export default function HomePage() {
               </span>
               {" "}
             </div>
-            <div className="scp6" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "28px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "8px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp6" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "28px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "8px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               <div style={{ "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "10px" }}>
                 <svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#00ADEE" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" style={{ "flex": "0 0 auto" }}>
                   <path d="M9 3h6l-1.6 2.6a1 1 0 0 1-.85.48h-1.1a1 1 0 0 1-.85-.48L9 3Z" />
@@ -386,7 +386,7 @@ export default function HomePage() {
               </span>
               {" "}
             </div>
-            <div className="scp6" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "28px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "8px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp6" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "28px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "8px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               <div style={{ "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "10px" }}>
                 <svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#00ADEE" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" style={{ "flex": "0 0 auto" }}>
                   <path d="m12 3.4 2.65 5.37 5.93.86-4.29 4.18 1.01 5.9L12 17l-5.3 2.71 1.01-5.9L3.42 9.63l5.93-.86L12 3.4Z" />
@@ -401,7 +401,7 @@ export default function HomePage() {
               </span>
               {" "}
             </div>
-            <div className="scp6" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "28px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "8px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp6" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "28px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "8px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, background 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               <div style={{ "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "10px" }}>
                 <svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="#00ADEE" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" style={{ "flex": "0 0 auto" }}>
                   <path d="M12 3.2 4.8 6v5.4c0 4.3 3 8.2 7.2 9.4 4.2-1.2 7.2-5.1 7.2-9.4V6L12 3.2Z" />
@@ -438,7 +438,7 @@ export default function HomePage() {
           </div>
           <div style={{ "position": "relative", "maxWidth": "1280px", "margin": "56px auto 0px", "display": "flex", "alignItems": "center", "gap": "14px" }}>
             {" "}
-            <button type="button" aria-label="Previous" className="scp7" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 0.22s, border-color 0.22s, color 0.22s, box-shadow 0.22s" }}>
+            <button type="button" aria-label="Previous" className="hm-scp7" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 0.22s, border-color 0.22s, color 0.22s, box-shadow 0.22s" }}>
               {" "}
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14.5 5.5 8 12l6.5 6.5" />
@@ -649,7 +649,7 @@ export default function HomePage() {
             <div style={{ "position": "absolute", "top": "0px", "bottom": "0px", "left": "60px", "width": "110px", "background": "linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.92))", "pointerEvents": "none" }} />
             <div style={{ "position": "absolute", "top": "0px", "bottom": "0px", "right": "60px", "width": "110px", "background": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.92))", "pointerEvents": "none" }} />
             {" "}
-            <button type="button" aria-label="Next" className="scp7" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 0.22s, border-color 0.22s, color 0.22s, box-shadow 0.22s" }}>
+            <button type="button" aria-label="Next" className="hm-scp7" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 0.22s, border-color 0.22s, color 0.22s, box-shadow 0.22s" }}>
               {" "}
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9.5 5.5 16 12l-6.5 6.5" />
@@ -689,7 +689,7 @@ export default function HomePage() {
               </h2>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "repeat(4, minmax(0px, 1fr))", "gap": "16px", "maxWidth": "1000px", "margin": "0px auto" }} className="cd-chips">
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -698,7 +698,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Foreclosures\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -707,7 +707,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Student Loans\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -716,7 +716,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Late Payments\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -725,7 +725,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Bankruptcies\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -734,7 +734,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Collections\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -743,7 +743,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Judgments\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -752,7 +752,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Repossessions\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -761,7 +761,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Child Support\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -770,7 +770,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Charge-Offs\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -779,7 +779,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Medical Bills\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -788,7 +788,7 @@ export default function HomePage() {
                 </span>
                 {"\n        Public Records\n      "}
               </div>
-              <div className="scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
+              <div className="hm-scp8" style={{ "display": "flex", "alignItems": "center", "gap": "12px", "padding": "16px 26px", "borderRadius": "16px", "border": "1px solid rgb(255, 255, 255)", "background": "var(--color-blue-600)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "22px", "textTransform": "uppercase", "whiteSpace": "nowrap", "transition": "transform 0.22s, background 0.22s, box-shadow 0.22s", "cursor": "pointer" }}>
                 {" "}
                 <span style={{ "width": "24px", "height": "24px", "borderRadius": "50%", "background": "rgb(255, 255, 255)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "flexShrink": "0" }}>
                   <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -923,7 +923,7 @@ export default function HomePage() {
                 {"Learn more about the man behind the movement."}
               </p>
               {" "}
-              <Link href="/about/" className="scp4" style={{ "alignSelf": "flex-start", "display": "inline-flex", "alignItems": "center", "height": "50px", "padding": "0px 30px", "borderRadius": "10px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "18px", "textTransform": "uppercase", "letterSpacing": "0.03em", "marginTop": "6px", "boxShadow": "rgba(12, 112, 195, 0.4) 0px 12px 30px", "cursor": "pointer" }}>
+              <Link href="/about/" className="hm-scp4" style={{ "alignSelf": "flex-start", "display": "inline-flex", "alignItems": "center", "height": "50px", "padding": "0px 30px", "borderRadius": "10px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "18px", "textTransform": "uppercase", "letterSpacing": "0.03em", "marginTop": "6px", "boxShadow": "rgba(12, 112, 195, 0.4) 0px 12px 30px", "cursor": "pointer" }}>
                 {"Read Danny's Story"}
               </Link>
               {" "}
@@ -944,7 +944,7 @@ export default function HomePage() {
             </h2>
           </div>
           <div style={{ "maxWidth": "1280px", "margin": "44px auto 0px", "display": "grid", "gridTemplateColumns": "repeat(3, 1fr)", "gap": "20px" }} className="cd-trio">
-            <div className="scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/stat-cash-wings.png" alt="" style={{ "width": "52px", "height": "52px", "objectFit": "contain" }} />
               {" "}
@@ -961,7 +961,7 @@ export default function HomePage() {
               </span>
               {" "}
             </div>
-            <div className="scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/stat-funding.png" alt="" style={{ "width": "52px", "height": "52px", "objectFit": "contain" }} />
               {" "}
@@ -978,7 +978,7 @@ export default function HomePage() {
               </span>
               {" "}
             </div>
-            <div className="scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/stat-late-payment.png" alt="" style={{ "width": "52px", "height": "52px", "objectFit": "contain" }} />
               {" "}
@@ -995,7 +995,7 @@ export default function HomePage() {
               </span>
               {" "}
             </div>
-            <div className="scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/stat-bankruptcy.png" alt="" style={{ "width": "52px", "height": "52px", "objectFit": "contain" }} />
               {" "}
@@ -1012,7 +1012,7 @@ export default function HomePage() {
               </span>
               {" "}
             </div>
-            <div className="scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/stat-student-loan.png" alt="" style={{ "width": "52px", "height": "52px", "objectFit": "contain" }} />
               {" "}
@@ -1029,7 +1029,7 @@ export default function HomePage() {
               </span>
               {" "}
             </div>
-            <div className="scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scp9" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "borderRadius": "22px", "padding": "32px 30px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.4) 0px 8px 30px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/stat-repossession.png" alt="" style={{ "width": "52px", "height": "52px", "objectFit": "contain" }} />
               {" "}
@@ -1134,7 +1134,7 @@ export default function HomePage() {
             </h2>
           </div>
           <div style={{ "maxWidth": "1280px", "margin": "56px auto 0px", "display": "grid", "gridTemplateColumns": "repeat(3, 1fr)", "gap": "26px", "alignItems": "stretch" }} className="cd-trio">
-            <div className="cd-plan-ca scpa" style={{ "position": "relative", "paddingTop": "22px", "transition": "transform 0.25s", "cursor": "pointer" }}>
+            <div className="cd-plan-ca hm-scpa" style={{ "position": "relative", "paddingTop": "22px", "transition": "transform 0.25s", "cursor": "pointer" }}>
               <div style={{ "position": "absolute", "top": "0px", "left": "50%", "transform": "translateX(-50%)", "zIndex": "2", "display": "inline-flex", "alignItems": "center", "padding": "11px 22px", "borderRadius": "999px", "background": "rgb(255, 255, 255)", "color": "rgb(0, 0, 0)", "fontFamily": "var(--font-display)", "fontSize": "14px", "letterSpacing": "0.08em", "textTransform": "uppercase", "whiteSpace": "nowrap", "boxShadow": "rgba(0, 0, 0, 0.45) 0px 8px 24px", "gap": "9px" }}>
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" style={{ "flex": "0 0 auto" }}>
                   <rect x="3" y="5" width="18" height="16" rx="2.5" />
@@ -1142,7 +1142,7 @@ export default function HomePage() {
                 </svg>
                 {"Flexible Monthly Option"}
               </div>
-              <div className="scpb" style={{ "position": "relative", "height": "100%", "boxSizing": "border-box", "display": "flex", "flexDirection": "column", "border": "1px solid rgba(255, 255, 255, 0.35)", "borderRadius": "26px", "background": "linear-gradient(rgb(13, 42, 69) 0%, rgb(8, 19, 31) 22%, rgb(5, 7, 8) 60%, rgb(5, 7, 8) 100%)", "boxShadow": "rgba(0, 173, 238, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.6) 0px 18px 50px", "overflow": "hidden", "padding": "46px 34px 34px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+              <div className="hm-scpb" style={{ "position": "relative", "height": "100%", "boxSizing": "border-box", "display": "flex", "flexDirection": "column", "border": "1px solid rgba(255, 255, 255, 0.35)", "borderRadius": "26px", "background": "linear-gradient(rgb(13, 42, 69) 0%, rgb(8, 19, 31) 22%, rgb(5, 7, 8) 60%, rgb(5, 7, 8) 100%)", "boxShadow": "rgba(0, 173, 238, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.6) 0px 18px 50px", "overflow": "hidden", "padding": "46px 34px 34px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
                 <div style={{ "textAlign": "center", "display": "flex", "flexDirection": "column", "gap": "6px" }}>
                   <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "32px", "lineHeight": "1.02", "textTransform": "uppercase", "whiteSpace": "nowrap", "color": "rgb(255, 255, 255)" }}>
                     {"Credit Accelerator 🚀"}
@@ -1157,7 +1157,7 @@ export default function HomePage() {
                   {"Our most popular program for clients who want professional credit repair without the time, stress, or guesswork of doing it themselves."}
                 </p>
                 <div style={{ "margin": "24px 0px 26px" }}>
-                  <Link href="/accelerator/" className="scp4" style={{ "display": "inline-flex", "width": "100%", "boxSizing": "border-box", "alignItems": "center", "justifyContent": "center", "height": "54px", "borderRadius": "12px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "19px", "letterSpacing": "0.05em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 10px 30px", "transition": "background 0.2s, color 0.2s", "cursor": "pointer" }}>
+                  <Link href="/accelerator/" className="hm-scp4" style={{ "display": "inline-flex", "width": "100%", "boxSizing": "border-box", "alignItems": "center", "justifyContent": "center", "height": "54px", "borderRadius": "12px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "19px", "letterSpacing": "0.05em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 10px 30px", "transition": "background 0.2s, color 0.2s", "cursor": "pointer" }}>
                     {"Learn More"}
                   </Link>
                 </div>
@@ -1215,14 +1215,14 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="cd-plan-bp scpa" style={{ "position": "relative", "paddingTop": "22px", "transition": "transform 0.25s", "cursor": "pointer" }}>
+            <div className="cd-plan-bp hm-scpa" style={{ "position": "relative", "paddingTop": "22px", "transition": "transform 0.25s", "cursor": "pointer" }}>
               <div style={{ "position": "absolute", "top": "0px", "left": "50%", "transform": "translateX(-50%)", "zIndex": "2", "display": "inline-flex", "alignItems": "center", "padding": "11px 22px", "borderRadius": "999px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "14px", "letterSpacing": "0.08em", "textTransform": "uppercase", "whiteSpace": "nowrap", "boxShadow": "rgba(0, 0, 0, 0.45) 0px 8px 24px", "gap": "9px" }}>
                 <svg width="12" height="17" viewBox="0 0 12 17" fill="currentColor" style={{ "flex": "0 0 auto" }}>
                   <path d="M7.4 0 0 9.6h4.1L3.4 17 12 6.9H7l.4-6.9Z" />
                 </svg>
                 {"Most Popular & Fastest Results"}
               </div>
-              <div className="scpc" style={{ "position": "relative", "height": "100%", "boxSizing": "border-box", "display": "flex", "flexDirection": "column", "border": "3px solid rgb(12, 112, 195)", "borderRadius": "26px", "background": "linear-gradient(rgb(13, 42, 69) 0%, rgb(8, 19, 31) 22%, rgb(5, 7, 8) 60%, rgb(5, 7, 8) 100%)", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 0px 34px, rgba(12, 112, 195, 0.22) 0px 0px 90px, rgba(0, 0, 0, 0.6) 0px 18px 50px", "overflow": "hidden", "padding": "46px 34px 34px", "transition": "transform 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+              <div className="hm-scpc" style={{ "position": "relative", "height": "100%", "boxSizing": "border-box", "display": "flex", "flexDirection": "column", "border": "3px solid rgb(12, 112, 195)", "borderRadius": "26px", "background": "linear-gradient(rgb(13, 42, 69) 0%, rgb(8, 19, 31) 22%, rgb(5, 7, 8) 60%, rgb(5, 7, 8) 100%)", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 0px 34px, rgba(12, 112, 195, 0.22) 0px 0px 90px, rgba(0, 0, 0, 0.6) 0px 18px 50px", "overflow": "hidden", "padding": "46px 34px 34px", "transition": "transform 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
                 <div style={{ "textAlign": "center", "display": "flex", "flexDirection": "column", "gap": "6px" }}>
                   <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "36px", "lineHeight": "1.02", "textTransform": "uppercase", "color": "rgb(255, 255, 255)" }}>
                     {"The Credit Danny"}
@@ -1239,7 +1239,7 @@ export default function HomePage() {
                   {"Our highest-level fast-track experience personally overseen by Danny and his legal team."}
                 </p>
                 <div style={{ "margin": "24px 0px 26px" }}>
-                  <Link href="/blueprint/" className="scp4" style={{ "display": "inline-flex", "width": "100%", "boxSizing": "border-box", "alignItems": "center", "justifyContent": "center", "height": "54px", "borderRadius": "12px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "19px", "letterSpacing": "0.05em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 10px 30px", "transition": "background 0.2s, color 0.2s", "cursor": "pointer" }}>
+                  <Link href="/blueprint/" className="hm-scp4" style={{ "display": "inline-flex", "width": "100%", "boxSizing": "border-box", "alignItems": "center", "justifyContent": "center", "height": "54px", "borderRadius": "12px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "19px", "letterSpacing": "0.05em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 10px 30px", "transition": "background 0.2s, color 0.2s", "cursor": "pointer" }}>
                     {"Learn More"}
                   </Link>
                 </div>
@@ -1307,14 +1307,14 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="cd-plan-sp scpa" style={{ "position": "relative", "paddingTop": "22px", "transition": "transform 0.25s", "cursor": "pointer" }}>
+            <div className="cd-plan-sp hm-scpa" style={{ "position": "relative", "paddingTop": "22px", "transition": "transform 0.25s", "cursor": "pointer" }}>
               <div style={{ "position": "absolute", "top": "0px", "left": "50%", "transform": "translateX(-50%)", "zIndex": "2", "display": "inline-flex", "alignItems": "center", "padding": "11px 22px", "borderRadius": "999px", "background": "rgb(255, 255, 255)", "color": "rgb(0, 0, 0)", "fontFamily": "var(--font-display)", "fontSize": "14px", "letterSpacing": "0.08em", "textTransform": "uppercase", "whiteSpace": "nowrap", "boxShadow": "rgba(0, 0, 0, 0.45) 0px 8px 24px", "gap": "9px" }}>
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style={{ "flex": "0 0 auto" }}>
                   <path d="M12 21s-6.7-4.3-9.2-8.2C.6 9.4 2.2 5.5 5.7 4.6c2-.5 3.9.3 5 1.8 1.1-1.5 3-2.3 5-1.8 3.5.9 5.1 4.8 2.9 8.2C18.7 16.7 12 21 12 21Z" />
                 </svg>
                 {"Our Give Back Program"}
               </div>
-              <div className="scpb" style={{ "position": "relative", "height": "100%", "boxSizing": "border-box", "display": "flex", "flexDirection": "column", "border": "1px solid rgba(255, 255, 255, 0.35)", "borderRadius": "26px", "background": "linear-gradient(rgb(13, 42, 69) 0%, rgb(8, 19, 31) 22%, rgb(5, 7, 8) 60%, rgb(5, 7, 8) 100%)", "boxShadow": "rgba(0, 173, 238, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.6) 0px 18px 50px", "overflow": "hidden", "padding": "46px 34px 34px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+              <div className="hm-scpb" style={{ "position": "relative", "height": "100%", "boxSizing": "border-box", "display": "flex", "flexDirection": "column", "border": "1px solid rgba(255, 255, 255, 0.35)", "borderRadius": "26px", "background": "linear-gradient(rgb(13, 42, 69) 0%, rgb(8, 19, 31) 22%, rgb(5, 7, 8) 60%, rgb(5, 7, 8) 100%)", "boxShadow": "rgba(0, 173, 238, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.6) 0px 18px 50px", "overflow": "hidden", "padding": "46px 34px 34px", "transition": "transform 0.25s, border-color 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
                 <div style={{ "textAlign": "center", "display": "flex", "flexDirection": "column", "gap": "6px" }}>
                   <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "36px", "lineHeight": "1.02", "textTransform": "uppercase", "color": "rgb(255, 255, 255)" }}>
                     {"THE CREDIT DANNY SPONSORSHIP ❤️"}
@@ -1329,7 +1329,7 @@ export default function HomePage() {
                   {"A unique opportunity for qualified individuals to receive credit repair services at no additional cost while actively participating in the Credit Danny community."}
                 </p>
                 <div style={{ "margin": "24px 0px 26px" }}>
-                  <Link href="/sponsorship/" className="scp4" style={{ "display": "inline-flex", "width": "100%", "boxSizing": "border-box", "alignItems": "center", "justifyContent": "center", "height": "54px", "borderRadius": "12px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "19px", "letterSpacing": "0.05em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 10px 30px", "transition": "background 0.2s, color 0.2s", "cursor": "pointer" }}>
+                  <Link href="/sponsorship/" className="hm-scp4" style={{ "display": "inline-flex", "width": "100%", "boxSizing": "border-box", "alignItems": "center", "justifyContent": "center", "height": "54px", "borderRadius": "12px", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "19px", "letterSpacing": "0.05em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 10px 30px", "transition": "background 0.2s, color 0.2s", "cursor": "pointer" }}>
                     {"Learn More"}
                   </Link>
                 </div>
@@ -1429,7 +1429,7 @@ export default function HomePage() {
         </section>
         <section data-screen-label="Value props" style={{ "background": "rgb(0, 0, 0)", "padding": "50px 40px" }} className="cd-pad">
           <div style={{ "maxWidth": "1280px", "margin": "0px auto", "display": "grid", "gridTemplateColumns": "repeat(4, 1fr)", "gap": "20px" }} className="cd-vprops cd-quad">
-            <div className="scpd" style={{ "position": "relative", "background": "linear-gradient(160deg, rgba(12, 112, 195, 0.28), rgba(8, 30, 52, 0.32) 55%, rgba(10, 14, 22, 0.4))", "backdropFilter": "blur(26px)", "border": "1px solid rgba(0, 173, 238, 0.35)", "borderRadius": "20px", "padding": "32px", "display": "flex", "flexDirection": "column", "gap": "12px", "boxShadow": "rgba(255, 255, 255, 0.28) 0px 1px 0px inset, rgba(12, 112, 195, 0.16) 0px 0px 40px inset, rgba(0, 0, 0, 0.45) 0px 14px 40px", "overflow": "hidden", "cursor": "pointer" }}>
+            <div className="hm-scpd" style={{ "position": "relative", "background": "linear-gradient(160deg, rgba(12, 112, 195, 0.28), rgba(8, 30, 52, 0.32) 55%, rgba(10, 14, 22, 0.4))", "backdropFilter": "blur(26px)", "border": "1px solid rgba(0, 173, 238, 0.35)", "borderRadius": "20px", "padding": "32px", "display": "flex", "flexDirection": "column", "gap": "12px", "boxShadow": "rgba(255, 255, 255, 0.28) 0px 1px 0px inset, rgba(12, 112, 195, 0.16) 0px 0px 40px inset, rgba(0, 0, 0, 0.45) 0px 14px 40px", "overflow": "hidden", "cursor": "pointer" }}>
               <div style={{ "width": "100%", "height": "150px", "marginBottom": "6px" }} data-lottie="/assets/js/lottie/lottie-credit-score.json" data-lottie-fit="meet" />
               <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "24px", "lineHeight": "1.08", "textTransform": "uppercase", "color": "rgb(255, 255, 255)" }}>
                 {"Say Goodbye To Bad Credit"}
@@ -1438,7 +1438,7 @@ export default function HomePage() {
                 {"We remove inaccurate, outdated, and unverifiable negative items, including collections, repossessions, charge-offs, and medical debt."}
               </p>
             </div>
-            <div className="scpd" style={{ "position": "relative", "background": "linear-gradient(160deg, rgba(12, 112, 195, 0.28), rgba(8, 30, 52, 0.32) 55%, rgba(10, 14, 22, 0.4))", "backdropFilter": "blur(26px)", "border": "1px solid rgba(0, 173, 238, 0.35)", "borderRadius": "20px", "padding": "32px", "display": "flex", "flexDirection": "column", "gap": "12px", "boxShadow": "rgba(255, 255, 255, 0.28) 0px 1px 0px inset, rgba(12, 112, 195, 0.16) 0px 0px 40px inset, rgba(0, 0, 0, 0.45) 0px 14px 40px", "overflow": "hidden", "cursor": "pointer" }}>
+            <div className="hm-scpd" style={{ "position": "relative", "background": "linear-gradient(160deg, rgba(12, 112, 195, 0.28), rgba(8, 30, 52, 0.32) 55%, rgba(10, 14, 22, 0.4))", "backdropFilter": "blur(26px)", "border": "1px solid rgba(0, 173, 238, 0.35)", "borderRadius": "20px", "padding": "32px", "display": "flex", "flexDirection": "column", "gap": "12px", "boxShadow": "rgba(255, 255, 255, 0.28) 0px 1px 0px inset, rgba(12, 112, 195, 0.16) 0px 0px 40px inset, rgba(0, 0, 0, 0.45) 0px 14px 40px", "overflow": "hidden", "cursor": "pointer" }}>
               <div style={{ "width": "100%", "height": "150px", "marginBottom": "6px" }} data-lottie="/assets/js/lottie/money.json" data-lottie-fit="meet" />
               <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "24px", "lineHeight": "1.08", "textTransform": "uppercase", "color": "rgb(255, 255, 255)" }}>
                 {"Own Your Financial Future"}
@@ -1447,7 +1447,7 @@ export default function HomePage() {
                 {"This isn't just credit repair. It's understanding how credit actually works, so you're not dependent on anyone long-term."}
               </p>
             </div>
-            <div className="scpd" style={{ "position": "relative", "background": "linear-gradient(160deg, rgba(12, 112, 195, 0.28), rgba(8, 30, 52, 0.32) 55%, rgba(10, 14, 22, 0.4))", "backdropFilter": "blur(26px)", "border": "1px solid rgba(0, 173, 238, 0.35)", "borderRadius": "20px", "padding": "32px", "display": "flex", "flexDirection": "column", "gap": "12px", "boxShadow": "rgba(255, 255, 255, 0.28) 0px 1px 0px inset, rgba(12, 112, 195, 0.16) 0px 0px 40px inset, rgba(0, 0, 0, 0.45) 0px 14px 40px", "overflow": "hidden", "cursor": "pointer" }}>
+            <div className="hm-scpd" style={{ "position": "relative", "background": "linear-gradient(160deg, rgba(12, 112, 195, 0.28), rgba(8, 30, 52, 0.32) 55%, rgba(10, 14, 22, 0.4))", "backdropFilter": "blur(26px)", "border": "1px solid rgba(0, 173, 238, 0.35)", "borderRadius": "20px", "padding": "32px", "display": "flex", "flexDirection": "column", "gap": "12px", "boxShadow": "rgba(255, 255, 255, 0.28) 0px 1px 0px inset, rgba(12, 112, 195, 0.16) 0px 0px 40px inset, rgba(0, 0, 0, 0.45) 0px 14px 40px", "overflow": "hidden", "cursor": "pointer" }}>
               <div style={{ "width": "100%", "height": "150px", "marginBottom": "6px" }} data-lottie="/assets/js/lottie/money-flyAnimation-1748315147317.json" data-lottie-fit="meet" />
               <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "24px", "lineHeight": "1.08", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "whiteSpace": "nowrap" }} className="cd-wrap">
                 {"Build A Business That Thrives"}
@@ -1456,7 +1456,7 @@ export default function HomePage() {
                 {"Strong credit creates leverage. We help business owners position their credit to access funding and scale with confidence."}
               </p>
             </div>
-            <div className="scpd" style={{ "position": "relative", "background": "linear-gradient(160deg, rgba(12, 112, 195, 0.28), rgba(8, 30, 52, 0.32) 55%, rgba(10, 14, 22, 0.4))", "backdropFilter": "blur(26px)", "border": "1px solid rgba(0, 173, 238, 0.35)", "borderRadius": "20px", "padding": "32px", "display": "flex", "flexDirection": "column", "gap": "12px", "boxShadow": "rgba(255, 255, 255, 0.28) 0px 1px 0px inset, rgba(12, 112, 195, 0.16) 0px 0px 40px inset, rgba(0, 0, 0, 0.45) 0px 14px 40px", "overflow": "hidden", "cursor": "pointer" }}>
+            <div className="hm-scpd" style={{ "position": "relative", "background": "linear-gradient(160deg, rgba(12, 112, 195, 0.28), rgba(8, 30, 52, 0.32) 55%, rgba(10, 14, 22, 0.4))", "backdropFilter": "blur(26px)", "border": "1px solid rgba(0, 173, 238, 0.35)", "borderRadius": "20px", "padding": "32px", "display": "flex", "flexDirection": "column", "gap": "12px", "boxShadow": "rgba(255, 255, 255, 0.28) 0px 1px 0px inset, rgba(12, 112, 195, 0.16) 0px 0px 40px inset, rgba(0, 0, 0, 0.45) 0px 14px 40px", "overflow": "hidden", "cursor": "pointer" }}>
               <div style={{ "width": "100%", "height": "150px", "marginBottom": "6px" }} data-lottie="/assets/js/lottie/lottie-clapping-hands.json" data-lottie-fit="meet" />
               <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "24px", "lineHeight": "1.08", "textTransform": "uppercase", "color": "rgb(255, 255, 255)" }}>
                 {"Real Talk. Real Results."}
@@ -1508,7 +1508,7 @@ export default function HomePage() {
                 {"How Rayleen Turned Her Dream Mercedes Into A Reality"}
               </p>
               {" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rayleencook" className="scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rayleencook" className="hm-scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
                 {"@rayleencook"}
               </a>
               {" "}
@@ -1537,7 +1537,7 @@ export default function HomePage() {
                 {" In Under 30 Days"}
               </h3>
               {" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mafiosoofvegas" className="scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mafiosoofvegas" className="hm-scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
                 {"@mafiosoofvegas"}
               </a>
               {" "}
@@ -1593,7 +1593,7 @@ export default function HomePage() {
                 </span>
               </h3>
               {" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ddelaney_mommy" className="scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ddelaney_mommy" className="hm-scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
                 {"@ddelaney_mommy"}
               </a>
               {" "}
@@ -1623,7 +1623,7 @@ export default function HomePage() {
                 {" In Just 45 Days"}
               </h3>
               {" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/strongher_withlayla" className="scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/strongher_withlayla" className="hm-scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
                 {"@strongher_withlayla"}
               </a>
               {" "}
@@ -1703,7 +1703,7 @@ export default function HomePage() {
                 {" Credit Increase In Under 30 Days"}
               </h3>
               {" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sulemcalderon" className="scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sulemcalderon" className="hm-scp1" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
                 {"@sulemcalderon"}
               </a>
               {" "}
@@ -1731,7 +1731,7 @@ export default function HomePage() {
           </div>
           <div style={{ "display": "flex", "justifyContent": "center", "marginTop": "48px" }}>
             {" "}
-            <Link href="/transformations/" className="scp3" style={{ "display": "inline-flex", "alignItems": "center", "height": "54px", "padding": "0px 34px", "borderRadius": "12px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "18px", "textTransform": "uppercase", "letterSpacing": "0.04em", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 14px 34px", "transition": "background 0.2s, color 0.2s, border-color 0.2s", "cursor": "pointer" }}>
+            <Link href="/transformations/" className="hm-scp3" style={{ "display": "inline-flex", "alignItems": "center", "height": "54px", "padding": "0px 34px", "borderRadius": "12px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "18px", "textTransform": "uppercase", "letterSpacing": "0.04em", "boxShadow": "rgba(12, 112, 195, 0.45) 0px 14px 34px", "transition": "background 0.2s, color 0.2s, border-color 0.2s", "cursor": "pointer" }}>
               {"View More Credit Transformations"}
             </Link>
             {" "}
@@ -1754,7 +1754,7 @@ export default function HomePage() {
             </p>
           </div>
           <div style={{ "position": "relative", "maxWidth": "1000px", "margin": "52px auto 0px", "display": "grid", "gridTemplateColumns": "repeat(2, 1fr)", "gap": "24px" }} className="cd-duo">
-            <div className="scpe" style={{ "background": "rgb(13, 13, 15)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "22px", "padding": "36px", "display": "flex", "flexDirection": "column", "gap": "16px", "transition": "border-color 0.25s, transform 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scpe" style={{ "background": "rgb(13, 13, 15)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "22px", "padding": "36px", "display": "flex", "flexDirection": "column", "gap": "16px", "transition": "border-color 0.25s, transform 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "24px", "textTransform": "uppercase", "color": "rgb(255, 255, 255)" }}>
                 {"Other Credit Repair Companies"}
               </h3>
@@ -1799,7 +1799,7 @@ export default function HomePage() {
                 </span>
               </div>
             </div>
-            <div className="scpf" style={{ "background": "linear-gradient(150deg, rgb(12, 112, 195), rgb(0, 74, 134))", "border": "1px solid rgba(255, 255, 255, 0.2)", "borderRadius": "22px", "padding": "36px", "display": "flex", "flexDirection": "column", "gap": "16px", "boxShadow": "rgba(12, 112, 195, 0.35) 0px 24px 60px", "transition": "border-color 0.25s, transform 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
+            <div className="hm-scpf" style={{ "background": "linear-gradient(150deg, rgb(12, 112, 195), rgb(0, 74, 134))", "border": "1px solid rgba(255, 255, 255, 0.2)", "borderRadius": "22px", "padding": "36px", "display": "flex", "flexDirection": "column", "gap": "16px", "boxShadow": "rgba(12, 112, 195, 0.35) 0px 24px 60px", "transition": "border-color 0.25s, transform 0.25s, box-shadow 0.25s", "cursor": "pointer" }}>
               <h3 style={{ "margin": "0px", "fontFamily": "var(--font-display)", "fontSize": "24px", "textTransform": "uppercase", "color": "rgb(255, 255, 255)" }}>
                 {"Credit Danny"}
               </h3>

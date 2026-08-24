@@ -905,7 +905,7 @@ font-display:swap;
 a{color:var(--link-color);text-decoration:none}
 a:hover{color:var(--link-hover-color);text-decoration:underline}
 
-.scp0:hover{box-shadow:0 12px 42px rgba(11,113,195,.75),0 4px 16px rgba(11,113,195,.6)!important;transform:translateY(-2px)!important}
+.bs-scp0:hover{box-shadow:0 12px 42px rgba(11,113,195,.75),0 4px 16px rgba(11,113,195,.6)!important;transform:translateY(-2px)!important}
 
 /* =========================================================================
    THE PHONE LAYER. The export is drawn at 1320px with 48px of side padding

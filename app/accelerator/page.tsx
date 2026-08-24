@@ -209,7 +209,7 @@ export default function AcceleratorPage() {
               </p>
               <div style={{ "display": "flex", "flexWrap": "wrap", "justifyContent": "center", "gap": "14px", "marginTop": "38px" }}>
                 {" "}
-                <a target="_blank" rel="noopener noreferrer" href="https://link.creditdanny.com/payment-link/6a23442771a0aa761e463451" className="scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+                <a target="_blank" rel="noopener noreferrer" href="https://link.creditdanny.com/payment-link/6a23442771a0aa761e463451" className="ca-scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                   {"Start My Transformation"}
                 </a>
                 {" "}
@@ -257,7 +257,7 @@ export default function AcceleratorPage() {
             </div>
             <div style={{ "position": "relative", "display": "flex", "alignItems": "center", "gap": "14px" }}>
               {" "}
-              <button type="button" aria-label="Previous" className="scp1" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1), color 220ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 220ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <button type="button" aria-label="Previous" className="ca-scp1" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1), color 220ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 220ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M14.5 5.5 8 12l6.5 6.5" />
@@ -468,7 +468,7 @@ export default function AcceleratorPage() {
               <div style={{ "position": "absolute", "top": "0px", "bottom": "0px", "left": "60px", "width": "110px", "background": "linear-gradient(270deg, rgba(5, 6, 8, 0), rgba(5, 6, 8, 0.92))", "pointerEvents": "none" }} className="ca-fade" />
               <div style={{ "position": "absolute", "top": "0px", "bottom": "0px", "right": "60px", "width": "110px", "background": "linear-gradient(90deg, rgba(5, 6, 8, 0), rgba(5, 6, 8, 0.92))", "pointerEvents": "none" }} className="ca-fade" />
               {" "}
-              <button type="button" aria-label="Next" className="scp1" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1), color 220ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 220ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <button type="button" aria-label="Next" className="ca-scp1" style={{ "flex": "0 0 auto", "width": "52px", "height": "52px", "borderRadius": "50%", "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(24px)", "border": "1px solid rgba(255, 255, 255, 0.22)", "color": "rgba(255, 255, 255, 0.85)", "display": "flex", "alignItems": "center", "justifyContent": "center", "cursor": "pointer", "padding": "0px", "transition": "background 220ms cubic-bezier(0.4, 0, 0.2, 1), border-color 220ms cubic-bezier(0.4, 0, 0.2, 1), color 220ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 220ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {" "}
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M9.5 5.5 16 12l-6.5 6.5" />
@@ -765,7 +765,7 @@ export default function AcceleratorPage() {
               </h2>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", "gap": "20px" }}>
-              <div className="scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "30px", "lineHeight": "0.8", "color": "var(--color-blue-400)", "marginBottom": "24px" }}>
                   {"Step 1"}
                 </div>
@@ -779,7 +779,7 @@ export default function AcceleratorPage() {
                   {"Complete your enrollment and activate SmartCredit monitoring so our team can access your credit reports and begin building your strategy."}
                 </p>
               </div>
-              <div className="scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "30px", "lineHeight": "0.8", "color": "var(--color-blue-400)", "marginBottom": "24px" }}>
                   {"Step 2"}
                 </div>
@@ -793,7 +793,7 @@ export default function AcceleratorPage() {
                   {"Our team reviews your credit profile, identifies the accounts holding you back, and creates a customized action plan designed to maximize results."}
                 </p>
               </div>
-              <div className="scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp2" style={{ "background": "rgba(255, 255, 255, 0.04)", "border": "1px solid rgba(255, 255, 255, 0.1)", "borderRadius": "20px", "padding": "34px 28px", "transition": "background 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "fontFamily": "var(--font-stat)", "fontSize": "30px", "lineHeight": "0.8", "color": "var(--color-blue-400)", "marginBottom": "24px" }}>
                   {"Step 3"}
                 </div>
@@ -1103,7 +1103,7 @@ export default function AcceleratorPage() {
               </div>
               <TrustindexWidget src="https://cdn.trustindex.io/loader.js?28cdc397833c7456b6762a5982e" />
               {" "}
-              <Link href="/transformations/" className="scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "borderWidth": "medium", "borderStyle": "none", "borderColor": "currentcolor", "borderImage": "none", "padding": "18px 34px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <Link href="/transformations/" className="ca-scp0" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "borderWidth": "medium", "borderStyle": "none", "borderColor": "currentcolor", "borderImage": "none", "padding": "18px 34px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {"View Our Credit Transformations"}
               </Link>
               {" "}
@@ -1121,7 +1121,7 @@ export default function AcceleratorPage() {
               </p>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 250px), 1fr))", "gap": "20px" }} className="ca-key">
-              <div className="ca-keycard scp3" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-keycard ca-scp3" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "20px" }} className="ca-keyrow">
                   {" "}
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1141,7 +1141,7 @@ export default function AcceleratorPage() {
                 </p>
                 <div style={{ "height": "2px", "marginTop": "auto", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255), rgba(0, 173, 238, 0.35))" }} />
               </div>
-              <div className="ca-keycard scp3" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-keycard ca-scp3" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "20px" }} className="ca-keyrow">
                   {" "}
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1159,7 +1159,7 @@ export default function AcceleratorPage() {
                 </p>
                 <div style={{ "height": "2px", "marginTop": "auto", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255), rgba(0, 173, 238, 0.35))" }} />
               </div>
-              <div className="ca-keycard scp3" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-keycard ca-scp3" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "20px" }} className="ca-keyrow">
                   {" "}
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1176,7 +1176,7 @@ export default function AcceleratorPage() {
                 </p>
                 <div style={{ "height": "2px", "marginTop": "auto", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255), rgba(0, 173, 238, 0.35))" }} />
               </div>
-              <div className="ca-keycard scp3" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-keycard ca-scp3" style={{ "position": "relative", "border": "1px solid rgba(255, 255, 255, 0.22)", "borderRadius": "22px", "padding": "34px 30px", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)", "overflow": "hidden", "display": "flex", "flexDirection": "column", "transition": "border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "20px" }} className="ca-keyrow">
                   {" "}
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ "flexShrink": "0" }}>
@@ -1227,7 +1227,7 @@ export default function AcceleratorPage() {
               </div>
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", "gap": "44px 36px" }}>
-              <div className="scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "height": "3px", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 173, 238) 55%, rgba(0, 173, 238, 0) 100%)" }} />
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                   {" "}
@@ -1244,7 +1244,7 @@ export default function AcceleratorPage() {
                   </p>
                 </div>
               </div>
-              <div className="scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "height": "3px", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 173, 238) 55%, rgba(0, 173, 238, 0) 100%)" }} />
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                   {" "}
@@ -1259,7 +1259,7 @@ export default function AcceleratorPage() {
                   </p>
                 </div>
               </div>
-              <div className="scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "height": "3px", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 173, 238) 55%, rgba(0, 173, 238, 0) 100%)" }} />
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                   {" "}
@@ -1275,7 +1275,7 @@ export default function AcceleratorPage() {
                   </p>
                 </div>
               </div>
-              <div className="scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "height": "3px", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 173, 238) 55%, rgba(0, 173, 238, 0) 100%)" }} />
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                   {" "}
@@ -1289,7 +1289,7 @@ export default function AcceleratorPage() {
                   </p>
                 </div>
               </div>
-              <div className="scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "height": "3px", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 173, 238) 55%, rgba(0, 173, 238, 0) 100%)" }} />
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                   {" "}
@@ -1305,7 +1305,7 @@ export default function AcceleratorPage() {
                   </p>
                 </div>
               </div>
-              <div className="scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <div className="ca-scp4" style={{ "display": "flex", "flexDirection": "column", "gap": "18px", "transition": "transform 250ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 <div style={{ "height": "3px", "borderRadius": "2px", "background": "linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 173, 238) 55%, rgba(0, 173, 238, 0) 100%)" }} />
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "18px" }}>
                   {" "}
@@ -1325,7 +1325,7 @@ export default function AcceleratorPage() {
             </div>
             <div id="get-started" style={{ "display": "flex", "justifyContent": "center", "marginTop": "88px", "scrollMarginTop": "24px" }}>
               {" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://link.creditdanny.com/payment-link/6a23442771a0aa761e463451" className="ca-endcta scp5" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "var(--color-blue-600)", "background": "rgb(255, 255, 255)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(12, 112, 195, 0.32) 0px 0px 70px 6px, rgba(0, 173, 238, 0.18) 0px 0px 24px 2px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://link.creditdanny.com/payment-link/6a23442771a0aa761e463451" className="ca-endcta ca-scp5" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "var(--color-blue-600)", "background": "rgb(255, 255, 255)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(12, 112, 195, 0.32) 0px 0px 70px 6px, rgba(0, 173, 238, 0.18) 0px 0px 24px 2px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                 {"Get Started Now"}
               </a>
               {" "}
@@ -1342,7 +1342,7 @@ export default function AcceleratorPage() {
               </span>
             </div>
             {" "}
-            <a target="_blank" rel="noopener noreferrer" href="https://link.creditdanny.com/payment-link/6a23442771a0aa761e463451" className="scp6" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "16px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "12px 27px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+            <a target="_blank" rel="noopener noreferrer" href="https://link.creditdanny.com/payment-link/6a23442771a0aa761e463451" className="ca-scp6" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "16px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "12px 27px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
               {"Start My Transformation"}
             </a>
             {" "}

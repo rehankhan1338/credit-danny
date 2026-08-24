@@ -789,13 +789,13 @@ section[id]{scroll-margin-top:24px}
 
 @keyframes dc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 /* hover states, rebuilt from the export's style-hover attrs */
-.scp0:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important;transform: translateY(-3px) !important}
-.scp1:hover{background: rgb(11, 113, 195) !important;border-color: rgb(255, 255, 255) !important;color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.5) 0px 6px 22px !important}
-.scp2:hover{background: linear-gradient(200deg, rgb(12, 112, 195), rgb(0, 69, 111)) !important;border-color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.28) 0px 6px 26px !important;transform: translateY(-4px) !important}
-.scp3:hover{border-color: rgb(255, 255, 255) !important;transform: translateY(-4px) !important}
-.scp4:hover{transform: translateY(-4px) !important}
-.scp5:hover{background: rgb(0, 0, 0) !important;color: rgb(255, 255, 255) !important;border-color: rgb(0, 0, 0) !important;box-shadow: rgba(12, 112, 195, 0.5) 0px 0px 70px 6px, rgba(0, 173, 238, 0.3) 0px 0px 24px 2px !important;transform: translateY(-3px) !important}
-.scp6:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important}
+.ca-scp0:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important;transform: translateY(-3px) !important}
+.ca-scp1:hover{background: rgb(11, 113, 195) !important;border-color: rgb(255, 255, 255) !important;color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.5) 0px 6px 22px !important}
+.ca-scp2:hover{background: linear-gradient(200deg, rgb(12, 112, 195), rgb(0, 69, 111)) !important;border-color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.28) 0px 6px 26px !important;transform: translateY(-4px) !important}
+.ca-scp3:hover{border-color: rgb(255, 255, 255) !important;transform: translateY(-4px) !important}
+.ca-scp4:hover{transform: translateY(-4px) !important}
+.ca-scp5:hover{background: rgb(0, 0, 0) !important;color: rgb(255, 255, 255) !important;border-color: rgb(0, 0, 0) !important;box-shadow: rgba(12, 112, 195, 0.5) 0px 0px 70px 6px, rgba(0, 173, 238, 0.3) 0px 0px 24px 2px !important;transform: translateY(-3px) !important}
+.ca-scp6:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important}
 .ca-sticky{transition:opacity 320ms ease,transform 320ms ease!important;}
 html.ca-js .ca-sticky{opacity:0;transform:translateY(100%);pointer-events:none;}
 html.ca-js .ca-sticky.ca-on{opacity:1;transform:none;pointer-events:auto;}

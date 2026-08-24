@@ -190,7 +190,7 @@ x-dc{display:none!important}
     .mv-cta-white:hover{background:#000!important;color:#fff!important;filter:none}
     .mv-cta-invert:hover{background:#fff!important;color:var(--color-blue-600)!important;filter:none}
     .mv-eyebrow{font-family:var(--font-body);font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase}
-    .mv-navchip{font-family:var(--font-label);font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:9px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.7);transition:all .18s ease;white-space:nowrap}
+    .mv-navchip{font-family:var(--font-label);font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:9px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#ffffff;transition:all .18s ease;white-space:nowrap}
     .mv-navchip:hover{background:var(--color-blue-600);border-color:var(--color-blue-600);color:#fff}
     @keyframes mv-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
     @keyframes mv-pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,173,238,.5)}70%{box-shadow:0 0 0 22px rgba(0,173,238,0)}}
@@ -240,6 +240,14 @@ html,body{overflow-x:clip!important;overflow-y:visible!important;}
 .mv-cta-nav:hover{background:#ffffff!important;color:#000000!important;border-color:#000000!important;filter:none;}
 @media (max-width:700px){#mv-topbar{height:72px!important;}#mv-topbar .mv-cta-nav{font-size:16px!important;padding:11px 24px!important;}#mv-topbar .mv-logo{height:28px!important;}}
 .mv-cta,.mv-cta:link,.mv-cta:visited,.mv-cta:hover,.mv-cta:focus,.mv-cta:active,.mv-navchip,.mv-navchip:hover,.mv-navchip:focus{text-decoration:none!important;}
+/* <body> carries elementor-kit-27255861 (Shell.tsx body_class), so the kit's
+   `.elementor-kit-27255861 a{color:accent}` / `a:hover{color:#000}` rules in
+   legacy-elementor.css outrank .mv-navchip (0,1,0) and recolour the hero nav
+   chips. Same conflict team.css scopes back; here only the chips need it. */
+body.elementor-kit-27255861 a.mv-navchip,
+body.elementor-kit-27255861 a.mv-navchip:visited{color:#ffffff;}
+body.elementor-kit-27255861 a.mv-navchip:hover,
+body.elementor-kit-27255861 a.mv-navchip:focus{color:#ffffff;}
 #mv-topbar{box-shadow:0 4px 18px rgba(0,0,0,.45);}
 @media (min-width:1060px){.mv-testi-head{white-space:nowrap;max-width:none;width:max-content;margin-left:auto;margin-right:auto;}}
 @media (max-width:560px){.cd-hero-title{font-size:60px!important;}.cd-hero-by{font-size:24px!important;}.cd-hero-sub{font-size:24px!important;}.cd-why-learn,.cd-h2{font-size:60px!important;}.cd-h2.cd-coaching,.cd-h2.mv-brandhead{font-size:40px!important;}.cd-mbr{display:inline!important;}.mv-final-photo{max-width:360px!important;margin-top:-95px!important;margin-bottom:-60px!important;}.mv-built-img{min-height:420px!important;margin-top:-140px!important;}.mv-built-img img{width:100%!important;height:100%!important;}.mv-built-img + div{padding-top:0!important;padding-bottom:0!important;}.mv-built{min-height:0!important;}.mv-built-img + div > *:last-child{margin-bottom:0!important;}.cd-copy-receipts,.cd-copy-fail{font-size:16px!important;}.cd-narr,.cd-biz{font-size:30px!important;}.cd-hero-media{display:flex;flex-wrap:wrap;gap:10px;}.cd-hero-media > *{flex:0 0 100%;}.mv-chip-l,.mv-chip-r{position:static!important;flex:1 1 0!important;min-width:0!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;justify-content:center!important;padding:10px 12px!important;gap:8px!important;transform-origin:center!important;animation:none!important;transform:none!important;}.mv-chip-l > span:first-child,.mv-chip-r > span:first-child{font-size:clamp(16px,5vw,24px)!important;white-space:nowrap!important;flex:0 0 auto!important;}.mv-chip-l > span:last-child,.mv-chip-r > span:last-child{font-size:10px!important;line-height:1.25!important;flex:0 1 auto!important;}.cd-fyi-card{padding:22px!important;}.cd-fyi{font-size:28px!important;letter-spacing:-0.5px!important;}.mv-results-head img{aspect-ratio:1/1!important;object-position:center center!important;}[data-screen-label]{padding-top:60px!important;padding-bottom:60px!important;}[data-screen-label="Curriculum Intro"]{padding-bottom:0!important;}[data-screen-label="Modules 1-4"]{padding-top:42px!important;}[data-screen-label="Hero"]{padding-top:26px!important;}[data-screen-label="Why I Built This"]{padding-bottom:42px!important;}}

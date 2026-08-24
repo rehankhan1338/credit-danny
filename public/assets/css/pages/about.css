@@ -774,8 +774,8 @@ a:hover{color:var(--color-blue-400)}
 @keyframes cd-pulse{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.5);opacity:1}}
 @keyframes cd-marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-.scp0:hover{background: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important}
-.scp1:hover{transform: translateY(-6px) !important;border-color: rgb(0, 173, 238) !important}
+.ab-scp0:hover{background: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important}
+.ab-scp1:hover{transform: translateY(-6px) !important;border-color: rgb(0, 173, 238) !important}
 /* ---- THE TWO HEROES ----------------------------------------------------
    Dustin drew the phone hero as its own screen ("Hero mobile" in the export)
    rather than asking for the wide one to be squeezed, so the two are SWAPPED.

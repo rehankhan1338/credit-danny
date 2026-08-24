@@ -788,14 +788,14 @@ section[id]{scroll-margin-top:24px}
 @keyframes dc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes dc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 /* hover states, rebuilt from the export's style-hover attrs */
-.scp0:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important;transform: translateY(-3px) !important}
-.scp1:hover{background: rgb(11, 113, 195) !important;border-color: rgb(255, 255, 255) !important;color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.5) 0px 6px 22px !important}
-.scp2:hover{background: linear-gradient(200deg, rgb(12, 112, 195), rgb(0, 69, 111)) !important;border-color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.28) 0px 6px 26px !important;transform: translateY(-4px) !important}
-.scp3:hover{background: linear-gradient(200deg, rgb(12, 112, 195), rgb(0, 69, 111)) !important;border-color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.28) 0px 6px 26px !important;transform: translateY(-4px) !important;--sc-btn-bg: #ffffff !important;--sc-btn-fg: var(--color-blue-600) !important}
-.scp4:hover{background: rgb(0, 0, 0) !important;color: rgb(255, 255, 255) !important;transform: translateY(-3px) !important}
-.scp5:hover{border-color: rgb(255, 255, 255) !important;transform: translateY(-4px) !important}
-.scp6:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important;transform: translateY(-2px) !important}
-.scp7:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important}
+.sp-scp0:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important;transform: translateY(-3px) !important}
+.sp-scp1:hover{background: rgb(11, 113, 195) !important;border-color: rgb(255, 255, 255) !important;color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.5) 0px 6px 22px !important}
+.sp-scp2:hover{background: linear-gradient(200deg, rgb(12, 112, 195), rgb(0, 69, 111)) !important;border-color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.28) 0px 6px 26px !important;transform: translateY(-4px) !important}
+.sp-scp3:hover{background: linear-gradient(200deg, rgb(12, 112, 195), rgb(0, 69, 111)) !important;border-color: rgb(255, 255, 255) !important;box-shadow: rgba(11, 113, 195, 0.28) 0px 6px 26px !important;transform: translateY(-4px) !important;--sc-btn-bg: #ffffff !important;--sc-btn-fg: var(--color-blue-600) !important}
+.sp-scp4:hover{background: rgb(0, 0, 0) !important;color: rgb(255, 255, 255) !important;transform: translateY(-3px) !important}
+.sp-scp5:hover{border-color: rgb(255, 255, 255) !important;transform: translateY(-4px) !important}
+.sp-scp6:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important;transform: translateY(-2px) !important}
+.sp-scp7:hover{background: rgb(255, 255, 255) !important;color: var(--color-blue-600) !important}
 .sp-sticky{transition:opacity 320ms ease,transform 320ms ease!important;}
 html.sp-js .sp-sticky{opacity:0;transform:translateY(100%);pointer-events:none;}
 html.sp-js .sp-sticky.sp-on{opacity:1;transform:none;pointer-events:auto;}

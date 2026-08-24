@@ -183,6 +183,65 @@ export default function HomeEffects() {
       });
     }
 
+    /* ---- the jump-rail scrollspy: light the pill for the section in view ---- */
+    const jumpNav = document.querySelector<HTMLElement>(".cd-jump");
+    if (jumpNav) {
+      const rail = jumpNav.querySelector<HTMLElement>(".cd-jump-rail");
+      const pills = Array.from(
+        jumpNav.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')
+      ).flatMap((link) => {
+        const target = document.getElementById(link.hash.slice(1));
+        return target ? [{ link, target }] : [];
+      });
+      if (pills.length) {
+        let active: HTMLAnchorElement | null = null;
+        let spyTick = false;
+        const center = (link: HTMLAnchorElement) => {
+          /* On phones the rail overflows sideways; keep the lit pill visible. */
+          if (!rail || rail.scrollWidth <= rail.clientWidth + 2) return;
+          rail.scrollTo({
+            left: link.offsetLeft - (rail.clientWidth - link.offsetWidth) / 2,
+            behavior: reduce ? "auto" : "smooth",
+          });
+        };
+        const update = () => {
+          spyTick = false;
+          /* Active = the last section whose top has passed under the sticky rail. */
+          const line = jumpNav.getBoundingClientRect().bottom + 8;
+          let best: HTMLAnchorElement | null = null;
+          let bestTop = -Infinity;
+          for (const { link, target } of pills) {
+            const top = target.getBoundingClientRect().top;
+            if (top <= line && top > bestTop) {
+              bestTop = top;
+              best = link;
+            }
+          }
+          if (best === active) return;
+          active?.classList.remove("is-active");
+          active = best;
+          if (active) {
+            active.classList.add("is-active");
+            center(active);
+          }
+        };
+        const onSpy = () => {
+          if (!spyTick) {
+            spyTick = true;
+            requestAnimationFrame(update);
+          }
+        };
+        window.addEventListener("scroll", onSpy, { passive: true });
+        window.addEventListener("resize", onSpy);
+        update();
+        cleanups.push(() => {
+          window.removeEventListener("scroll", onSpy);
+          window.removeEventListener("resize", onSpy);
+          active?.classList.remove("is-active");
+        });
+      }
+    }
+
     return () => cleanups.forEach((fn) => fn());
   }, []);
 

@@ -807,24 +807,25 @@ a:hover{color:var(--color-blue-400)}
 @keyframes dc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes dc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 /* hover states, rebuilt from the export's style-hover attrs */
-.scp0:hover{background: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important}
-.scp1:hover{color: rgb(0, 173, 238) !important}
-.scp2:hover{opacity: 0.75 !important}
-.scp3:hover{background: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important}
-.scp4:hover{background: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important}
-.scp5:hover{background: rgb(255, 255, 255) !important;border-color: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important}
-.scp6:hover{transform: translateY(-6px) !important;border-color: rgb(0, 173, 238) !important;background: rgba(10, 14, 22, 0.62) !important;box-shadow: rgba(0, 0, 0, 0.5) 0px 18px 44px !important}
-.scp7:hover{background: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important;color: rgb(255, 255, 255) !important;box-shadow: rgba(12, 112, 195, 0.5) 0px 6px 22px !important}
-.scp8:hover{transform: translateY(-4px) !important;background: rgb(10, 95, 166) !important;box-shadow: rgba(12, 112, 195, 0.45) 0px 12px 30px !important}
-.scp9:hover{transform: translateY(-6px) !important;border-color: rgb(0, 173, 238) !important;box-shadow: rgba(0, 0, 0, 0.55) 0px 18px 44px !important}
-.scpa:hover{transform: translateY(-6px) !important}
-.scpb:hover{border-color: rgba(255, 255, 255, 0.7) !important;box-shadow: rgba(0, 173, 238, 0.14) 0px 0px 0px 1px, rgba(0, 0, 0, 0.7) 0px 26px 60px !important}
-.scpc:hover{box-shadow: rgba(12, 112, 195, 0.6) 0px 0px 44px, rgba(12, 112, 195, 0.3) 0px 0px 120px, rgba(0, 0, 0, 0.7) 0px 26px 60px !important}
-.scpd:hover{border-color: rgba(0, 173, 238, 0.85) !important;transform: translateY(-5px) !important;box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 0px inset, rgba(12, 112, 195, 0.24) 0px 0px 52px inset, rgba(0, 0, 0, 0.55) 0px 20px 52px !important}
-.scpe:hover{transform: translateY(-5px) !important;box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 50px !important}
-.scpf:hover{border-color: rgb(255, 255, 255) !important;transform: translateY(-5px) !important;box-shadow: rgba(12, 112, 195, 0.55) 0px 30px 72px !important}
-.scpg:hover{background: rgb(255, 255, 255) !important;color: rgb(0, 0, 0) !important;border-color: rgb(255, 255, 255) !important}
-.scph:hover{color: rgb(255, 255, 255) !important}
+.hm-scp0:hover{background: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important}
+.hm-scp1:hover{color: rgb(0, 173, 238) !important}
+.hm-scp2:hover{opacity: 0.75 !important}
+.hm-scp3:hover{background: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important}
+.hm-scp4:hover{background: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important}
+.hm-scp5:hover{background: rgb(255, 255, 255) !important;border-color: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important}
+.hm-scp5.is-active{background: rgb(255, 255, 255) !important;border-color: rgb(255, 255, 255) !important;color: rgb(12, 112, 195) !important}
+.hm-scp6:hover{transform: translateY(-6px) !important;border-color: rgb(0, 173, 238) !important;background: rgba(10, 14, 22, 0.62) !important;box-shadow: rgba(0, 0, 0, 0.5) 0px 18px 44px !important}
+.hm-scp7:hover{background: rgb(12, 112, 195) !important;border-color: rgb(255, 255, 255) !important;color: rgb(255, 255, 255) !important;box-shadow: rgba(12, 112, 195, 0.5) 0px 6px 22px !important}
+.hm-scp8:hover{transform: translateY(-4px) !important;background: rgb(10, 95, 166) !important;box-shadow: rgba(12, 112, 195, 0.45) 0px 12px 30px !important}
+.hm-scp9:hover{transform: translateY(-6px) !important;border-color: rgb(0, 173, 238) !important;box-shadow: rgba(0, 0, 0, 0.55) 0px 18px 44px !important}
+.hm-scpa:hover{transform: translateY(-6px) !important}
+.hm-scpb:hover{border-color: rgba(255, 255, 255, 0.7) !important;box-shadow: rgba(0, 173, 238, 0.14) 0px 0px 0px 1px, rgba(0, 0, 0, 0.7) 0px 26px 60px !important}
+.hm-scpc:hover{box-shadow: rgba(12, 112, 195, 0.6) 0px 0px 44px, rgba(12, 112, 195, 0.3) 0px 0px 120px, rgba(0, 0, 0, 0.7) 0px 26px 60px !important}
+.hm-scpd:hover{border-color: rgba(0, 173, 238, 0.85) !important;transform: translateY(-5px) !important;box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 0px inset, rgba(12, 112, 195, 0.24) 0px 0px 52px inset, rgba(0, 0, 0, 0.55) 0px 20px 52px !important}
+.hm-scpe:hover{transform: translateY(-5px) !important;box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 50px !important}
+.hm-scpf:hover{border-color: rgb(255, 255, 255) !important;transform: translateY(-5px) !important;box-shadow: rgba(12, 112, 195, 0.55) 0px 30px 72px !important}
+.hm-scpg:hover{background: rgb(255, 255, 255) !important;color: rgb(0, 0, 0) !important;border-color: rgb(255, 255, 255) !important}
+.hm-scph:hover{color: rgb(255, 255, 255) !important}
 .cdm-h0:hover{background:#0C70C3!important;border-color:#fff!important}
 .cdm-h1:hover{color:#00ADEE!important}
 
@@ -1457,7 +1458,7 @@ wistia-player[media-id='o3uudfqzob']:not(:defined){display:block;position:absolu
      `top:calc(50% - 20px)` rather than translateY(-50%) simply so the position
      does not depend on `transform` at all -- the reveal cascade animates
      transforms in this section, and centring is not worth sharing a property
-     with an animation. (.scp7, the runtime hover class, turned out to touch
+     with an animation. (.hm-scp7, the runtime hover class, turned out to touch
      only background, border and shadow, so either approach would work here.) */
   [data-screen-label="Real people real results"] > div:nth-child(2) > div:nth-child(3),
   [data-screen-label="Real people real results"] > div:nth-child(2) > div:nth-child(4){

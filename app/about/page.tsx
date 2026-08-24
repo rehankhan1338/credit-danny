@@ -207,11 +207,11 @@ export default function AboutPage() {
             </div>
             <div data-reveal="" style={{ "display": "flex", "flexWrap": "wrap", "alignItems": "center", "gap": "16px", "marginTop": "14px", "opacity": "1", "transform": "none" }}>
               {" "}
-              <Link href="/transformations/" className="scp0" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "12px 24px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "20px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "boxShadow": "rgba(12, 112, 195, 0.65) 0px 0px 18px, rgba(12, 112, 195, 0.35) 0px 0px 44px", "transition": "background 0.2s, color 0.2s, border-color 0.2s" }}>
+              <Link href="/transformations/" className="ab-scp0" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "12px 24px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "20px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "boxShadow": "rgba(12, 112, 195, 0.65) 0px 0px 18px, rgba(12, 112, 195, 0.35) 0px 0px 44px", "transition": "background 0.2s, color 0.2s, border-color 0.2s" }}>
                 {"View Credit Transformations"}
               </Link>
               {" "}
-              <a href="#trust" className="scp0" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "12px 24px", "borderRadius": "10px", "border": "2px solid rgb(255, 255, 255)", "background": "transparent", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "20px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "transition": "background 0.2s, color 0.2s, border-color 0.2s" }}>
+              <a href="#trust" className="ab-scp0" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "12px 24px", "borderRadius": "10px", "border": "2px solid rgb(255, 255, 255)", "background": "transparent", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "20px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "transition": "background 0.2s, color 0.2s, border-color 0.2s" }}>
                 {"Why People Trust Danny"}
               </a>
               {" "}
@@ -532,7 +532,7 @@ export default function AboutPage() {
               {" "}
             </div>
             <div style={{ "display": "grid", "gridTemplateColumns": "repeat(4, 1fr)", "gap": "20px" }} className="ab-quad">
-              <div data-reveal="" className="scp1" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "30px 26px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
+              <div data-reveal="" className="ab-scp1" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "30px 26px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
                 {" "}
                 <span data-count="14" data-suffix="+" style={{ "fontFamily": "var(--font-stat)", "fontSize": "62px", "lineHeight": "0.9", "color": "rgb(0, 173, 238)" }}>
                   {"14+"}
@@ -545,7 +545,7 @@ export default function AboutPage() {
                 </span>
                 {" "}
               </div>
-              <div data-reveal="" className="scp1" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "30px 26px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
+              <div data-reveal="" className="ab-scp1" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "30px 26px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
                 {" "}
                 <span data-count="1000" data-suffix="" style={{ "fontFamily": "var(--font-stat)", "fontSize": "62px", "lineHeight": "0.9", "color": "rgb(0, 173, 238)" }}>
                   {"1,000"}
@@ -558,7 +558,7 @@ export default function AboutPage() {
                 </span>
                 {" "}
               </div>
-              <div data-reveal="" className="scp1" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "30px 26px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
+              <div data-reveal="" className="ab-scp1" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "30px 26px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
                 {" "}
                 <span style={{ "fontFamily": "var(--font-stat)", "fontSize": "62px", "lineHeight": "0.9", "color": "rgb(0, 173, 238)" }}>
                   {"400s→700s"}
@@ -571,7 +571,7 @@ export default function AboutPage() {
                 </span>
                 {" "}
               </div>
-              <div data-reveal="" className="scp1" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "30px 26px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
+              <div data-reveal="" className="ab-scp1" style={{ "background": "rgba(10, 14, 22, 0.45)", "backdropFilter": "blur(22px)", "border": "1px solid rgba(255, 255, 255, 0.16)", "borderRadius": "18px", "padding": "30px 26px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "10px", "boxShadow": "rgba(0, 0, 0, 0.35) 0px 8px 30px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
                 {" "}
                 <span style={{ "fontFamily": "var(--font-stat)", "fontSize": "62px", "lineHeight": "0.9", "color": "rgb(0, 173, 238)" }}>
                   {"90-Day"}
@@ -898,7 +898,7 @@ export default function AboutPage() {
                 </span>
               </p>
               {" "}
-              <Link data-reveal="" href="/transformations/" className="scp0" style={{ "alignSelf": "flex-start", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "12px 24px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "20px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "boxShadow": "rgba(12, 112, 195, 0.65) 0px 0px 18px, rgba(12, 112, 195, 0.35) 0px 0px 44px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
+              <Link data-reveal="" href="/transformations/" className="ab-scp0" style={{ "alignSelf": "flex-start", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "12px 24px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "20px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "boxShadow": "rgba(12, 112, 195, 0.65) 0px 0px 18px, rgba(12, 112, 195, 0.35) 0px 0px 44px", "transition": "opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1)", "opacity": "1", "transform": "none" }}>
                 {"View Credit Transformations"}
               </Link>
               {" "}
@@ -982,11 +982,11 @@ export default function AboutPage() {
               </p>
               <div style={{ "display": "flex", "flexWrap": "wrap", "gap": "14px", "justifyContent": "center", "marginTop": "10px" }}>
                 {" "}
-                <Link href="/get-started/" className="scp0" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "16px 32px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "30px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "boxShadow": "rgba(12, 112, 195, 0.65) 0px 0px 18px, rgba(12, 112, 195, 0.35) 0px 0px 44px", "transition": "background 0.2s, color 0.2s, border-color 0.2s" }}>
+                <Link href="/get-started/" className="ab-scp0" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "16px 32px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "30px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "boxShadow": "rgba(12, 112, 195, 0.65) 0px 0px 18px, rgba(12, 112, 195, 0.35) 0px 0px 44px", "transition": "background 0.2s, color 0.2s, border-color 0.2s" }}>
                   {"Begin Today"}
                 </Link>
                 {" "}
-                <Link href="/blueprint-strategy/" className="scp0" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "16px 32px", "borderRadius": "10px", "border": "2px solid rgb(255, 255, 255)", "background": "transparent", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "30px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "transition": "background 0.2s, color 0.2s, border-color 0.2s" }}>
+                <Link href="/blueprint-strategy/" className="ab-scp0" style={{ "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "boxSizing": "border-box", "padding": "16px 32px", "borderRadius": "10px", "border": "2px solid rgb(255, 255, 255)", "background": "transparent", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "30px", "letterSpacing": "0.2px", "textTransform": "uppercase", "cursor": "pointer", "transition": "background 0.2s, color 0.2s, border-color 0.2s" }}>
                   {"Book A Consultation"}
                 </Link>
                 {" "}

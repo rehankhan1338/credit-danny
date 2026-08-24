@@ -277,7 +277,7 @@ export default function HomeBuyingBlueprintPage() {
                   </p>
                   <div style={{ "display": "flex", "flexDirection": "column", "alignItems": "center", "gap": "14px", "marginTop": "38px" }}>
                     {" "}
-                    <Link href="/blueprint-application/" className="scp0 hb-cta" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+                    <Link href="/blueprint-application/" className="hb-scp0 hb-cta" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                       {"Get Started Today"}
                     </Link>
                     {" "}
@@ -692,7 +692,7 @@ export default function HomeBuyingBlueprintPage() {
                 </div>
                 <div style={{ "display": "flex", "justifyContent": "center", "marginTop": "56px" }}>
                   {" "}
-                  <Link href="/blueprint-application/" className="hb-reveal scp0 hb-cta" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px" }}>
+                  <Link href="/blueprint-application/" className="hb-reveal hb-scp0 hb-cta" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "21px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "18px 39px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px" }}>
                     {"Get Approved in 90 Days or Less"}
                   </Link>
                   {" "}
@@ -712,7 +712,7 @@ export default function HomeBuyingBlueprintPage() {
                     {"Dispute Process"}
                   </h2>
                   <div style={{ "display": "flex", "flexDirection": "column", "gap": "12px" }}>
-                    <div className="hb-reveal scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
+                    <div className="hb-reveal hb-scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
                       {" "}
                       <span style={{ "flexShrink": "0", "width": "22px", "height": "22px", "borderRadius": "50%", "background": "var(--color-blue-600)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "marginTop": "2px" }}>
                         <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -724,7 +724,7 @@ export default function HomeBuyingBlueprintPage() {
                         {"Structured 90-day timeline"}
                       </p>
                     </div>
-                    <div className="hb-reveal scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
+                    <div className="hb-reveal hb-scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
                       {" "}
                       <span style={{ "flexShrink": "0", "width": "22px", "height": "22px", "borderRadius": "50%", "background": "var(--color-blue-600)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "marginTop": "2px" }}>
                         <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -736,7 +736,7 @@ export default function HomeBuyingBlueprintPage() {
                         {"Clear step-by-step system"}
                       </p>
                     </div>
-                    <div className="hb-reveal scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
+                    <div className="hb-reveal hb-scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
                       {" "}
                       <span style={{ "flexShrink": "0", "width": "22px", "height": "22px", "borderRadius": "50%", "background": "var(--color-blue-600)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "marginTop": "2px" }}>
                         <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -748,7 +748,7 @@ export default function HomeBuyingBlueprintPage() {
                         {"No confusion or guessing"}
                       </p>
                     </div>
-                    <div className="hb-reveal scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
+                    <div className="hb-reveal hb-scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
                       {" "}
                       <span style={{ "flexShrink": "0", "width": "22px", "height": "22px", "borderRadius": "50%", "background": "var(--color-blue-600)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "marginTop": "2px" }}>
                         <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -760,7 +760,7 @@ export default function HomeBuyingBlueprintPage() {
                         {"Focused on approvals, not just scores"}
                       </p>
                     </div>
-                    <div className="hb-reveal scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
+                    <div className="hb-reveal hb-scp1" style={{ "display": "flex", "gap": "18px", "padding": "18px 22px", "borderRadius": "16px", "background": "rgba(255, 255, 255, 0.05)", "border": "1px solid rgba(255, 255, 255, 0.1)", "backdropFilter": "blur(18px)", "boxShadow": "rgba(0, 0, 0, 0.28) 0px 6px 22px" }}>
                       {" "}
                       <span style={{ "flexShrink": "0", "width": "22px", "height": "22px", "borderRadius": "50%", "background": "var(--color-blue-600)", "display": "inline-flex", "alignItems": "center", "justifyContent": "center", "marginTop": "2px" }}>
                         <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
@@ -839,7 +839,7 @@ export default function HomeBuyingBlueprintPage() {
                   </h2>
                 </div>
                 <div style={{ "display": "grid", "gridTemplateColumns": "repeat(2, minmax(0px, 1fr))", "gap": "28px" }}>
-                  <div className="hb-reveal scp2" style={{ "display": "flex", "gap": "26px", "alignItems": "center", "padding": "32px 30px", "borderRadius": "24px", "border": "1px solid rgba(255, 255, 255, 0.12)", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)" }}>
+                  <div className="hb-reveal hb-scp2" style={{ "display": "flex", "gap": "26px", "alignItems": "center", "padding": "32px 30px", "borderRadius": "24px", "border": "1px solid rgba(255, 255, 255, 0.12)", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)" }}>
                     <div style={{ "flexShrink": "0", "display": "flex", "alignItems": "center", "justifyContent": "center" }}>
                       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M6 3h8l4.4 4.4V21H6z" />
@@ -857,7 +857,7 @@ export default function HomeBuyingBlueprintPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="hb-reveal scp2" style={{ "display": "flex", "gap": "26px", "alignItems": "center", "padding": "32px 30px", "borderRadius": "24px", "border": "1px solid rgba(255, 255, 255, 0.12)", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)" }}>
+                  <div className="hb-reveal hb-scp2" style={{ "display": "flex", "gap": "26px", "alignItems": "center", "padding": "32px 30px", "borderRadius": "24px", "border": "1px solid rgba(255, 255, 255, 0.12)", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)" }}>
                     <div style={{ "flexShrink": "0", "display": "flex", "alignItems": "center", "justifyContent": "center" }}>
                       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M3.4 6.4 9 3.6l6 2.8 5.6-2.8v14l-5.6 2.8-6-2.8-5.6 2.8z" />
@@ -874,7 +874,7 @@ export default function HomeBuyingBlueprintPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="hb-reveal scp2" style={{ "display": "flex", "gap": "26px", "alignItems": "center", "padding": "32px 30px", "borderRadius": "24px", "border": "1px solid rgba(255, 255, 255, 0.12)", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)" }}>
+                  <div className="hb-reveal hb-scp2" style={{ "display": "flex", "gap": "26px", "alignItems": "center", "padding": "32px 30px", "borderRadius": "24px", "border": "1px solid rgba(255, 255, 255, 0.12)", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)" }}>
                     <div style={{ "flexShrink": "0", "display": "flex", "alignItems": "center", "justifyContent": "center" }}>
                       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M13.6 2.6 5 13.4h5.6L9.6 21.4 19 10.2h-5.9z" />
@@ -889,7 +889,7 @@ export default function HomeBuyingBlueprintPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="hb-reveal scp2" style={{ "display": "flex", "gap": "26px", "alignItems": "center", "padding": "32px 30px", "borderRadius": "24px", "border": "1px solid rgba(255, 255, 255, 0.12)", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)" }}>
+                  <div className="hb-reveal hb-scp2" style={{ "display": "flex", "gap": "26px", "alignItems": "center", "padding": "32px 30px", "borderRadius": "24px", "border": "1px solid rgba(255, 255, 255, 0.12)", "background": "linear-gradient(160deg, rgb(7, 8, 10) 0%, rgb(7, 18, 29) 55%, rgb(11, 77, 132) 130%)" }}>
                     <div style={{ "flexShrink": "0", "display": "flex", "alignItems": "center", "justifyContent": "center" }}>
                       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-blue-400)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M3.4 10.6 12 3.6l8.6 7" />
@@ -926,7 +926,7 @@ export default function HomeBuyingBlueprintPage() {
                   {"Your next 90 days can change everything if you take action today."}
                 </p>
                 {" "}
-                <Link href="/blueprint-application/" className="hb-reveal scp0 hb-cta" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "18px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "15px 32px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px" }}>
+                <Link href="/blueprint-application/" className="hb-reveal hb-scp0 hb-cta" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "18px", "letterSpacing": "0.04em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "15px 32px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px" }}>
                   {"Apply Now"}
                 </Link>
                 {" "}
@@ -941,7 +941,7 @@ export default function HomeBuyingBlueprintPage() {
                   </span>
                 </div>
                 {" "}
-                <Link href="/blueprint-application/" className="scp3 hb-cta" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "16px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "12px 27px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
+                <Link href="/blueprint-application/" className="hb-scp3 hb-cta" style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "fontSize": "16px", "letterSpacing": "0.05em", "textTransform": "uppercase", "color": "rgb(255, 255, 255)", "background": "rgb(11, 113, 195)", "border": "1px solid rgb(255, 255, 255)", "padding": "12px 27px", "borderRadius": "16px", "display": "inline-flex", "boxShadow": "rgba(11, 113, 195, 0.55) 0px 8px 28px, rgba(11, 113, 195, 0.45) 0px 2px 10px", "transition": "background 200ms cubic-bezier(0.4, 0, 0.2, 1), color 200ms cubic-bezier(0.4, 0, 0.2, 1)" }}>
                   {"Get Started"}
                 </Link>
                 {" "}

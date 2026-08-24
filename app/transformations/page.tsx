@@ -683,11 +683,11 @@ export default function TransformationsPage() {
               </h3>
               <div style={{ "display": "flex", "gap": "18px", "flexWrap": "wrap", "marginBottom": "18px" }}>
                 {" "}
-                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/monicahilltrejo08" className="scp0" style={{ "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/monicahilltrejo08" className="ct-scp0" style={{ "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
                   {"@monicahilltrejo08"}
                 </a>
                 {" "}
-                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kingdommuzicministries" className="scp0" style={{ "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/kingdommuzicministries" className="ct-scp0" style={{ "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
                   {"@kingdommuzicministries"}
                 </a>
                 {" "}
@@ -1056,7 +1056,7 @@ export default function TransformationsPage() {
                 {" In Under 90 Days 📈"}
               </h3>
               {" "}
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rayleencook" className="scp0" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rayleencook" className="ct-scp0" style={{ "display": "inline-block", "marginBottom": "18px", "fontSize": "14px", "fontWeight": "700", "color": "rgb(12, 112, 195)", "cursor": "pointer" }}>
                 {"@rayleencook"}
               </a>
               {" "}
@@ -1195,7 +1195,7 @@ export default function TransformationsPage() {
             </h2>
           </div>
           <div style={{ "position": "relative", "maxWidth": "1200px", "margin": "56px auto 0px", "display": "grid", "gridTemplateColumns": "repeat(5, 1fr)", "gap": "20px" }} className="ct-card ct-quint">
-            <div className="scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
+            <div className="ct-scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/house-emoji.png" alt="" style={{ "width": "64px", "height": "64px", "objectFit": "contain", "display": "block" }} />
               {" "}
@@ -1203,7 +1203,7 @@ export default function TransformationsPage() {
                 {"Finally being able to say \"yes\" when the right home comes along"}
               </p>
             </div>
-            <div className="scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
+            <div className="ct-scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/Car-emoji.png" alt="" style={{ "width": "64px", "height": "64px", "objectFit": "contain", "display": "block" }} />
               {" "}
@@ -1211,7 +1211,7 @@ export default function TransformationsPage() {
                 {"Choosing the car you want, not settling for what you're approved for"}
               </p>
             </div>
-            <div className="scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
+            <div className="ct-scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/Briefcase-emoji.png" alt="" style={{ "width": "64px", "height": "64px", "objectFit": "contain", "display": "block" }} />
               {" "}
@@ -1219,7 +1219,7 @@ export default function TransformationsPage() {
                 {"Accessing real funding when your business is ready to grow"}
               </p>
             </div>
-            <div className="scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
+            <div className="ct-scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/Money-Fly-Emoji.webp" alt="" style={{ "width": "64px", "height": "64px", "objectFit": "contain", "display": "block" }} />
               {" "}
@@ -1227,7 +1227,7 @@ export default function TransformationsPage() {
                 {"Using credit as a tool, instead of it controlling your life"}
               </p>
             </div>
-            <div className="scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
+            <div className="ct-scp1" style={{ "background": "rgba(25, 25, 25, 0.4)", "backdropFilter": "blur(68px)", "border": "1px solid rgba(255, 255, 255, 0.15)", "borderRadius": "25px", "padding": "34px 24px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "18px", "transition": "transform 0.25s, border-color 0.25s" }}>
               {" "}
               <img loading="lazy" decoding="async" src="/assets/img/ariplane-emoji.png" alt="" style={{ "width": "64px", "height": "64px", "objectFit": "contain", "display": "block" }} />
               {" "}
@@ -1252,7 +1252,7 @@ export default function TransformationsPage() {
               {" Transform Your Credit?"}
             </h2>
             {" "}
-            <Link href="/plans/" className="ct-nowrap scp2" style={{ "display": "inline-flex", "alignItems": "center", "flex": "0 0 auto", "whiteSpace": "nowrap", "height": "56px", "padding": "0px 38px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "20px", "letterSpacing": "0.04em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.75) 0px 0px 18px, rgba(12, 112, 195, 0.45) 0px 0px 48px, rgba(0, 0, 0, 0.35) 0px 14px 34px", "transition": "background 0.2s, color 0.2s, border-color 0.2s", "cursor": "pointer" }}>
+            <Link href="/plans/" className="ct-nowrap ct-scp2" style={{ "display": "inline-flex", "alignItems": "center", "flex": "0 0 auto", "whiteSpace": "nowrap", "height": "56px", "padding": "0px 38px", "borderRadius": "10px", "border": "1px solid rgb(12, 112, 195)", "background": "rgb(12, 112, 195)", "color": "rgb(255, 255, 255)", "fontFamily": "var(--font-display)", "fontSize": "20px", "letterSpacing": "0.04em", "textTransform": "uppercase", "boxShadow": "rgba(12, 112, 195, 0.75) 0px 0px 18px, rgba(12, 112, 195, 0.45) 0px 0px 48px, rgba(0, 0, 0, 0.35) 0px 14px 34px", "transition": "background 0.2s, color 0.2s, border-color 0.2s", "cursor": "pointer" }}>
               {"Fix My Credit Now"}
             </Link>
             {" "}

@@ -899,10 +899,10 @@ font-display:swap;
 a{color:var(--link-color);text-decoration:none}
 a:hover{color:var(--link-hover-color);text-decoration:underline}
 
-.scp0:hover{background:#ffffff!important;color:var(--color-blue-600)!important;transform:translateY(-3px)!important}
-.scp1:hover{background:rgba(12,112,195,.16)!important;border-color:rgba(0,173,238,.55)!important;box-shadow:0 10px 30px rgba(11,113,195,.3)!important;transform:translateX(6px)!important}
-.scp2:hover{border-color:#ffffff!important;transform:translateY(-4px)!important}
-.scp3:hover{background:#ffffff!important;color:var(--color-blue-600)!important}
+.hb-scp0:hover{background:#ffffff!important;color:var(--color-blue-600)!important;transform:translateY(-3px)!important}
+.hb-scp1:hover{background:rgba(12,112,195,.16)!important;border-color:rgba(0,173,238,.55)!important;box-shadow:0 10px 30px rgba(11,113,195,.3)!important;transform:translateX(6px)!important}
+.hb-scp2:hover{border-color:#ffffff!important;transform:translateY(-4px)!important}
+.hb-scp3:hover{background:#ffffff!important;color:var(--color-blue-600)!important}
 
 /* Default VISIBLE. The hidden start state applies only once the script above
    has set html.hb-js, so a JS failure degrades to a static page. */
