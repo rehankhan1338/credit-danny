@@ -115,7 +115,7 @@
 --duration-fast:150ms; /* @kind other */
 --duration-standard:250ms; /* @kind other */
 }
-@font-face{font-family:"Podium";src:url("../../fonts/podium.woff2") format("woff2");font-weight:400 900;font-style:normal;font-display:swap;}
+@font-face{font-family:"Podium";src:url("/assets/fonts/podium.woff2") format("woff2");font-weight:400 900;font-style:normal;font-display:swap;}
 
 *,*::before,*::after{box-sizing:border-box;}
 html,body{margin:0;padding:0;}

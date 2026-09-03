@@ -113,3 +113,22 @@ node scripts/verify-redirects.mjs  # every legacy URL: one permanent hop
 node scripts/verify-console.mjs    # headless-Chrome console/hydration sweep
 node scripts/verify-spa-nav.mjs    # proves link clicks navigate without reload
 ```
+
+## Performance measures (2026-09-03)
+
+- **Hero video** — `components/HeroVideo.tsx` paints a poster
+  (`assets/img/site-video-header-poster.webp`) and attaches the re-encoded
+  `assets/video/site-video-header_new-720.mp4` (3.6 MB, was 18 MB) only after
+  the window `load` event. The original mp4 is kept on disk but unreferenced.
+- **Third-party scripts** — Wistia (`components/WistiaLoader.tsx`),
+  Trustindex and Lottie load when their element nears the viewport; GA4,
+  Clicky, Meta Pixel and the GoHighLevel `form_embed.js` use `lazyOnload`;
+  OTTO waits for idle time. Payload URLs and IDs are unchanged.
+- **Images** — the 44 base64 data-URIs that were inlined in the markup live in
+  `assets/img/inline-<hash>.webp`; heavy PNG/JPGs have WebP siblings (originals
+  kept, per the do-not-rename rule); `<img>`s carry intrinsic `width`/`height`
+  where the inline style already fixes the height. Iframes are `loading="lazy"`.
+- **Fonts** — the `@font-face` `url()`s point at `/assets/fonts/…` (immutable
+  cache header) so `components/Shell.tsx` can preload podium + poppins 400/700.
+- Re-generate WebP siblings / posters with `sharp` (already a dependency of
+  Next) — see the git history of this section's commit for the one-off scripts.

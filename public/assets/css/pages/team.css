@@ -3,9 +3,9 @@
    Extracted verbatim from the page's inline <style> blocks.
    ========================================================================== */
 
-@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url('../../fonts/poppins-400.woff2') format('woff2');}
-@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url('../../fonts/poppins-600.woff2') format('woff2');}
-@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url('../../fonts/poppins-700.woff2') format('woff2');}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/poppins-400.woff2') format('woff2');}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/poppins-600.woff2') format('woff2');}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/poppins-700.woff2') format('woff2');}
 
 
     .sc-placeholder{background:color-mix(in srgb,currentColor 8%,transparent);
@@ -59,7 +59,7 @@ html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}
 
 @font-face{
   font-family:"CD Display";
-  src:url("../../fonts/podium.woff2") format("woff2");
+  src:url("/assets/fonts/podium.woff2") format("woff2");
   font-weight:400 900;
   font-display:swap;
 }
@@ -705,7 +705,7 @@ html,body{height:auto !important;min-height:100% !important;}
 --duration-fast:150ms; /* @kind other */
 --duration-standard:250ms; /* @kind other */
 }
-@font-face{font-family:"Podium";src:url("../../fonts/podium.woff2") format("woff2");font-weight:400 900;font-style:normal;font-display:swap;}
+@font-face{font-family:"Podium";src:url("/assets/fonts/podium.woff2") format("woff2");font-weight:400 900;font-style:normal;font-display:swap;}
 
 *,*::before,*::after{box-sizing:border-box;}
 html,body{margin:0;padding:0;}

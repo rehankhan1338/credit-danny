@@ -22,6 +22,9 @@ const nextConfig: NextConfig = {
 
   reactStrictMode: true,
 
+  // One header less on every response; nothing reads it.
+  poweredByHeader: false,
+
   /*
    * ────────────────────────────────────────────────────────────────────────
    * TEST-DOMAIN NOINDEX — REMOVE ONLY THE X-Robots-Tag ENTRY AT LAUNCH

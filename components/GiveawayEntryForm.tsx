@@ -347,7 +347,7 @@ function AgreementViewer() {
             </div>
             <div className="gwe-modal__body">
               {!loaded && <div className="gwe-modal__fallback">Loading the agreement…</div>}
-              <iframe
+              <iframe loading="lazy"
                 className="gwe-modal__frame"
                 title="Credit Danny Service Agreement"
                 src={`${AGREEMENT_PDF}#view=FitH`}

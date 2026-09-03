@@ -44,7 +44,7 @@
 
 
 
-@font-face{font-family:"Podium";src:url("../../fonts/podium.woff2") format("woff2");font-weight:400 900;font-style:normal;font-display:swap;}
+@font-face{font-family:"Podium";src:url("/assets/fonts/podium.woff2") format("woff2");font-weight:400 900;font-style:normal;font-display:swap;}
 
 :root{
 --font-display:"Podium",Impact,"Arial Narrow",sans-serif;

@@ -7,6 +7,9 @@ import SharedNavElementorNavMenuMain from "@/components/shared/SharedNavElemento
 import SharedNavElementorNavMenuDropdown from "@/components/shared/SharedNavElementorNavMenuDropdown";
 import OttoSeo from "@/components/OttoSeo";
 
+/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   "title": "Terms and Conditions | Read Our Service Guidelines",
   "description": "Review Credit Danny's terms of service to understand how we work, what's included in your program, and your rights as a client. Transparency is our standard.",
@@ -577,9 +580,9 @@ export default function TermsPage() {
             </div>
             <div className="elementor-element elementor-element-a247628 elementor-widget elementor-widget-html" data-id="a247628" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
               {" "}
-              <iframe src="https://link.creditdanny.com/widget/form/RNUcdyxyK1HmKCUT6A2X" style={{ "width": "100%", "height": "100%", "border": "none", "borderRadius": "8px" }} id="inline-RNUcdyxyK1HmKCUT6A2X" data-layout={"{'id':'INLINE'}"} data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Credit Danny Lead Form" data-height="467" data-layout-iframe-id="inline-RNUcdyxyK1HmKCUT6A2X" data-form-id="RNUcdyxyK1HmKCUT6A2X" title="Credit Danny Lead Form" />
+              <iframe loading="lazy" src="https://link.creditdanny.com/widget/form/RNUcdyxyK1HmKCUT6A2X" style={{ "width": "100%", "height": "100%", "border": "none", "borderRadius": "8px" }} id="inline-RNUcdyxyK1HmKCUT6A2X" data-layout={"{'id':'INLINE'}"} data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Credit Danny Lead Form" data-height="467" data-layout-iframe-id="inline-RNUcdyxyK1HmKCUT6A2X" data-form-id="RNUcdyxyK1HmKCUT6A2X" title="Credit Danny Lead Form" />
               {" "}
-              <Script src="https://link.creditdanny.com/js/form_embed.js" strategy="afterInteractive" />
+              <Script src="https://link.creditdanny.com/js/form_embed.js" strategy="lazyOnload" />
               {" "}
             </div>
           </div>

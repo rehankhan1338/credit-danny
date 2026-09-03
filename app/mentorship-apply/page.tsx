@@ -5,6 +5,9 @@ import Script from "next/script";
 import "@/public/assets/css/pages/mentorship-apply.css";
 import OttoSeo from "@/components/OttoSeo";
 
+/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   "title": "Apply - The Movement | Credit Repair Expert Phoenix, AZ",
   "description": "Rebuild your financial future with help from Credit Danny. Visit our Apply - The Movement page to learn what a credit repair expert can do for you.",
@@ -113,9 +116,9 @@ export default function MentorshipApplyPage() {
             <div className="cd-formcard">
               <div className="cd-formslot">
                 {" "}
-                <iframe src="https://link.creditdanny.com/widget/form/gfyOndJWqvze5fVy9ypI" style={{ "width": "100%", "height": "100%", "border": "none", "borderRadius": "3px" }} id="inline-gfyOndJWqvze5fVy9ypI" data-layout={"{'id':'INLINE'}"} data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Mentorship Program Application" data-height="402" data-layout-iframe-id="inline-gfyOndJWqvze5fVy9ypI" data-form-id="gfyOndJWqvze5fVy9ypI" title="Mentorship Program Application" />
+                <iframe loading="lazy" src="https://link.creditdanny.com/widget/form/gfyOndJWqvze5fVy9ypI" style={{ "width": "100%", "height": "100%", "border": "none", "borderRadius": "3px" }} id="inline-gfyOndJWqvze5fVy9ypI" data-layout={"{'id':'INLINE'}"} data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Mentorship Program Application" data-height="402" data-layout-iframe-id="inline-gfyOndJWqvze5fVy9ypI" data-form-id="gfyOndJWqvze5fVy9ypI" title="Mentorship Program Application" />
                 {" "}
-                <Script src="https://link.creditdanny.com/js/form_embed.js" strategy="afterInteractive" />
+                <Script src="https://link.creditdanny.com/js/form_embed.js" strategy="lazyOnload" />
                 {" "}
               </div>
             </div>
@@ -168,7 +171,7 @@ export default function MentorshipApplyPage() {
           {" "}
           <Link className="cd-logo-link" href="/">
             {" "}
-            <img src="/assets/img/credit-danny-logo-white.webp" alt="Credit Danny" style={{ "height": "26px", "width": "auto", "opacity": ".8" }} loading="lazy" decoding="async" />
+            <img width="1394" height="261" src="/assets/img/credit-danny-logo-white.webp" alt="Credit Danny" style={{ "height": "26px", "width": "auto", "opacity": ".8" }} loading="lazy" decoding="async" />
             {" "}
           </Link>
           {" "}

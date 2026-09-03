@@ -6,7 +6,7 @@ export default function SharedHeaderTop2() {
       <div style={{ "maxWidth": "1280px", "margin": "0px auto", "height": "92px", "display": "flex", "alignItems": "center", "justifyContent": "space-between", "gap": "32px" }}>
         {" "}
         <Link href="/" className="cd-hov-logo" style={{ "display": "inline-flex", "alignItems": "center", "transition": "opacity 0.18s", "cursor": "pointer" }}>
-          <img loading="lazy" decoding="async" src="/assets/img/logo-white.png" alt="Credit Danny" style={{ "height": "38px", "width": "auto", "display": "block" }} />
+          <img decoding="async" width="1394" height="261" src="/assets/img/logo-white.png" alt="Credit Danny" style={{ "height": "38px", "width": "auto", "display": "block" }} />
         </Link>
         {" "}
         <nav style={{ "display": "flex", "alignItems": "center", "gap": "30px", "fontFamily": "var(--font-body)", "fontSize": "12px", "fontWeight": "700", "letterSpacing": "0.14em", "textTransform": "uppercase", "color": "rgba(255, 255, 255, 0.9)" }}>

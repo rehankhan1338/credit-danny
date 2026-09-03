@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import BodyClass from "@/components/BodyClass";
 import Link from "next/link";
-import Script from "next/script";
+import WistiaLoader from "@/components/WistiaLoader";
 import "@/public/assets/css/pages/mentorship.css";
 import MentorshipEffects from "@/components/effects/MentorshipEffects";
 import OttoSeo from "@/components/OttoSeo";
+
+/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   "title": "The Movement | Build Your High-Impact Credit Business",
@@ -81,7 +84,7 @@ export default function MentorshipPage() {
               <div className="cd-bar-inner">
                 {" "}
                 <Link className="cd-logo-link" href="/">
-                  <img src="/assets/img/credit-danny-logo-white.webp" alt="Credit Danny" className="mv-logo" style={{ "height": "36px", "width": "auto", "display": "block" }} />
+                  <img width="1394" height="261" src="/assets/img/credit-danny-logo-white.webp" alt="Credit Danny" className="mv-logo" style={{ "height": "36px", "width": "auto", "display": "block" }} />
                 </Link>
                 {" "}
                 <div style={{ "display": "flex", "alignItems": "center", "gap": "22px" }}>
@@ -119,8 +122,7 @@ export default function MentorshipPage() {
                   <div style={{ "position": "relative", "borderRadius": "20px", "overflow": "hidden", "border": "1px solid rgba(255, 255, 255, 0.14)", "boxShadow": "rgba(0, 0, 0, 0.55) 0px 40px 90px" }}>
                     {" "}
                     <wistia-player media-id="ebfmcabckw" aspect="1.7777777777777777" autoplay="" muted="" playsinline="" />
-                    <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
-                    <Script src="https://fast.wistia.com/embed/ebfmcabckw.js" type="module" strategy="afterInteractive" />
+                    <WistiaLoader mediaIds={["ebfmcabckw"]} />
                   </div>
                   <div className="mv-chip-l" style={{ "position": "absolute", "top": "126px", "left": "-34px", "display": "flex", "alignItems": "center", "gap": "10px", "padding": "12px 18px", "borderRadius": "14px", "background": "rgba(20, 20, 25, 0.5)", "backdropFilter": "blur(20px)", "border": "1px solid rgba(255, 255, 255, 0.14)", "animation": "5s ease-in-out 0s infinite normal none running mv-float" }}>
                     {" "}
@@ -244,7 +246,7 @@ export default function MentorshipPage() {
                   <div style={{ "position": "relative" }}>
                     <div style={{ "position": "absolute", "inset": "-16px", "borderRadius": "26px", "background": "radial-gradient(60% 60% at 50% 45%, rgba(0, 173, 238, 0.4), transparent 75%)", "filter": "blur(28px)", "pointerEvents": "none" }} />
                     {" "}
-                    <img src="/assets/img/danny-stage.webp" alt="Credit Danny speaking on stage" style={{ "position": "relative", "width": "100%", "aspectRatio": "1 / 1", "objectFit": "cover", "objectPosition": "center center", "borderRadius": "var(--radius-lg)", "border": "1px solid rgba(255, 255, 255, 0.14)", "boxShadow": "rgba(0, 0, 0, 0.6) 0px 30px 70px", "display": "block" }} loading="lazy" decoding="async" />
+                    <img src="/assets/img/danny-stage-opt.webp" alt="Credit Danny speaking on stage" style={{ "position": "relative", "width": "100%", "aspectRatio": "1 / 1", "objectFit": "cover", "objectPosition": "center center", "borderRadius": "var(--radius-lg)", "border": "1px solid rgba(255, 255, 255, 0.14)", "boxShadow": "rgba(0, 0, 0, 0.6) 0px 30px 70px", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "position": "absolute", "bottom": "18px", "left": "18px", "right": "18px", "display": "flex", "alignItems": "center", "gap": "12px", "padding": "12px 16px", "borderRadius": "14px", "background": "rgba(20, 20, 25, 0.55)", "backdropFilter": "blur(20px)", "border": "1px solid rgba(255, 255, 255, 0.16)" }}>
                       {" "}
@@ -260,7 +262,7 @@ export default function MentorshipPage() {
                 <div className="mv-stat4" style={{ "display": "grid", "gridTemplateColumns": "repeat(4, 1fr)", "gap": "18px" }}>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-chart-uptrend.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-chart-uptrend.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.3px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       {"Built a"}
@@ -274,7 +276,7 @@ export default function MentorshipPage() {
                   </div>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-rocket.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-rocket.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.3px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       {"Scaled to"}
@@ -286,7 +288,7 @@ export default function MentorshipPage() {
                   </div>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-clients.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-clients.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.3px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       {"Helped"}
@@ -300,7 +302,7 @@ export default function MentorshipPage() {
                   </div>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-moneybag.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-moneybag.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.3px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       {"Gave Back Over"}
@@ -316,7 +318,7 @@ export default function MentorshipPage() {
                 <div className="mv-stat5" style={{ "display": "grid", "gridTemplateColumns": "repeat(5, 1fr)", "gap": "18px", "marginTop": "18px" }}>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-car.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-car.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.2px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       {"Gave Away a"}
@@ -328,7 +330,7 @@ export default function MentorshipPage() {
                   </div>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-house.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-house.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.2px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       <span style={{ "color": "var(--color-blue-400)" }}>
@@ -340,7 +342,7 @@ export default function MentorshipPage() {
                   </div>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-airplane.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-airplane.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.2px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       {"Sent Deserving"}
@@ -354,7 +356,7 @@ export default function MentorshipPage() {
                   </div>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-microphone.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-microphone.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.2px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       {"Hosted One of the Largest"}
@@ -368,7 +370,7 @@ export default function MentorshipPage() {
                   </div>
                   <div className="cd-statcard" style={{ "borderRadius": "var(--radius-lg)", "padding": "12px", "display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center", "gap": "22px", "minHeight": "205px", "justifyContent": "center" }}>
                     {" "}
-                    <img src="/assets/img/icon-heart.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
+                    <img width="160" height="160" src="/assets/img/icon-heart.webp" alt="" style={{ "width": "48px", "height": "48px", "objectFit": "contain", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                     <div style={{ "fontFamily": "var(--font-display)", "fontWeight": "750", "textTransform": "uppercase", "fontSize": "21px", "lineHeight": "1.05", "letterSpacing": "0.2px", "color": "rgba(255, 255, 255, 0.94)" }}>
                       {"Built a Brand Known for"}
@@ -474,7 +476,7 @@ export default function MentorshipPage() {
                   </div>
                   <div className="mv-narrative-photo" style={{ "position": "relative", "width": "clamp(300px, 32vw, 420px)", "justifySelf": "center" }}>
                     {" "}
-                    <img src="/assets/img/danny-portrait.webp" alt="Daniel Radcliffe" style={{ "width": "100%", "aspectRatio": "3 / 4", "objectFit": "cover", "objectPosition": "center", "borderRadius": "var(--radius-lg)", "boxShadow": "var(--shadow-card)", "display": "block" }} loading="lazy" decoding="async" />
+                    <img src="/assets/img/danny-portrait-opt.webp" alt="Daniel Radcliffe" style={{ "width": "100%", "aspectRatio": "3 / 4", "objectFit": "cover", "objectPosition": "center", "borderRadius": "var(--radius-lg)", "boxShadow": "var(--shadow-card)", "display": "block" }} loading="lazy" decoding="async" />
                     {" "}
                   </div>
                   <div className="mv-narrative-r" style={{ "textAlign": "center", "maxWidth": "300px" }}>
@@ -621,7 +623,7 @@ export default function MentorshipPage() {
               <div className="mv-built" style={{ "display": "grid", "gridTemplateColumns": "1fr 1fr", "minHeight": "560px" }}>
                 <div className="mv-built-img" style={{ "position": "relative", "marginTop": "-140px" }}>
                   {" "}
-                  <img src="/assets/img/danny-img2.webp" alt="Credit Danny" style={{ "position": "absolute", "inset": "0px", "width": "86%", "height": "86%", "margin": "auto", "objectFit": "contain", "objectPosition": "center bottom", "display": "block" }} loading="lazy" decoding="async" />
+                  <img width="1100" height="1121" src="/assets/img/danny-img2-opt.webp" alt="Credit Danny" style={{ "position": "absolute", "inset": "0px", "width": "86%", "height": "86%", "margin": "auto", "objectFit": "contain", "objectPosition": "center bottom", "display": "block" }} loading="lazy" decoding="async" />
                   {" "}
                 </div>
                 <div style={{ "position": "relative", "display": "flex", "flexDirection": "column", "justifyContent": "center", "padding": "80px clamp(24px, 5vw, 64px)" }}>
@@ -2108,7 +2110,7 @@ export default function MentorshipPage() {
                 <div className="mv-final-photo" style={{ "position": "relative", "alignSelf": "stretch", "minHeight": "520px" }}>
                   <div style={{ "position": "absolute", "top": "-40px", "left": "50%", "transform": "translateX(-50%)", "width": "460px", "height": "460px", "borderRadius": "50%", "background": "radial-gradient(circle, rgba(0, 173, 238, 0.4), transparent 68%)", "filter": "blur(38px)", "pointerEvents": "none" }} />
                   {" "}
-                  <img src="/assets/img/danny-cutout.webp" alt="Credit Danny" style={{ "position": "absolute", "top": "-170px", "left": "50%", "transform": "translateX(-50%)", "width": "100%", "maxWidth": "460px", "height": "auto", "display": "block" }} loading="lazy" decoding="async" />
+                  <img width="956" height="1527" src="/assets/img/danny-cutout.webp" alt="Credit Danny" style={{ "position": "absolute", "top": "-170px", "left": "50%", "transform": "translateX(-50%)", "width": "100%", "maxWidth": "460px", "height": "auto", "display": "block" }} loading="lazy" decoding="async" />
                   {" "}
                 </div>
               </div>
@@ -2117,7 +2119,7 @@ export default function MentorshipPage() {
               <div className="cd-foot-inner">
                 {" "}
                 <Link className="cd-logo-link" href="/">
-                  <img src="/assets/img/credit-danny-logo-white.webp" alt="Credit Danny" style={{ "height": "26px", "width": "auto", "opacity": "0.8" }} loading="lazy" decoding="async" />
+                  <img width="1394" height="261" src="/assets/img/credit-danny-logo-white.webp" alt="Credit Danny" style={{ "height": "26px", "width": "auto", "opacity": "0.8" }} loading="lazy" decoding="async" />
                 </Link>
                 {" "}
                 <span style={{ "fontFamily": "var(--font-body)", "fontSize": "12px", "color": "rgba(255, 255, 255, 0.45)" }}>

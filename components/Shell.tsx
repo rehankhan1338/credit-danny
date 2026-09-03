@@ -34,6 +34,14 @@ export default function Shell({ children }: { children: React.ReactNode }) {
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
+      <head>
+        {/* The lead-form iframes (22 of 23 pages) come from this origin; open the connection while the HTML is still parsing. */}
+        <link rel="preconnect" href="https://link.creditdanny.com" />
+        {/* Fonts used above the fold on every page (display headings + body/nav). The @font-face rules point at these exact public URLs, so the preload is the request the CSS would make anyway — just started before the stylesheet has been parsed. */}
+        <link rel="preload" href="/assets/fonts/podium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      </head>
       <body className={SHARED_BODY_CLASS} suppressHydrationWarning>
         <JsDetect />
         <AnalyticsScripts />

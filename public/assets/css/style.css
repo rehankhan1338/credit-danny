@@ -44,7 +44,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				}
 
 /* ---- c4166584 ---- */
-@font-face{font-family:podium;font-style:normal;font-weight:400;font-display:fallback;src:url('../fonts/podium.woff2') format('woff2');}
+@font-face{font-family:podium;font-style:normal;font-weight:400;font-display:fallback;src:url('/assets/fonts/podium.woff2') format('woff2');}
 
 /* ---- wp-custom-css ---- */
 .stroke-text {
@@ -69,7 +69,7 @@ div#blur {
 @keyframes dc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* ---- e78daf4b ---- */
-@font-face{font-family:podium;font-style:normal;font-weight:400;font-display:fallback;src:url('../fonts/podium.woff2') format('woff2');}
+@font-face{font-family:podium;font-style:normal;font-weight:400;font-display:fallback;src:url('/assets/fonts/podium.woff2') format('woff2');}
 
 /* ---- lead-form modal --------------------------------------------------------
    Replaces the Elementor popup module. The dialog is driven by the [hidden]
