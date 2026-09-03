@@ -16,6 +16,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const HTML_TO_ROUTE: Record<string, string> = {
   "/index.html": "/",
+  "/5kgiveaway-entry.html": "/5kgiveaway-entry/",
   "/about.html": "/about/",
   "/accelerator.html": "/accelerator/",
   "/accelerator-application.html": "/accelerator-application/",
@@ -40,6 +41,7 @@ const HTML_TO_ROUTE: Record<string, string> = {
 /** Routes owned by this app (everything else falls through to WordPress). */
 const OWNED_ROUTES = new Set([
   "/",
+  "/5kgiveaway-entry/",
   "/about/",
   "/accelerator/",
   "/accelerator-application/",
@@ -95,7 +97,9 @@ function finalUrlFor(pathname: string): string | null {
  */
 // `||` (not `??`) so an empty WP_ORIGIN env var also falls back
 const WP_ORIGIN = process.env.WP_ORIGIN || "https://creditdanny.com";
-const WP_KEEP = new Set(["/blog/", "/feed/", "/comments/"]);
+// /5kgiveaway-confirmed/ is the Gravity Forms confirmation redirect target for
+// the /5kgiveaway-entry/ form; the page itself still lives in WordPress.
+const WP_KEEP = new Set(["/blog/", "/feed/", "/comments/", "/5kgiveaway-confirmed/"]);
 /** dotted root paths Next itself serves — everything else dotted goes to WP */
 const OWNED_FILES = new Set(["/robots.txt", "/page-sitemap.xml"]);
 

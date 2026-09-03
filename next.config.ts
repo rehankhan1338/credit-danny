@@ -91,6 +91,7 @@ const nextConfig: NextConfig = {
       { source: "/index.html", destination: "/", permanent: true },
 
       // one entry per page file in this repo — exhaustive
+      { source: "/5kgiveaway-entry.html", destination: "/5kgiveaway-entry/", permanent: true },
       { source: "/about.html", destination: "/about/", permanent: true },
       { source: "/accelerator.html", destination: "/accelerator/", permanent: true },
       { source: "/accelerator-application.html", destination: "/accelerator-application/", permanent: true },
