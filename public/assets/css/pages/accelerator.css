@@ -1113,6 +1113,16 @@ html.ca-js .ca-strip-spacer{height:0!important;}
   .ca-chips{grid-template-columns:repeat(2,minmax(0,1fr))!important;
     gap:12px 10px!important;}
   .ca-chips > *{padding-left:12px!important;padding-right:12px!important;}
+  /* The chips are nowrap on purpose (a credit item split over two lines reads
+     badly), so on a phone the TYPE has to give instead of the words. At 22px
+     "Repossessions" and "Student Loans" ran past their 170px column in a
+     390px viewport. The size tracks the viewport so it never re-breaks on a
+     narrower phone: 16px at 390, 14px at 340. Padding, gap and the check
+     badge come down with it, and min-width:0 lets the grid track shrink
+     instead of being propped open by the nowrap text. */
+  .ca-chips > *{font-size:clamp(12px,4.2vw,16px)!important;padding:12px 10px!important;
+    gap:8px!important;min-width:0!important;}
+  .ca-chips > * > span{width:20px!important;height:20px!important;}
 
   /* 5, phone half. The Blueprint page sets every section heading to a flat
      50px; this page ranged 34 to 38, so the two read as different designs.

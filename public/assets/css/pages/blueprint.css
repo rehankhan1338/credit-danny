@@ -1009,7 +1009,9 @@ html.bp-js .bp-sticky.bp-on{opacity:1;transform:none;pointer-events:auto;}
      white-space:nowrap, two "Repossessions" chips wanted 356px of a 350px row.
      nowrap is worth keeping -- a credit item split over two lines reads badly --
      so the type and the padding come down instead. */
-  .bp-chip{font-size:16px!important;padding:12px 14px!important;gap:8px!important;}
+  .bp-chip{font-size:clamp(12px,4.2vw,16px)!important;padding:12px 10px!important;
+    gap:8px!important;min-width:0!important;}
+  .bp-chip > span{width:20px!important;height:20px!important;}
   /* auto-fit does not save these: minmax(400px,1fr) still demands 400px in a
      350px container and overflows. Only an explicit single column does. */
   .bp-pair{grid-template-columns:1fr!important;}

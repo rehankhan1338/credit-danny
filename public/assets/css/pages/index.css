@@ -354,6 +354,18 @@ section[id],[id="top"]{scroll-margin-top:104px;}
   [data-track="results"] > *{scroll-snap-align:center!important;
     scroll-snap-stop:always!important;
     flex:0 0 100%!important;}
+
+  /* THE "NEGATIVE ITEMS" CHIPS. Two per row on a phone, each column is ~150px
+     at 360 wide. The export pins the label at 22px with white-space:nowrap, so
+     "Repossessions" and "Student Loans" run out past the pill. The label
+     scales with the viewport (16px at 390, 14px at 340) and the padding, gap
+     and check badge tighten with it; nowrap stays, a split credit item reads badly. */
+  .cd-chips{gap:10px!important;}
+  .cd-chips > *{font-size:clamp(12px,4.2vw,16px)!important;min-width:0!important;
+    gap:8px!important;padding:12px 10px!important;
+    line-height:1.1!important;
+    justify-content:center!important;}
+  .cd-chips > * > span{width:20px!important;height:20px!important;}
 }
 
 /* ==========================================================================
@@ -1087,6 +1099,18 @@ section[id],[id="top"]{scroll-margin-top:104px;}
   [data-track="results"] > *{scroll-snap-align:center!important;
     scroll-snap-stop:always!important;
     flex:0 0 100%!important;}
+
+  /* THE "NEGATIVE ITEMS" CHIPS. Two per row on a phone, each column is ~150px
+     at 360 wide. The export pins the label at 22px with white-space:nowrap, so
+     "Repossessions" and "Student Loans" run out past the pill. The label
+     scales with the viewport (16px at 390, 14px at 340) and the padding, gap
+     and check badge tighten with it; nowrap stays, a split credit item reads badly. */
+  .cd-chips{gap:10px!important;}
+  .cd-chips > *{font-size:clamp(12px,4.2vw,16px)!important;min-width:0!important;
+    gap:8px!important;padding:12px 10px!important;
+    line-height:1.1!important;
+    justify-content:center!important;}
+  .cd-chips > * > span{width:20px!important;height:20px!important;}
 }
 
 /* ==========================================================================
