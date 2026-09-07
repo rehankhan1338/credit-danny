@@ -1,9 +1,3 @@
-/**
- * Shared implementation for the accelerator / sponsorship / blueprint page
- * scripts (assets/js/pages/{accelerator,sponsorship,blueprint}.js —
- * accelerator and sponsorship are byte-identical; blueprint differs in its
- * reveal selector/shape and autoplay interval, captured by the options).
- */
 import { prefersReduce } from "@/components/behaviors/reduce";
 
 type RevealEl = HTMLElement & {
@@ -15,9 +9,7 @@ type RevealEl = HTMLElement & {
 
 export type RevealCarouselOptions = {
   revealSelector: string;
-  /** accelerator/sponsorship handle [data-float] chips; blueprint does not */
   floats: boolean;
-  /** blueprint installs the transition in the same pass (no split flush) */
   splitFlush: boolean;
   autoplayMs: number;
 };
@@ -26,17 +18,14 @@ export function setupRevealCarousel(opts: RevealCarouselOptions): () => void {
   const reduce = prefersReduce();
   const cleanups: Array<() => void> = [];
 
-  /* ---- the reveal cascade, ported from the export's setupReveal() ---- */
   if (!reduce && "IntersectionObserver" in window) {
     const marked: RevealEl[] = [];
     const vh = window.innerHeight;
     document.querySelectorAll("section").forEach((section) => {
       const picked: RevealEl[] = [];
       section.querySelectorAll<RevealEl>(opts.revealSelector).forEach((el) => {
-        if (el.closest("[data-track]")) return; /* the carousel scrolls itself */
+        if (el.closest("[data-track]")) return;
         if (opts.floats) {
-          /* The floating box (the USA Today chip) is revealed like everything
-             else; only its CHILDREN are skipped, so it does not animate twice. */
           const floater = el.closest("[data-float]");
           if (floater && floater !== el) return;
           el.__floats = !!floater;
@@ -44,9 +33,6 @@ export function setupRevealCarousel(opts: RevealCarouselOptions): () => void {
         if (el.closest("[data-reveal]")) return;
         const rect = el.getBoundingClientRect();
         if (rect.height === 0) return;
-        /* Never hide what the reader is already looking at: this runs after
-           hydration — long after first paint — so hiding on-screen content
-           makes the page visibly blink out. Only below-fold content reveals. */
         if (rect.top < vh && rect.bottom > 0) return;
         el.setAttribute("data-reveal", "");
         picked.push(el);
@@ -54,8 +40,6 @@ export function setupRevealCarousel(opts: RevealCarouselOptions): () => void {
       picked.forEach((el, i) => {
         el.__delay = Math.min(i * 55, 480);
         el.__base = el.style.transition || "";
-        /* `translate`, not `transform`, except for floating chips whose
-           cdFloat keyframes own `translate` (see original notes). */
         el.__prop = el.__floats ? "transform" : "translate";
         el.style.opacity = "0";
         el.style.setProperty(el.__prop, el.__floats ? "translateY(-18px)" : "0 -18px");
@@ -69,8 +53,6 @@ export function setupRevealCarousel(opts: RevealCarouselOptions): () => void {
     });
 
     if (opts.splitFlush) {
-      /* The flush: one forced reflow settles opacity:0 before the transition
-         exists (see original notes on the hero pop bug). */
       void document.body.offsetHeight;
       marked.forEach((el) => {
         el.style.transition =
@@ -79,8 +61,6 @@ export function setupRevealCarousel(opts: RevealCarouselOptions): () => void {
       });
     }
 
-    /* Hand the element back to the stylesheet: undo everything the cascade
-       set, so the element is exactly as server-rendered. */
     const restore = (el: RevealEl) => {
       el.style.opacity = "";
       if (el.__prop) el.style.removeProperty(el.__prop);
@@ -110,35 +90,26 @@ export function setupRevealCarousel(opts: RevealCarouselOptions): () => void {
     }
     marked.forEach((el) => io.observe(el));
 
-    /* Last-resort guard (parity with the shared Reveal behavior): content
-       stranded hidden is worse than a missed animation. */
     const guard = window.setTimeout(() => pending.forEach(reveal), 8000);
 
     cleanups.push(() => {
       io.disconnect();
       window.clearTimeout(guard);
       timers.forEach((t) => window.clearTimeout(t));
-      /* Un-hide everything on unmount. Without this, a remount (dev
-         StrictMode runs every effect setup → cleanup → setup) sees the
-         data-reveal markers from the first pass, skips every element, and
-         the still-hidden content is never observed — the page goes blank. */
       marked.forEach(restore);
     });
   }
 
-  /* ---- the results carousel: autoplay, arrows, one card per swipe ---- */
   const track = document.querySelector<HTMLElement>("#results [data-track]");
   if (track && track.firstElementChild) {
-    let driving = false; /* true while WE are scrolling it */
-    let from = 0; /* index the current gesture started at */
+    let driving = false;
+    let from = 0;
     const pitch = () => track.firstElementChild!.getBoundingClientRect().width + 20;
     const index = () => Math.round(track.scrollLeft / pitch());
     const last = () => track.children.length - 1;
     let driveOff: number | undefined;
     const goTo = (i: number) => {
       driving = true;
-      /* Keep the paging origin in sync with where WE are sending it (see
-         original notes on the stale-`from` arrow bug). */
       from = i;
       track.scrollTo({ left: i * pitch(), behavior: "smooth" });
       window.clearTimeout(driveOff);
@@ -163,8 +134,6 @@ export function setupRevealCarousel(opts: RevealCarouselOptions): () => void {
       next?.removeEventListener("click", onNext);
     });
 
-    /* PAGING: clamp the landing to one card per swipe on the phone layout
-       (see original notes on scroll-snap-stop and hard flings). */
     const paged = window.matchMedia("(max-width:560px)");
     let settle: number | undefined;
     const onDown = () => {
@@ -193,7 +162,6 @@ export function setupRevealCarousel(opts: RevealCarouselOptions): () => void {
 
     if (!reduce) {
       const timer = window.setInterval(() => step(1), opts.autoplayMs);
-      /* Stop competing with the reader the moment they take over. */
       const stop = () => window.clearInterval(timer);
       (["pointerdown", "wheel", "touchstart"] as const).forEach((ev) => {
         track.addEventListener(ev, stop, { passive: true, once: true });

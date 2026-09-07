@@ -3,12 +3,6 @@
 import { useEffect } from "react";
 import { prefersReduce } from "./reduce";
 
-/**
- * Count-up figures (main.js module 10). Counts up to [data-count] when the
- * figure scrolls into view; under reduced motion the final figure is printed
- * immediately. Starts from zero because the static capture froze the end
- * values into the markup.
- */
 export default function Counters() {
   useEffect(() => {
     const els = Array.from(document.querySelectorAll<HTMLElement>("[data-count]"));
@@ -36,7 +30,6 @@ export default function Counters() {
           function frame(ts: number) {
             if (t0 === null) t0 = ts;
             const p = Math.min((ts - t0) / dur, 1);
-            /* easeOutCubic — fast start, gentle settle. */
             print(el, Math.round(target * (1 - Math.pow(1 - p, 3))));
             if (p < 1) requestAnimationFrame(frame);
           }

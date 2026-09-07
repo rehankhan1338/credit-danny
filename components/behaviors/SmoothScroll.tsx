@@ -3,11 +3,6 @@
 import { useEffect } from "react";
 import { prefersReduce } from "./reduce";
 
-/**
- * Smooth scroll for same-page anchors (main.js module 4). Skips the menu
- * opener and bare "#" links. Honours reduced motion. Keeps the URL hash in
- * step so the link is still shareable.
- */
 export default function SmoothScroll() {
   useEffect(() => {
     const reduce = prefersReduce();

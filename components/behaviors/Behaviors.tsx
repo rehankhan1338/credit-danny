@@ -13,15 +13,7 @@ import StickyStrip from "./StickyStrip";
 import Reveal from "./Reveal";
 import HeroSound from "./HeroSound";
 
-/**
- * The site-wide behaviour suite — the React port of assets/js/main.js init().
- * Every module is a no-op when its markup is absent, so the same set mounts
- * on every page, exactly like the original file was loaded everywhere.
- * (LottiePlayers is the exception: it is mounted per-page by the pages that
- * originally loaded lottie.min.js.)
- */
 export default function Behaviors() {
-  /* window.CD.reduce for the per-page reveal cascades. */
   useEffect(() => {
     exposeReduce();
   }, []);

@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { setupRevealCarousel } from "./revealCarousel";
 
-/** Port of assets/js/pages/blueprint.js. */
 export default function BlueprintEffects() {
   useEffect(
     () =>

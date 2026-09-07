@@ -2,11 +2,6 @@
 
 import { useEffect } from "react";
 
-/**
- * Panned image slots (main.js module 8). Re-runs the crop arithmetic for
- * img[data-view] on load and on every resize; data-view-m supplies a
- * phone-only pan below 900px. See the original for the geometry notes.
- */
 export default function PannedSlots() {
   useEffect(() => {
     const panned = Array.from(document.querySelectorAll<HTMLImageElement>("img[data-view]"));
@@ -33,14 +28,12 @@ export default function PannedSlots() {
         const w = ((iw * k) / fw) * 100,
           h = ((ih * k) / fh) * 100;
 
-        /* Clamp the pan: the range on each axis is half the overflow past the
-           frame edge. */
         const mx = Math.max(0, (w / 100 - 1) * 50);
         const my = Math.max(0, (h / 100 - 1) * 50);
         const x = Math.max(-mx, Math.min(mx, v[1] || 0));
         const y = Math.max(-my, Math.min(my, v[2] || 0));
 
-        img.style.objectFit = ""; /* the box IS the image now */
+        img.style.objectFit = "";
         img.style.width = w + "%";
         img.style.height = h + "%";
         img.style.left = 50 + x + "%";

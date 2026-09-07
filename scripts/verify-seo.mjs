@@ -1,20 +1,3 @@
-/**
- * SEO parity verification: fetches every route from a running `next start`
- * server and compares it against the original static HTML file.
- *
- * Per page:
- *  1. <title>, meta description, meta robots — exact strings
- *  2. canonical — exact (mentorship-apply: corrected URL expected)
- *  3. og:* / twitter:* / article:* — name→content map equality
- *  4. JSON-LD blocks — exact payload strings, same count
- *  5. Full body DOM diff — every element, attribute and text node must match
- *     (scripts/styles/links/meta excluded; whitespace-only text normalized;
- *     style attributes compared declaration-by-declaration)
- *  6. Heading sequence h1–h6 + exactly one h1
- *  7. Link audit — no .html hrefs, no links to redirecting URLs
- *
- * Usage: node scripts/verify-seo.mjs [baseUrl]   (default http://localhost:3100)
- */
 import { parse } from "parse5";
 import fs from "node:fs";
 import path from "node:path";
@@ -80,7 +63,6 @@ function collectJsonLd(docEl) {
   return out;
 }
 
-/* ------------- href mapping (same rules as the converter) -------------- */
 function mapHref(href, sourceFile) {
   if (!href || /^(mailto:|tel:|javascript:|#)/i.test(href)) return href;
   let base = href,
@@ -133,12 +115,9 @@ const mapSrcset = (v) =>
     })
     .join(", ");
 
-/* ---------------------- normalized DOM comparison ---------------------- */
 const SKIP_TAGS = new Set(["script", "style", "link", "meta", "noscript", "template", "title"]);
 
 function normStyle(v) {
-  /* Duplicate declarations collapse to the last occurrence — CSS semantics
-     (some source attrs repeat a property; React style objects dedupe). */
   const map = new Map();
   for (const d of v.split(";")) {
     const t = d.trim();
@@ -147,7 +126,7 @@ function normStyle(v) {
     if (i < 0) continue;
     const prop = t.slice(0, i).trim().toLowerCase();
     const val = t.slice(i + 1).trim().replace(/\s+/g, " ").replace(/, /g, ",");
-    map.set(prop, val); // first-occurrence position, last value — JS object semantics
+    map.set(prop, val);
   }
   return [...map.entries()].map(([p, val]) => `${p}:${val}`).join(";");
 }
@@ -169,7 +148,7 @@ function normNode(node, sourceFile, isOriginal) {
       if (isOriginal)
         value = value.replace(/url\(\s*(['"]?)([^'")]+)\1\s*\)/g, (m, q, u) => `url(${q}${mapAsset(u)}${q})`);
       value = normStyle(value);
-      if (value === "") continue; // React drops empty style attrs — render-identical
+      if (value === "") continue;
     }
     if (isOriginal) {
       if (name === "href" && tag === "a") value = mapHref(value, sourceFile);
@@ -178,7 +157,6 @@ function normNode(node, sourceFile, isOriginal) {
       else if (name.startsWith("data-") && /(\.\.\/)?(assets|wp-content)\//.test(value))
         value = mapAsset(value);
     }
-    // boolean attribute normalization: value === name → ""
     if (value.toLowerCase() === name) value = "";
     attrs[name] = value;
   }
@@ -187,8 +165,6 @@ function normNode(node, sourceFile, isOriginal) {
     .filter(Boolean)
     .filter(
       (c) =>
-        // React streaming-metadata placeholder: <div hidden><!--$--><!--/$--></div>
-        // — empty, hidden, no SEO or visual footprint. Served side only.
         isOriginal ||
         !(
           c.tag === "div" &&
@@ -196,11 +172,8 @@ function normNode(node, sourceFile, isOriginal) {
           Object.keys(c.attrs).length === 1 &&
           c.attrs.hidden === ""
         ) &&
-        // TrustindexWidget host: layout-neutral stand-in for the original
-        // position-anchored loader <script> (which the diff also excludes)
         !(c.tag === "div" && c.attrs["data-ti-anchor"] !== undefined)
     );
-  // merge adjacent text nodes
   const merged = [];
   for (const c of children) {
     const prev = merged[merged.length - 1];
@@ -245,7 +218,6 @@ function diffNodes(a, b, pathStr, out, limit = 8) {
   }
 }
 
-/* --------------------------------- run --------------------------------- */
 let failures = 0;
 const summary = [];
 
@@ -267,12 +239,10 @@ for (const [file, route] of PAGES) {
 
   const problems = [];
 
-  /* 1. title */
   const oTitle = rawText(findOne(oHead, (n) => n.tagName === "title") || { childNodes: [] });
   const sTitle = rawText(findOne(sHead, (n) => n.tagName === "title") || { childNodes: [] });
   if (oTitle !== sTitle) problems.push(`title: ${JSON.stringify(oTitle)} != ${JSON.stringify(sTitle)}`);
 
-  /* 2. canonical */
   const canonOf = (head) => {
     let v = null;
     (function walk(n) {
@@ -287,7 +257,6 @@ for (const [file, route] of PAGES) {
   if (servedCanonical !== expectedCanonical)
     problems.push(`canonical: expected ${expectedCanonical}, served ${servedCanonical}`);
 
-  /* 3. metas (served page may hoist some into body; collect from whole doc) */
   const oMetas = collectMetas(oHead);
   const sMetas = new Map();
   (function walk(n) {
@@ -307,7 +276,6 @@ for (const [file, route] of PAGES) {
       problems.push(`meta ${k}: ${JSON.stringify(expect.slice(0, 80))} != ${JSON.stringify(sMetas.get(k).slice(0, 80))}`);
   }
 
-  /* 4. JSON-LD */
   const oLd = collectJsonLd(orig).map((s) =>
     file === "mentorship/apply.html"
       ? s.split("https://creditdanny.com/mentorship/apply/").join("https://creditdanny.com/mentorship-apply/")
@@ -320,13 +288,8 @@ for (const [file, route] of PAGES) {
       if (s !== sLd[i]) problems.push(`json-ld[${i}] payload differs`);
     });
 
-  /* 5. body DOM diff */
   const oNorm = normNode(oBody, file, true);
   const sNorm = normNode(sBody, file, false);
-  /* body class: the root layout SSRs the shared class set (the only classes
-     any CSS/JS references — verified); the page's full original string is
-     applied pre-paint by <BodyClass>, whose prop must be present verbatim in
-     the RSC payload of the served HTML. */
   const SHARED_BODY_CLASS =
     "wp-singular page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor eio-default hello-elementor-default elementor-default elementor-kit-27255861";
   const origBodyClass = attr(oBody, "class") || "";
@@ -343,7 +306,6 @@ for (const [file, route] of PAGES) {
   );
   problems.push(...domDiffs);
 
-  /* 6. headings */
   const headingsOf = (body) => {
     const out = [];
     (function walk(n) {
@@ -362,13 +324,10 @@ for (const [file, route] of PAGES) {
   const oH = headingsOf(oBody),
     sH = headingsOf(sBody);
   if (JSON.stringify(oH) !== JSON.stringify(sH)) problems.push(`heading sequence differs`);
-  /* h1 count must match the SOURCE exactly (two source pages deviate from the
-     one-h1 ideal: home-buying-blueprint has 2, mentorship has 0 — preserved). */
   const h1s = sH.filter((h) => h.startsWith("h1:")).length;
   const oH1s = oH.filter((h) => h.startsWith("h1:")).length;
   if (h1s !== oH1s) problems.push(`h1 count = ${h1s}, source has ${oH1s}`);
 
-  /* 7. link audit on served page */
   (function walk(n) {
     if (isEl(n) && n.tagName === "a") {
       const href = attr(n, "href") || "";

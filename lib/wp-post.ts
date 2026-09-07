@@ -1,27 +1,7 @@
-/**
- * Blog post pages, served by Next with WordPress as the content AND SEO
- * source of truth.
- *
- * The REST API does not expose Rank Math's per-post SEO (custom titles,
- * descriptions, JSON-LD), so each post's WP-rendered page is fetched
- * server-side (ISR, hourly) and its head + article region are extracted
- * verbatim:
- *   - head: title, description/robots, canonical, og:/article:/twitter:
- *     metas, icons, JSON-LD — character-identical to what WP serves today
- *   - body: the #cdb article region + the pre-footer CTA section, exactly
- *     as the theme renders them (design identical by construction)
- * Our Next shell supplies the header/menu/footer chrome and analytics.
- *
- * Editing a post in wp-admin updates the page within the hour; publishing a
- * new post works on first visit (dynamicParams) with no redeploy.
- */
 import { parse, serializeOuter } from "parse5";
 
-// `||` (not `??`) so an empty WP_ORIGIN env var also falls back
 const WP_ORIGIN = process.env.WP_ORIGIN || "https://creditdanny.com";
 export const POST_REVALIDATE_SECONDS = 3600;
-
-/* --------------------------------- types -------------------------------- */
 
 export type HeadTag = {
   tag: "title" | "meta" | "link";
@@ -32,14 +12,10 @@ export type HeadTag = {
 export type ScrapedPost = {
   headTags: HeadTag[];
   jsonLd: string[];
-  /** the theme's inline <style> block carrying the .cdb design rules */
   styleCss: string;
   bodyClass: string;
-  /** #cdb article region + pre-footer CTA section, internal URLs made root-relative */
   regionHtml: string;
 };
-
-/* ------------------------------ tree helpers ---------------------------- */
 
 type P5Node = {
   nodeName: string;
@@ -63,12 +39,9 @@ function findOne(node: P5Node, pred: (n: P5Node) => boolean): P5Node | null {
   return null;
 }
 
-/** Absolute own-domain URLs -> root-relative (posts, images, theme fonts). */
 function relativize(s: string): string {
   return s.replace(/https?:\/\/(www\.)?creditdanny\.com\//gi, "/");
 }
-
-/* --------------------------------- fetch -------------------------------- */
 
 export async function getAllPostSlugs(): Promise<string[]> {
   const res = await fetch(`${WP_ORIGIN}/wp-json/wp/v2/posts?per_page=100&_fields=slug`, {
@@ -98,9 +71,8 @@ export async function getScrapedPost(slug: string): Promise<ScrapedPost | null> 
   if (!head || !body) return null;
 
   const cdb = findOne(body, (n) => isEl(n) && attr(n, "id") === "cdb");
-  if (!cdb) return null; // not a cdb-templated post page
+  if (!cdb) return null;
 
-  /* ---- head ---- */
   const headTags: HeadTag[] = [];
   const jsonLd: string[] = [];
   let styleCss = "";
@@ -140,14 +112,13 @@ export async function getScrapedPost(slug: string): Promise<ScrapedPost | null> 
     }
   }
 
-  /* ---- body region: #cdb + the pre-footer CTA <section> ---- */
   const parts: string[] = [serializeOuter(cdb as never)];
   const bodyKids = (body.childNodes || []).filter(isEl);
   const cdbIndex = bodyKids.indexOf(cdb);
   for (let i = cdbIndex + 1; i < bodyKids.length; i++) {
     const el = bodyKids[i];
     if (el.tagName === "section") parts.push(serializeOuter(el as never));
-    else break; // stop at footer/scripts — our shell provides those
+    else break;
   }
   const regionHtml = relativize(parts.join("\n"));
 

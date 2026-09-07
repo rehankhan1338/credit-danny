@@ -1,17 +1,3 @@
-/**
- * WordPress REST API client.
- *
- * Published posts are PUBLIC on the WP REST API — no credentials required
- * (verified against the live site). If the API is ever locked down, create an
- * Application Password in wp-admin (Users → Profile → Application Passwords —
- * NOT the real admin password) and set WP_APP_USER / WP_APP_PASSWORD in
- * .env.local (see .env.example). Never commit credentials.
- *
- * Pages consuming this revalidate hourly (ISR): new posts published in
- * WordPress appear without a redeploy.
- */
-
-// `||` (not `??`) so an empty WP_ORIGIN env var also falls back
 const WP_ORIGIN = process.env.WP_ORIGIN || "https://creditdanny.com";
 export const WP_REVALIDATE_SECONDS = 3600;
 
@@ -63,14 +49,10 @@ export async function getCategoryBySlug(slug: string): Promise<WpCategory> {
 }
 
 export async function getCategoryPosts(categoryId: number): Promise<WpPost[]> {
-  // per_page max is 100; the site has ~42 posts in its largest category.
-  // If it ever exceeds 100, follow X-WP-TotalPages here.
   return wpFetch<WpPost[]>(
     `/posts?categories=${categoryId}&per_page=100&orderby=date&order=desc&_embed=wp:featuredmedia`
   );
 }
-
-/* ------------------------- presentation helpers ------------------------- */
 
 const ENTITIES: Record<string, string> = {
   "&hellip;": "…", "&amp;": "&", "&#038;": "&", "&#8217;": "’", "&#8216;": "‘",
@@ -99,7 +81,6 @@ export function postPath(post: WpPost): string {
   }
 }
 
-/** Featured image URL, root-relative so it proxies through this domain. */
 export function featuredImage(post: WpPost, size: "large" | "medium_large"): string | null {
   const media = post._embedded?.["wp:featuredmedia"]?.[0];
   if (!media) return null;

@@ -2,11 +2,6 @@
 
 import { useEffect } from "react";
 
-/**
- * Mid-page floating CTA bar (main.js module 11): visible only past the hero
- * and before the closing CTA. Same logic on four pages, different class
- * prefix, so it is parameterised exactly like the original calls.
- */
 export default function StickyStrip({
   stripSel,
   startSel,
@@ -25,8 +20,6 @@ export default function StickyStrip({
     const end = document.querySelector(endSel);
 
     if (!("IntersectionObserver" in window) || !start || !end) {
-      /* No way to know where we are, so fall back to always-on rather than
-         leaving a CTA the reader can never reach. */
       strip.classList.add(onClass);
       return;
     }

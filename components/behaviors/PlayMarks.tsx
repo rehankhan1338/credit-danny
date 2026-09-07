@@ -2,11 +2,6 @@
 
 import { useEffect } from "react";
 
-/**
- * Play overlays (main.js module 9): each mark steps aside once its own video
- * starts, via the player's play events or, failing that, the first press on
- * the frame (the overlay is pointer-events:none).
- */
 export default function PlayMarks() {
   useEffect(() => {
     const cleanups: Array<() => void> = [];

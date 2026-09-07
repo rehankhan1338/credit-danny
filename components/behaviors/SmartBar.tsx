@@ -2,12 +2,6 @@
 
 import { useEffect, useRef } from "react";
 
-/**
- * Retracting sticky header (main.js module 2). Fully visible at the top of
- * the page; retracts on scroll down, returns on scroll up, with a 6px
- * deadband against trackpad flicker. Applied to whichever bar the page has:
- * #top (most pages), #mv-topbar (mentorship), #cd-topbar (mentorship-apply).
- */
 export default function SmartBar({ barId }: { barId: string }) {
   const last = useRef(0);
   const ticking = useRef(false);
@@ -41,7 +35,6 @@ export default function SmartBar({ barId }: { barId: string }) {
       }
     }
 
-    /* An open menu must not leave the bar retracted behind it. */
     function onClick(e: MouseEvent) {
       const t = e.target as Element | null;
       if (t?.closest && t.closest("[data-menu-open]")) bar!.style.transform = "translateY(0)";

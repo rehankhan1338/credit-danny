@@ -1,7 +1,6 @@
 import Link from "next/link";
 import SharedNavCdmNav from "@/components/shared/SharedNavCdmNav";
 
-/** The full-screen menu overlay used by every cd-chrome page (opened via [data-menu-open], driven by the FullScreenMenu behavior). */
 export default function MenuOverlay() {
   return (
     <div id="menu" style={{ "position": "fixed", "inset": "0", "zIndex": "200", "background": "linear-gradient(180deg,#000 0%,#06243f 45%,#0b3a63 100%)", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "flex-start", "padding": "38px 40px 46px", "overflowY": "auto", "animation": "cd-menu-iris .62s cubic-bezier(.76,0,.24,1) both" } as React.CSSProperties} data-menu-panel="">

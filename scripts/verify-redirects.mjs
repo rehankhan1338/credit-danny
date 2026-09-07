@@ -1,14 +1,6 @@
-/**
- * Redirect matrix verification against a running server.
- * Asserts: every legacy URL shape reaches a 200 in EXACTLY ONE permanent
- * redirect hop (308/301 — never 302/307), and final URLs serve 200 directly.
- *
- * Usage: node scripts/verify-redirects.mjs [baseUrl]
- */
 const BASE = process.argv[2] || "http://localhost:3100";
 
 const CASES = [
-  // [path, expected final path, expected hops]
   ["/index.html", "/", 1],
   ["/about.html", "/about/", 1],
   ["/accelerator.html", "/accelerator/", 1],
@@ -29,24 +21,15 @@ const CASES = [
   ["/team.html", "/team/", 1],
   ["/terms-and-conditions.html", "/terms-and-conditions/", 1],
   ["/transformations.html", "/transformations/", 1],
-  // live legacy redirect preserved
   ["/mentorship/apply/", "/mentorship-apply/", 1],
-  // double-variant (renamed page AND missing slash): the built-in
-  // trailing-slash 308 fires before custom redirects, so this is 2 hops —
-  // same as live production (nginx slash redirect + WP redirect).
   ["/mentorship/apply", "/mentorship-apply/", 2],
-  // trailing-slash normalization (Next built-in)
   ["/about", "/about/", 1],
   ["/team", "/team/", 1],
-  // case variants (live nginx serves these at 200; we canonicalize with one hop)
   ["/TEAM/", "/team/", 1],
   ["/About/", "/about/", 1],
-  // double-variant (wrong case AND missing slash): built-in slash 308 first,
-  // then the lowercasing proxy — 2 hops, same as live's slash+case handling.
   ["/ABOUT", "/about/", 2],
   ["/About.html", "/about/", 1],
   ["/MENTORSHIP/APPLY/", "/mentorship-apply/", 1],
-  // direct 200s — zero hops
   ["/", "/", 0],
   ["/about/", "/about/", 0],
   ["/mentorship-apply/", "/mentorship-apply/", 0],
@@ -92,7 +75,6 @@ for (const [start, expectedFinal, expectedHops] of CASES) {
   console.log(`${ok ? "✓" : "✗"} ${start.padEnd(28)} → ${expectedFinal.padEnd(26)} ${note}`);
 }
 
-/* infra endpoints */
 for (const [p, expect] of [
   ["/robots.txt", 200],
   ["/page-sitemap.xml", 200],

@@ -8,7 +8,6 @@ import SharedHeaderTop from "@/components/shared/SharedHeaderTop";
 import SharedFooterCdPad from "@/components/shared/SharedFooterCdPad";
 import OttoSeo from "@/components/OttoSeo";
 
-/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {

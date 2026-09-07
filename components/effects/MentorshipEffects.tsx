@@ -2,11 +2,6 @@
 
 import { useEffect } from "react";
 
-/**
- * Port of assets/js/pages/mentorship.js — a sweep-based cascade over
- * [data-screen-label] sections (a sweep, not an IntersectionObserver, so
- * content the viewport jumps over can never get stranded).
- */
 export default function MentorshipEffects() {
   useEffect(() => {
     if (!("IntersectionObserver" in window)) return;
@@ -16,16 +11,13 @@ export default function MentorshipEffects() {
     const sections = Array.from(document.querySelectorAll<HTMLElement>("[data-screen-label]"));
     if (!sections.length) return;
 
-    /* Grids cascade by their own items; everything else by section content block. */
     const GRIDS = ".mv-stat4,.mv-stat5,.mv-grid4,.mv-included,.mv-bullets,.mv-grid2,.mv-narrative,.mv-bento";
 
     function blocksFor(section: HTMLElement): HTMLElement[] {
-      /* Unwrap single-child wrappers to reach the real content container. */
       let el: HTMLElement = section;
       while (el.children.length === 1 && (el.firstElementChild as HTMLElement).children.length)
         el = el.firstElementChild as HTMLElement;
       const out = Array.from(el.children) as HTMLElement[];
-      /* Swap any grid for its items so cards cascade one by one. */
       let expanded: HTMLElement[] = [];
       out.forEach((node) => {
         const grid: HTMLElement | null =
@@ -35,7 +27,6 @@ export default function MentorshipEffects() {
         else expanded.push(node);
       });
       return expanded.filter((n) => {
-        /* Skip decorative absolutely-positioned art and zero-size nodes. */
         const cs = getComputedStyle(n);
         if (cs.position === "absolute" || cs.position === "fixed") return false;
         return n.getBoundingClientRect().height > 0;
@@ -44,11 +35,10 @@ export default function MentorshipEffects() {
 
     let pending: HTMLElement[] = [];
     sections.forEach((section, si) => {
-      /* The hero is above the fold; animating it would delay the headline. */
       if (si === 0) return;
       blocksFor(section).forEach((node, i) => {
         node.classList.add("cd-r");
-        node.style.setProperty("--rd", String(Math.min(i, 8))); /* cap stagger */
+        node.style.setProperty("--rd", String(Math.min(i, 8)));
         pending.push(node);
       });
     });
@@ -79,9 +69,8 @@ export default function MentorshipEffects() {
 
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
-    sweep(); /* reveal whatever is already in view */
+    sweep();
 
-    /* Last-resort guard: invisible content is worse than a missed animation. */
     const t = window.setTimeout(() => {
       pending.forEach((n) => n.classList.add("is-in"));
     }, 8000);

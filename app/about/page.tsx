@@ -11,7 +11,6 @@ import SharedNavElementorNavMenuDropdown from "@/components/shared/SharedNavElem
 import AboutEffects from "@/components/effects/AboutEffects";
 import OttoSeo from "@/components/OttoSeo";
 
-/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {

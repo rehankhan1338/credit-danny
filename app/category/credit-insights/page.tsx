@@ -17,13 +17,6 @@ import {
 import "@/public/assets/css/pages/index.css";
 import "./category.css";
 
-/**
- * /category/credit-insights/ — the Credit Insights archive, now served by
- * Next.js. Post data is fetched from the WordPress REST API and revalidated
- * hourly, so posts published in wp-admin appear here automatically.
- * Head metadata + JSON-LD are ported verbatim from the live WP archive
- * (same URL, same canonical — no SEO change).
- */
 export const revalidate = 3600;
 
 const CANONICAL = "https://creditdanny.com/category/credit-insights/";
@@ -83,7 +76,6 @@ const PILL_INACTIVE: React.CSSProperties = {
   fontSize: 13,
   fontWeight: 700,
 };
-/* Live styles the "All" pill dark; the current category stays gray like the rest. */
 const PILL_ALL: React.CSSProperties = {
   ...PILL_INACTIVE,
   background: "rgb(0, 0, 0)",
@@ -108,8 +100,6 @@ const CTA_BASE: React.CSSProperties = {
 export default async function CreditInsightsArchive() {
   const category = await getCategoryBySlug("credit-insights");
   const posts = await getCategoryPosts(category.id);
-  // Live's archive page 1: newest post featured, the next 9 in the grid,
-  // everything older behind "Load more articles" (/page/2/, WP-served).
   const [featured, ...rest] = posts;
   const gridPosts = rest.slice(0, 9);
   const hasMore = rest.length > 9;
@@ -127,7 +117,6 @@ export default async function CreditInsightsArchive() {
 
       <div id="cdb">
         <div id="archive" style={{ position: "relative" }}>
-          {/* hero — verbatim from the live archive */}
           <div style={{ background: "linear-gradient(220deg, rgb(0, 0, 0) 28%, rgb(12, 112, 195) 98%)", position: "relative" }}>
             <div className="cdb-hero-pad" style={{ position: "relative", padding: "64px 60px 150px", textAlign: "center" }}>
               <div style={{ fontSize: 13, fontWeight: 800, letterSpacing: 3, color: "rgb(0, 173, 238)", textTransform: "uppercase" }}>
@@ -142,7 +131,6 @@ export default async function CreditInsightsArchive() {
             </div>
           </div>
 
-          {/* featured post (newest) */}
           {featured && (
             <div className="cdb-cards-pad" style={{ padding: "0px 60px", marginTop: -110, position: "relative" }}>
               <div className="cdb-feat-wrap" style={{ background: "rgb(255, 255, 255)", borderRadius: 25, boxShadow: "rgba(0, 0, 0, 0.1) 0px 0px 10px", display: "grid", gridTemplateColumns: "minmax(300px, 1.05fr) minmax(380px, 1fr)", overflow: "hidden" }}>
@@ -177,10 +165,6 @@ export default async function CreditInsightsArchive() {
             </div>
           )}
 
-          {/* list header — title + category pills, verbatim from live.
-              /blog/ and the other two categories are served by WordPress
-              through the proxy, not by Next routes, so they are plain <a>
-              full navigations by design */}
           <div style={{ padding: "56px 60px 20px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <div style={{ fontFamily: '"Podium Sharp", Impact, sans-serif', fontSize: 38, textTransform: "uppercase", color: "rgb(0, 0, 0)" }}>
               {"Latest Articles"}
@@ -196,7 +180,6 @@ export default async function CreditInsightsArchive() {
             </div>
           </div>
 
-          {/* post grid — everything after the featured post */}
           <div id="cdb-grid" style={{ padding: "24px 60px 56px", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 32 }}>
             {gridPosts.map((post) => (
               <Link key={post.id} href={postPath(post)} style={{ textDecoration: "none", color: "inherit", display: "block" }} className="cdb-card cdb-post-card">
@@ -217,8 +200,6 @@ export default async function CreditInsightsArchive() {
             ))}
           </div>
 
-          {/* load more — /category/credit-insights/page/2/ is WP-served via
-              the proxy, so a plain <a> full navigation, as on live */}
           {hasMore && (
             <div style={{ display: "flex", justifyContent: "center", padding: "0px 0px 56px" }}>
               <a id="cdb-more" href="/category/credit-insights/page/2/" style={{ ...CTA_BASE, background: "transparent", color: "rgb(0, 0, 0)", border: "2px solid rgb(0, 0, 0)" }}>
@@ -227,7 +208,6 @@ export default async function CreditInsightsArchive() {
             </div>
           )}
 
-          {/* bio band — verbatim from live */}
           <div className="cdb-bio" style={{ position: "relative", background: "rgb(255, 255, 255)", paddingTop: "96px" }}>
             <div className="cdb-bio-photo" style={{ position: "absolute", left: "60px", width: 380, top: "0px", bottom: "0px", overflow: "hidden", zIndex: 2 }}>
               <img src="/assets/img/danny-cutout.webp" alt="Credit Danny" style={{ position: "absolute", left: "0px", bottom: -46, height: 482, objectFit: "contain", objectPosition: "center bottom" }} />
@@ -267,7 +247,6 @@ export default async function CreditInsightsArchive() {
             </div>
           </div>
 
-          {/* sticky bottom bar — verbatim from live */}
           <div style={{ position: "sticky", bottom: "0px", zIndex: 5, background: "rgb(0, 0, 0)", padding: "18px 60px", display: "flex", alignItems: "center", justifyContent: "space-between", borderTop: "1px solid rgba(255, 255, 255, 0.15)" }}>
             <div className="cdb-bar-inner" style={{ maxWidth: 1200, margin: "0 auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
               <div style={{ fontFamily: '"Podium Sharp", Impact, sans-serif', fontSize: 22, textTransform: "uppercase", color: "rgb(255, 255, 255)" }}>

@@ -2,19 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 
-/**
- * Accessible dialog manager (main.js module 5, the Elementor popup
- * replacement). Opened by [data-open-modal="<id>"]; closed by
- * [data-modal-close], a backdrop click (the [data-modal] element itself,
- * never its inner panel), or Esc. Focus moves into the dialog on open and
- * returns to the opener on close; .cd-modal-open on <html> is the scroll
- * lock the stylesheet keys off.
- */
 export default function Modal() {
   const [openId, setOpenId] = useState<string | null>(null);
   const lastFocus = useRef<HTMLElement | null>(null);
 
-  /* apply/unapply DOM state whenever openId changes */
   useEffect(() => {
     const dialogs = Array.from(document.querySelectorAll<HTMLElement>("[data-modal]"));
     for (const dlg of dialogs) {

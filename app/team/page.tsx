@@ -10,7 +10,6 @@ import SharedNavElementorNavMenuMain from "@/components/shared/SharedNavElemento
 import SharedNavElementorNavMenuDropdown from "@/components/shared/SharedNavElementorNavMenuDropdown";
 import OttoSeo from "@/components/OttoSeo";
 
-/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
