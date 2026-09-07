@@ -2,11 +2,6 @@
 
 import { useEffect } from "react";
 
-/**
- * Port of assets/js/pages/about.js — the About page's scroll-reveal:
- * [data-reveal] elements are authored into the markup; a sweep guarantees
- * anything scrolled past is visible.
- */
 export default function AboutEffects() {
   useEffect(() => {
     const reveals = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]"));
@@ -14,7 +9,6 @@ export default function AboutEffects() {
       el.style.opacity = "0";
       el.style.transform = "translateY(26px)";
     });
-    /* settle the hidden state BEFORE the transition exists, or it animates 1->0 */
     void document.body.offsetHeight;
     reveals.forEach((el) => {
       el.style.transition =
@@ -38,8 +32,6 @@ export default function AboutEffects() {
     );
     reveals.forEach((el) => io.observe(el));
 
-    /* The sweep: anything already scrolled past must be visible, and the last
-       band of the document can never trigger a -12% rootMargin observer. */
     let ticking = false;
     const sweep = () => {
       ticking = false;

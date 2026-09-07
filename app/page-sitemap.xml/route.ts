@@ -1,14 +1,3 @@
-/**
- * page-sitemap.xml — served by Next because the pages themselves now live
- * here. Byte-compatible with the Rank Math format (same stylesheet ref, same
- * <loc> + <lastmod> shape, no <priority>/<changefreq>, matching live).
- *
- * sitemap_index.xml and the post/category/author sitemaps stay with
- * WordPress via the fallback rewrite, and the index's page-sitemap.xml entry
- * resolves to THIS route. lastmod values are the live production values
- * captured at migration time (2026-08-17); bump an entry when its page's
- * content meaningfully changes.
- */
 const ENTRIES: Array<[loc: string, lastmod: string]> = [
   ["https://creditdanny.com/", "2026-08-12T15:33:01+00:00"],
   ["https://creditdanny.com/plans/", "2026-08-14T00:35:28+00:00"],

@@ -1,14 +1,3 @@
-/**
- * Client-side navigation test: proves link clicks do NOT reload the page.
- *
- * Loads the home page in headless Chrome, plants window.__navMarker, then
- * clicks real internal links. After each click:
- *   - window.__navMarker must survive (a full reload would wipe it)
- *   - location.pathname and document.title must be the new page's
- *   - the new page's body class (applied by BodyClass) must be present
- *
- * Usage: node scripts/verify-spa-nav.mjs [baseUrl]
- */
 import { spawn } from "node:child_process";
 
 const BASE = process.argv[2] || "http://localhost:3100";
@@ -16,7 +5,6 @@ const CHROME =
   process.env.CHROME || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const PORT = 9226;
 
-// [link href, title fragment, body class fragment, html class expected, html classes that must be GONE]
 const HOPS = [
   ["/about/", "About Credit Danny", "cd-about", null, []],
   ["/blueprint/", "Blueprint", "cd-blueprint", "bp-js", []],
@@ -55,11 +43,9 @@ const evaluate = async (expr) => {
 await send("Page.enable");
 await send("Runtime.enable");
 await send("Page.navigate", { url: BASE + "/" });
-await new Promise((r) => setTimeout(r, 5000)); // load + hydrate
+await new Promise((r) => setTimeout(r, 5000));
 await evaluate("window.__navMarker = 'alive'");
 
-/* the reviews-at-top regression: no Trustindex widget may render outside its
-   in-page anchor, and nothing widget-like may precede the page content */
 async function checkNoTopWidget() {
   return evaluate(`(() => {
     const stray = document.querySelector("body > [class*='ti-'], body > [id*='trustindex']");
@@ -76,7 +62,7 @@ for (const [href, titleFrag, bodyFrag, htmlClass, goneClasses] of HOPS) {
     a.click();
     return true;
   })()`);
-  await new Promise((r) => setTimeout(r, 3000)); // client transition + BodyClass
+  await new Promise((r) => setTimeout(r, 3000));
   const state = await evaluate(`({
     marker: window.__navMarker,
     path: location.pathname,

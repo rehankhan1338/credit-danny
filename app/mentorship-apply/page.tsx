@@ -5,7 +5,6 @@ import Script from "next/script";
 import "@/public/assets/css/pages/mentorship-apply.css";
 import OttoSeo from "@/components/OttoSeo";
 
-/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {

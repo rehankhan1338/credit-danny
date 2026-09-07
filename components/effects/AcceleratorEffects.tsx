@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { setupRevealCarousel } from "./revealCarousel";
 
-/** Port of assets/js/pages/accelerator.js. */
 export default function AcceleratorEffects() {
   useEffect(
     () =>

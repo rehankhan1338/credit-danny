@@ -3,17 +3,6 @@
 import { useEffect } from "react";
 import { prefersReduce } from "./reduce";
 
-/**
- * [data-lottie] animation boxes (main.js module 6), lazily.
- *
- * The original loaded lottie.min.js (305 KB) plus lottie-data.js — an 820 KB
- * blob inlining every animation — on page load. Now the player library is
- * fetched only when the first animation box comes within 300px of the
- * viewport, and each animation's own JSON is fetched (via lottie's `path`)
- * only when that box approaches — so the initial load carries none of it and
- * an animation the visitor never scrolls to is never fetched.
- * Only mounted on pages that loaded assets/js/lottie.min.js originally.
- */
 const LOTTIE_ALWAYS_LOOP = false;
 const LIB_SRC = "/assets/js/lottie.min.js";
 
@@ -46,8 +35,6 @@ export default function LottiePlayers() {
       if (cancelled || el.dataset.lottieStarted || !window.lottie) return;
       el.dataset.lottieStarted = "1";
 
-      /* Reduced motion: play once, do not loop (see original notes).
-         data-lottie-motion="always" opts a specific animation back in. */
       const force = LOTTIE_ALWAYS_LOOP || el.getAttribute("data-lottie-motion") === "always";
       const calm = reduce && !force;
 

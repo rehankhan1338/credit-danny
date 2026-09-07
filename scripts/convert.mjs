@@ -1,18 +1,3 @@
-/**
- * One-time migration converter: static HTML export -> Next.js App Router TSX.
- *
- * Guarantees:
- *  - Head SEO data (title/description/robots/canonical/OG/Twitter/JSON-LD)
- *    extracted verbatim into `export const metadata` + hoisted JSX meta tags.
- *  - Body markup converted node-for-node into JSX (same tags, same attribute
- *    values, same text). Text nodes are emitted as JSON string literals so
- *    whitespace/entities survive JSX exactly.
- *  - Internal *.html links -> clean trailing-slash URLs via <Link>.
- *  - Relative asset refs -> root-absolute /assets/... (files did not move).
- *  - Identical header/footer/nav subtrees across pages -> shared components.
- *
- * Run: npm run convert
- */
 import { parse } from "parse5";
 import fs from "node:fs";
 import path from "node:path";
@@ -27,8 +12,6 @@ const write = (p, c) => {
   console.log("wrote", p);
 };
 
-/* ---------------------------------------------------------------- pages */
-
 const PAGES = [
   { file: "index.html", route: "/", group: "home", comp: "HomePage" },
   { file: "about.html", route: "/about/", group: "about", comp: "AboutPage" },
@@ -41,9 +24,6 @@ const PAGES = [
   { file: "get-started.html", route: "/get-started/", group: "get-started", comp: "GetStartedPage" },
   { file: "home-buying-blueprint.html", route: "/home-buying-blueprint/", group: "home-buying-blueprint", comp: "HomeBuyingBlueprintPage" },
   { file: "mentorship.html", route: "/mentorship/", group: "mentorship", comp: "MentorshipPage" },
-  // Lives at mentorship/apply.html locally but its live URL is the flat
-  // /mentorship-apply/ (the /mentorship/apply/ shape 301s there in prod).
-  // Its stale canonical/og:url are corrected to the resolving URL.
   { file: "mentorship/apply.html", route: "/mentorship-apply/", group: "mentorship-apply", comp: "MentorshipApplyPage", canonicalOverride: "https://creditdanny.com/mentorship-apply/" },
   { file: "plans.html", route: "/plans/", group: "plans", comp: "PlansPage" },
   { file: "privacy-policy.html", route: "/privacy-policy/", group: "privacy-policy", comp: "PrivacyPolicyPage" },
@@ -57,7 +37,6 @@ const PAGES = [
 const FILE_TO_ROUTE = Object.fromEntries(PAGES.map((p) => [p.file, p.route]));
 const ROUTES = new Set(PAGES.map((p) => p.route));
 
-// per-page vanilla JS ported by hand into components/effects/<Comp>Effects.tsx
 const PAGE_JS_TO_EFFECT = {
   "assets/js/pages/index.js": "HomeEffects",
   "assets/js/pages/about.js": "AboutEffects",
@@ -67,8 +46,6 @@ const PAGE_JS_TO_EFFECT = {
   "assets/js/pages/sponsorship.js": "SponsorshipEffects",
   "assets/js/pages/transformations.js": "TransformationsEffects",
 };
-
-/* ------------------------------------------------------------ attr maps */
 
 const HTML_ATTR_MAP = {
   class: "className", for: "htmlFor", tabindex: "tabIndex",
@@ -116,7 +93,7 @@ function svgAttrToJsx(name) {
   if (name.startsWith("data-") || name.startsWith("aria-")) return name;
   if (name === "class") return "className";
   if (name === "tabindex") return "tabIndex";
-  if (!name.includes("-") && !name.includes(":")) return name; // viewBox etc. already adjusted by parse5
+  if (!name.includes("-") && !name.includes(":")) return name;
   if (name === "xml:space") return "xmlSpace";
   if (name === "xml:lang") return "xmlLang";
   if (name === "xlink:href") return "xlinkHref";
@@ -125,11 +102,10 @@ function svgAttrToJsx(name) {
 }
 
 function cssPropToJsx(prop) {
-  if (prop.startsWith("--")) return prop; // custom property: keep verbatim
+  if (prop.startsWith("--")) return prop;
   let p = prop;
   if (p.startsWith("-ms-")) p = "ms-" + p.slice(4);
   else if (p.startsWith("-")) p = p.slice(1).charAt(0).toUpperCase() === p.slice(1).charAt(0) ? p.slice(1) : p.slice(1, 2).toUpperCase() + p.slice(2);
-  // vendor: -webkit-x -> Webkit-x handled above; now camelCase the rest
   return p.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
 }
 
@@ -165,8 +141,6 @@ function styleToJsxObject(style) {
   return `{ ${entries} }`;
 }
 
-/* ------------------------------------------------------- url rewriting */
-
 function rewriteAssetUrl(u) {
   return u
     .replace(/^(\.\.\/)+assets\//, "/assets/")
@@ -198,11 +172,6 @@ function rewriteSrcset(v) {
     .join(", ");
 }
 
-/**
- * Map an href from a given source file to its new value.
- * Returns { href, isRoute } — isRoute means it targets one of our 19 routes
- * (rendered with <Link>); everything else stays a plain <a>.
- */
 function mapHref(href, sourceFile) {
   if (!href) return { href, isRoute: false };
   if (/^(mailto:|tel:|javascript:|#)/i.test(href)) return { href, isRoute: false };
@@ -211,7 +180,6 @@ function mapHref(href, sourceFile) {
   const m = href.match(/^([^#?]*)([#?].*)$/);
   if (m) { base = m[1]; suffix = m[2]; }
 
-  // absolute internal
   const abs = base.match(/^https?:\/\/(www\.)?creditdanny\.com(\/[^\s]*)?$/i);
   if (abs) {
     let p = abs[2] || "/";
@@ -222,11 +190,10 @@ function mapHref(href, sourceFile) {
       const rel = p.replace(/^\//, "");
       if (FILE_TO_ROUTE[rel]) return { href: FILE_TO_ROUTE[rel] + suffix, isRoute: true };
     }
-    return { href, isRoute: false }; // proxied WP URL (blog etc.) — verbatim
+    return { href, isRoute: false };
   }
   if (/^https?:\/\//i.test(base) || base.startsWith("//")) return { href, isRoute: false };
 
-  // relative *.html -> route
   if (/\.html$/i.test(base)) {
     const dir = path.posix.dirname(sourceFile.replace(/\\/g, "/"));
     const resolved = path.posix
@@ -237,13 +204,10 @@ function mapHref(href, sourceFile) {
     return { href, isRoute: false };
   }
 
-  // relative asset
   const rewritten = rewriteAssetUrl(base);
   if (rewritten !== base) return { href: rewritten + suffix, isRoute: false };
   return { href, isRoute: false };
 }
-
-/* ----------------------------------------------------------- tree utils */
 
 const isElement = (n) => !!n.tagName;
 const isText = (n) => n.nodeName === "#text";
@@ -262,8 +226,6 @@ function rawText(el) {
   return (el.childNodes || []).map((c) => (isText(c) ? c.value : "")).join("");
 }
 
-/* -------------------------------------------------------- JSX emission */
-
 const customElements = new Set();
 
 function attrToJsx(attr, tag, inSvg, ctx) {
@@ -272,7 +234,6 @@ function attrToJsx(attr, tag, inSvg, ctx) {
 
   if (full === "style") return `style={${styleToJsxObject(value)}}`;
 
-  // URL-bearing attributes
   if (["src", "poster", "data-src", "data-poster", "href"].includes(full) && tag !== "a") {
     value = rewriteAssetUrl(value);
   }
@@ -283,15 +244,13 @@ function attrToJsx(attr, tag, inSvg, ctx) {
 
   let jsxName;
   if (full.startsWith("data-") || full.startsWith("aria-")) jsxName = full;
-  else if (tag.includes("-")) jsxName = full; // custom elements: verbatim attributes
+  else if (tag.includes("-")) jsxName = full;
   else if (inSvg) jsxName = svgAttrToJsx(full);
   else jsxName = HTML_ATTR_MAP[full] || full;
 
   if (BOOLEAN_ATTRS.has(full) && !tag.includes("-")) {
     if (value === "" || value.toLowerCase() === full) return jsxName;
-    // keep explicit value if it's something odd
   }
-  // React types these as number-only
   const NUMERIC = ["tabIndex", "rowSpan", "colSpan", "maxLength", "minLength", "start", "size", "span", "cols", "rows"];
   if (NUMERIC.includes(jsxName) && /^-?\d+$/.test(value)) return `${jsxName}={${value}}`;
   const simple = /^[^"\\\n\r{}<>&]*$/.test(value) && !value.includes("'");
@@ -299,7 +258,7 @@ function attrToJsx(attr, tag, inSvg, ctx) {
 }
 
 function textIsWs(t) {
-  return /^[\s ]*$/.test(t) && !/ /.test(t); // nbsp is content, not ws
+  return /^[\s ]*$/.test(t) && !/ /.test(t);
 }
 
 function emitNode(node, sourceFile, depth, inSvg, ctx, parentTag) {
@@ -310,9 +269,7 @@ function emitNode(node, sourceFile, depth, inSvg, ctx, parentTag) {
     if (RAW_TEXT_PARENTS.has(parentTag)) return `${pad}{${JSON.stringify(t)}}`;
     if (textIsWs(t)) {
       if (!t.includes("\n")) return `${pad}{" "}`;
-      // newline whitespace: render-equivalent single space in inline context,
-      // nothing between blocks
-      return null; // caller decides using sibling info
+      return null;
     }
     return `${pad}{${JSON.stringify(t)}}`;
   }
@@ -323,51 +280,32 @@ function emitNode(node, sourceFile, depth, inSvg, ctx, parentTag) {
   const svg = inSvg || tag === "svg";
   if (tag.includes("-")) customElements.add(tag);
 
-  /* scripts.
-     Executable third-party scripts go through next/script (afterInteractive):
-     several of them mutate the live DOM (Meta Pixel insertBefore, Wistia
-     style/custom-element setup, GHL form embeds, Trustindex widgets), and
-     executing during parse raced React's whole-document hydration into
-     intermittent #418 failures. afterInteractive runs them immediately after
-     hydration — the documented Next pattern for analytics/embeds.
-     Exceptions kept as raw SSR'd <script>:
-       - JSON-LD (inert data),
-       - tiny pre-paint JS-detection one-liners that only toggle a class on
-         <html> (reveal CSS depends on them running before first paint;
-         Shell's <html> carries suppressHydrationWarning for this). */
   if (tag === "script") {
     const src = getAttr(node, "src");
     if (src) {
       const norm = src.replace(/^(\.\.\/)+/, "").replace(/^\.\//, "");
-      if (norm === "assets/js/main.js") return ""; // ported to Behaviors
+      if (norm === "assets/js/main.js") return "";
       if (norm === "assets/js/lottie.min.js" || norm === "assets/js/lottie-data.js") {
         ctx.needsLottie = true;
-        return ""; // loaded by the Lottie behavior component
+        return "";
       }
       if (PAGE_JS_TO_EFFECT[norm]) {
         ctx.effects.push(PAGE_JS_TO_EFFECT[norm]);
         return "";
       }
-      /* Trustindex widget loaders are POSITION-ANCHORED (the widget renders
-         where the script tag sits); they must not go through next/script,
-         which would execute them from <head> and dump the widget at the top
-         of the page. The generic ver=1 library (legal pages' head) has no
-         widget id and stays on next/script. */
       if (/cdn\.trustindex\.io\/loader\.js\?(?!ver=)/.test(src)) {
         ctx.usesTrustindex = true;
         return `${pad}<TrustindexWidget src=${JSON.stringify(src)} />`;
       }
       ctx.usesNextScript = true;
       const attrs = node.attrs
-        .filter((a) => !["async", "defer"].includes(a.name)) // managed by next/script
+        .filter((a) => !["async", "defer"].includes(a.name))
         .map((a) => attrToJsx(a, tag, false, ctx))
         .join(" ");
       return `${pad}<Script ${attrs}${attrs ? " " : ""}strategy="afterInteractive" />`;
     }
     const content = rawText(node);
     if (content.includes("sa-dynamic-optimization")) {
-      // OTTO DOM-rewriter: injected post-hydration by <OttoSeo /> to avoid
-      // racing React hydration (same script, same uuid).
       ctx.usesOtto = true;
       return "";
     }
@@ -376,12 +314,6 @@ function emitNode(node, sourceFile, depth, inSvg, ctx, parentTag) {
     if (type === "application/ld+json") {
       return `${pad}<script ${attrs} dangerouslySetInnerHTML={{ __html: ${JSON.stringify(content)} }} />`;
     }
-    /* JS-detection class on <html> (bp-js/ca-js/sp-js/pl-js/hb-js). Raw
-       page-tree scripts never execute on client navigation, so these become
-       <HtmlClass> + the root-layout JsDetect script (see HtmlClass.tsx).
-       The hb variant also carries reveal/sticky logic that is a verbatim
-       duplicate of main.js simpleReveal('.hb-reveal')/stickyStrip('.hb-sticky')
-       — already ported in Behaviors — so only its class survives. */
     const jsDetect =
       content.includes("documentElement") &&
       content.match(/(?:classList\.add\('([a-z]+-js)'\)|className\s*\+=\s*' ([a-z]+-js)')/);
@@ -395,12 +327,10 @@ function emitNode(node, sourceFile, depth, inSvg, ctx, parentTag) {
   }
 
   if (tag === "noscript") {
-    // serialize children raw
     const inner = (node.childNodes || []).map(serializeRaw).join("");
     return `${pad}<noscript dangerouslySetInnerHTML={{ __html: ${JSON.stringify(inner)} }} />`;
   }
 
-  /* anchors: internal page links become <Link> */
   let jsxTag = tag;
   let attrs = [...(node.attrs || [])];
   if (tag === "a") {
@@ -426,8 +356,6 @@ function emitNode(node, sourceFile, depth, inSvg, ctx, parentTag) {
     const child = kids[i];
     let line = emitNode(child, sourceFile, depth + 1, svg, ctx, tag);
     if (line === null) {
-      // whitespace-with-newline text node: keep a space if an inline element
-      // is adjacent (HTML collapses runs of whitespace to one space)
       const prev = kids[i - 1], next = kids[i + 1];
       const inlineAdj = [prev, next].some(
         (s) => s && isElement(s) && INLINE_TAGS.has(s.tagName)
@@ -441,7 +369,6 @@ function emitNode(node, sourceFile, depth, inSvg, ctx, parentTag) {
   return `${pad}${open}>\n${childLines.join("\n")}\n${pad}</${jsxTag}>`;
 }
 
-// raw serializer for noscript innerHTML
 function serializeRaw(node) {
   if (isText(node)) return node.value;
   if (node.nodeName === "#comment") return `<!--${node.data}-->`;
@@ -453,8 +380,6 @@ function serializeRaw(node) {
   if (VOID_TAGS.has(node.tagName)) return open;
   return `${open}${(node.childNodes || []).map(serializeRaw).join("")}</${node.tagName}>`;
 }
-
-/* ------------------------------------------------- shared block hashing */
 
 function stableSerialize(node) {
   if (isText(node)) return JSON.stringify(node.value);
@@ -468,8 +393,6 @@ function stableSerialize(node) {
     .map(stableSerialize)
     .join("")}</${node.tagName}>`;
 }
-
-/* --------------------------------------------------------- head parsing */
 
 function parseHead(headEl, page) {
   const meta = {
@@ -491,11 +414,11 @@ function parseHead(headEl, page) {
       const name = getAttr(node, "name");
       const prop = getAttr(node, "property");
       const content = getAttr(node, "content") ?? "";
-      if (getAttr(node, "charset") !== undefined) continue; // Next emits
+      if (getAttr(node, "charset") !== undefined) continue;
       if (name === "viewport") {
         if (content !== "width=device-width, initial-scale=1")
           console.warn(`  !! nonstandard viewport on ${page.file}: ${content}`);
-        continue; // Next default matches
+        continue;
       }
       if (name === "description") { meta.description = content; continue; }
       if (name === "robots") { meta.robots = content; continue; }
@@ -518,7 +441,7 @@ function parseHead(headEl, page) {
         const key = prop.slice(3);
         const known = { locale: "locale", type: "type", title: "title", description: "description", url: "url", site_name: "siteName" };
         if (known[key]) meta.og[known[key]] = content;
-        else meta.rawHead.push({ property: prop, content }); // og:updated_time etc.
+        else meta.rawHead.push({ property: prop, content });
         continue;
       }
       if (prop && prop.startsWith("article:")) {
@@ -529,10 +452,9 @@ function parseHead(headEl, page) {
         const key = name.slice(8);
         const known = { card: "card", title: "title", description: "description", image: "image" };
         if (known[key]) meta.twitter[known[key]] = content;
-        else meta.rawHead.push({ name, content }); // twitter:label1/data1
+        else meta.rawHead.push({ name, content });
         continue;
       }
-      // ti-site-data and anything else: verbatim
       meta.rawHead.push(name ? { name, content } : { property: prop, content });
       continue;
     }
@@ -543,7 +465,7 @@ function parseHead(headEl, page) {
       if (rel === "canonical") { meta.canonical = href; continue; }
       if (rel === "stylesheet") {
         const norm = href.replace(/^(\.\.\/)+/, "").replace(/^\.\//, "");
-        if (norm.endsWith("google-fonts.css") || norm.endsWith("/style.css")) continue; // Shell
+        if (norm.endsWith("google-fonts.css") || norm.endsWith("/style.css")) continue;
         if (norm.endsWith("legacy-elementor.css")) { meta.usesLegacyElementor = true; continue; }
         const m = norm.match(/assets\/css\/pages\/([a-z0-9-]+)\.css$/);
         if (m) { meta.pageCss = m[1]; continue; }
@@ -552,7 +474,7 @@ function parseHead(headEl, page) {
       }
       if (rel === "icon") { meta.icons.push({ url: rewriteAssetUrl(href), sizes: getAttr(node, "sizes") }); continue; }
       if (rel === "apple-touch-icon") { meta.apple.push({ url: rewriteAssetUrl(href) }); continue; }
-      if (rel === "profile" || rel === "pingback" || rel === "EditURI") continue; // WP plumbing, dropped
+      if (rel === "profile" || rel === "pingback" || rel === "EditURI") continue;
       console.warn(`  !! unhandled head link rel=${rel} in ${page.file}`);
       continue;
     }
@@ -564,9 +486,9 @@ function parseHead(headEl, page) {
         meta.jsonLd.push({ className: getAttr(node, "class"), body: rawText(node) });
         continue;
       }
-      if (src && (src.includes(GA_HOST) || src.includes(CLICKY))) continue; // AnalyticsScripts
+      if (src && (src.includes(GA_HOST) || src.includes(CLICKY))) continue;
       const body = src ? null : rawText(node);
-      if (body && (body.includes("dataLayer") || body.includes("clicky_site_ids") || body.includes("fbq("))) continue; // AnalyticsScripts
+      if (body && (body.includes("dataLayer") || body.includes("clicky_site_ids") || body.includes("fbq("))) continue;
       meta.headScripts.push(node);
       continue;
     }
@@ -575,8 +497,6 @@ function parseHead(headEl, page) {
   }
   return meta;
 }
-
-/* -------------------------------------------------- metadata TS emission */
 
 function metadataLiteral(meta, page) {
   const canonical = page.canonicalOverride || meta.canonical;
@@ -614,7 +534,6 @@ function metadataLiteral(meta, page) {
 
 function rawHeadJsx(meta, page) {
   const lines = [];
-  // article:* tags that couldn't be typed (og:type !== article)
   if (meta.og.type !== "article") {
     for (const [prop, content] of Object.entries(meta.article))
       lines.push(`      <meta property=${JSON.stringify(prop)} content=${JSON.stringify(content)} />`);
@@ -626,11 +545,9 @@ function rawHeadJsx(meta, page) {
   return lines;
 }
 
-/* ---------------------------------------------------------------- main */
-
-const sharedCandidates = new Map(); // hash -> {node, pages:[], name}
+const sharedCandidates = new Map();
 const pageData = [];
-const jsDetectMap = {}; // route -> html js-detect class (bp-js, ca-js, ...)
+const jsDetectMap = {};
 
 for (const page of PAGES) {
   console.log("parsing", page.file);
@@ -646,9 +563,6 @@ for (const page of PAGES) {
   if (extraBodyAttrs.length)
     console.warn(`  !! extra body attrs on ${page.file}:`, extraBodyAttrs.map((a) => a.name).join(","));
 
-  // fix stale canonical inside ti-site-data? left verbatim (analytics only)
-
-  // shared-block candidates: header/footer/nav elements & known topbar ids
   const candidates = [];
   (function scan(node, depth) {
     if (!isElement(node)) return;
@@ -656,7 +570,7 @@ for (const page of PAGES) {
     const isCand =
       ["header", "footer", "nav"].includes(node.tagName) ||
       ["top", "mv-topbar", "cd-topbar", "hb-top"].includes(id);
-    if (isCand) { candidates.push(node); return; } // top-most only
+    if (isCand) { candidates.push(node); return; }
     for (const c of node.childNodes || []) scan(c, depth + 1);
   })(bodyEl, 0);
 
@@ -670,7 +584,6 @@ for (const page of PAGES) {
   pageData.push({ page, meta, bodyClass, bodyEl, html });
 }
 
-/* name shared blocks that appear on 2+ pages */
 const sharedByHash = new Map();
 const usedNames = new Set();
 for (const [hash, info] of sharedCandidates) {
@@ -692,7 +605,6 @@ for (const [hash, info] of sharedCandidates) {
   sharedByHash.set(hash, { name, node: el, sourceFile: info.sourceFile, pages: info.pages });
 }
 
-/* emit shared components */
 for (const { name, node, sourceFile } of sharedByHash.values()) {
   const ctx = { usesLink: false, effects: [], needsLottie: false };
   const jsx = emitNode(node, sourceFile, 2, false, ctx, "body");
@@ -707,7 +619,6 @@ for (const { name, node, sourceFile } of sharedByHash.values()) {
   );
 }
 
-/* emit pages */
 const groupBodyClass = {};
 for (const { page, meta, bodyClass, bodyEl } of pageData) {
   const ctx = { usesLink: false, effects: [], needsLottie: false, videoMuted: false };
@@ -722,16 +633,12 @@ for (const { page, meta, bodyClass, bodyEl } of pageData) {
       lines.push(`      <${name} />`);
       continue;
     }
-    // nested shared candidates (not direct body children)
     const replaced = replaceSharedDeep(child, page.file, ctx, usedShared, 3);
     if (replaced) lines.push(replaced);
   }
 
   const headExtra = rawHeadJsx(meta, page);
   const headScriptLines = meta.headScripts.map((n) => emitNode(n, page.file, 3, false, ctx, "head"));
-  /* mentorship-apply: the source page's canonical points at a URL that 301s;
-     JSON-LD @id/url/breadcrumb entries are updated to the resolving URL,
-     matching the corrected canonical/og:url. */
   if (page.canonicalOverride && meta.canonical && meta.canonical !== page.canonicalOverride) {
     for (const j of meta.jsonLd) j.body = j.body.split(meta.canonical).join(page.canonicalOverride);
   }
@@ -745,10 +652,6 @@ for (const { page, meta, bodyClass, bodyEl } of pageData) {
   if (ctx.usesLink) importLines.push(`import Link from "next/link";`);
   if (ctx.usesNextScript) importLines.push(`import Script from "next/script";`);
   if (meta.pageCss) importLines.push(`import "@/public/assets/css/pages/${meta.pageCss}.css";`);
-  /* legacy-elementor.css contains export-mangled selectors (unbalanced
-     parens) that Lightning CSS refuses to parse but browsers error-recover
-     through. It is served byte-identical via a plain <link> so every browser
-     applies exactly what it applies on the current static site. */
   for (const s of usedShared) importLines.push(`import ${s} from "@/components/shared/${s}";`);
   const effects = [...new Set(ctx.effects)];
   for (const e of effects) importLines.push(`import ${e} from "@/components/effects/${e}";`);
@@ -788,24 +691,15 @@ ${body}
   );
 }
 `;
-  /* Flat routes under a single root layout: separate root layouts would force
-     a full page load on every navigation; the per-page body class is handled
-     by <BodyClass> instead. */
   const routeDir = page.route === "/" ? "app" : `app${page.route.slice(0, -1)}`;
   write(`${routeDir}/page.tsx`, src);
   groupBodyClass[page.group] = bodyClass;
   if (ctx.htmlClass) jsDetectMap[page.route] = ctx.htmlClass;
 }
 
-/* Root-layout JS-detection script: adds the page's -js class to <html>
-   DURING PARSE on initial loads (pre-paint — the sticky-bar/reveal CSS
-   depends on it), and because the root layout is never re-rendered on client
-   navigation, React never client-renders this script tag (no dev error).
-   Client navigations are handled by each page's <HtmlClass>. */
 write(
   "components/JsDetect.tsx",
-  `/* GENERATED by scripts/convert.mjs — do not edit by hand. */
-const MAP: Record<string, string> = ${JSON.stringify(jsDetectMap, null, 2)};
+  `const MAP: Record<string, string> = ${JSON.stringify(jsDetectMap, null, 2)};
 
 const CODE =
   "(function(){var m=" +
@@ -835,7 +729,6 @@ function replaceSharedDeep(node, sourceFile, ctx, usedShared, depth) {
     return `${"  ".repeat(Math.min(depth, 20))}<${name} />`;
   }
   if (isElement(node) && node.childNodes?.some((c) => hasSharedDeep(c))) {
-    // rebuild element with children replaced
     const tag = node.tagName;
     const attrStr = (node.attrs || [])
       .map((a) => attrToJsx(a, tag, tag === "svg", ctx))
@@ -858,7 +751,6 @@ function hasSharedDeep(node) {
   return (node.childNodes || []).some(hasSharedDeep);
 }
 
-/* custom element TS declarations */
 write(
   "types/custom-elements.d.ts",
   `import "react";

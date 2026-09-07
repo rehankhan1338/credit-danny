@@ -7,17 +7,8 @@ import SharedFooterCdPad from "@/components/shared/SharedFooterCdPad";
 import OttoSeo from "@/components/OttoSeo";
 import GiveawayEntryForm from "@/components/GiveawayEntryForm";
 
-/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
 export const dynamic = "force-dynamic";
 
-/**
- * /5kgiveaway-entry/ — the "Free Credit Repair + $5,000 Giveaway" entry page.
- *
- * Head SEO and page chrome are taken from the WordPress-rendered page
- * (5kgiveaway-entry/index.html export). The embedded Gravity Form (id 21) is
- * ported natively in components/GiveawayEntryForm.tsx and still submits into
- * Gravity Forms via app/api/gravity-forms/[id]/submit.
- */
 
 export const metadata: Metadata = {
   "title": "5K Giveaway Entry | Credit Repair Expert Phoenix, AZ",

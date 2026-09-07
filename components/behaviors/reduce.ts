@@ -1,8 +1,3 @@
-/**
- * Shared motion preference (main.js module 1).
- * Also exposed as window.CD.reduce for the per-page reveal cascades,
- * exactly as the original did.
- */
 export function prefersReduce(): boolean {
   if (typeof window === "undefined") return false;
   return !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);

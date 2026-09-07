@@ -5,11 +5,6 @@ import { prefersReduce } from "@/components/behaviors/reduce";
 
 type RevealEl = HTMLElement & { __delay?: number };
 
-/**
- * Port of assets/js/pages/transformations.js — the transient reveal: the
- * runtime marks elements, shows them on intersection and clears the marker
- * afterwards, backed by the same sweep as the About page.
- */
 export default function TransformationsEffects() {
   useEffect(() => {
     const reduce = prefersReduce();
@@ -23,9 +18,6 @@ export default function TransformationsEffects() {
           if (el.closest("[data-reveal]")) return;
           const rect = el.getBoundingClientRect();
           if (rect.height === 0) return;
-          /* Never hide what the reader is already looking at: this runs
-             after hydration — long after first paint — so hiding on-screen
-             content makes the page visibly blink out. */
           if (rect.top < vh && rect.bottom > 0) return;
           el.setAttribute("data-reveal", "");
           picked.push(el);
@@ -40,8 +32,6 @@ export default function TransformationsEffects() {
         el.style.transform = "translateY(22px)";
         el.style.willChange = "opacity, transform";
       });
-      /* HIDDEN NOW, TRANSITION LATER: one forced reflow settles the hidden
-         state for the whole page (see original notes). */
       void document.body.offsetHeight;
       marked.forEach((el) => {
         el.style.transition =
@@ -50,7 +40,6 @@ export default function TransformationsEffects() {
       });
     }
     const pending = new Set(marked);
-    /* Undo everything the cascade set, back to the server-rendered state. */
     const restore = (el: RevealEl) => {
       el.style.opacity = "";
       el.style.transform = "";
@@ -88,7 +77,6 @@ export default function TransformationsEffects() {
       );
       marked.forEach((el) => io.observe(el));
 
-      /* The sweep (see original notes). */
       let ticking = false;
       const sweep = () => {
         ticking = false;
@@ -120,10 +108,6 @@ export default function TransformationsEffects() {
         window.removeEventListener("resize", onScroll);
         window.clearInterval(t);
         timers.forEach((timer) => window.clearTimeout(timer));
-        /* Un-hide everything on unmount. Without this, a remount (dev
-           StrictMode runs setup → cleanup → setup) sees the data-reveal
-           markers from the first pass, skips every element, and the
-           still-hidden content is never observed — the page goes blank. */
         marked.forEach(restore);
       });
     }

@@ -4,11 +4,6 @@ import { useEffect } from "react";
 
 type WistiaPlayerEl = HTMLElement & { muted: boolean; paused: boolean; play?: () => void };
 
-/**
- * Hero video sound (main.js module 13). Unmuted autoplay cannot be forced, so
- * the video starts muted, tries for sound immediately, and otherwise unmutes
- * on the visitor's first gesture.
- */
 export default function HeroSound() {
   useEffect(() => {
     const p = document.querySelector<WistiaPlayerEl>(

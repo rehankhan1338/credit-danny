@@ -1,10 +1,3 @@
-/* Credit Insights archive — ported from the live WP archive's inline rules
-   (creditdanny.com/category/credit-insights/, fetched 2026-08-20).
-   Every [style*=…] selector is doubled with a no-space variant: the live DOM
-   serializes declarations as "padding: 0px 60px" but React renders
-   "padding:0px 60px". */
-
-/* Content column: the 60px-padded bands cap at 1320px and center. */
 #cdb [style*="padding: 0px 60px"], #cdb [style*="padding:0px 60px"],
 #cdb [style*="padding: 24px 60px 56px"], #cdb [style*="padding:24px 60px 56px"],
 #cdb [style*="padding: 56px 60px 20px"], #cdb [style*="padding:56px 60px 20px"],
@@ -15,8 +8,6 @@
   max-width:1320px !important;margin-left:auto !important;margin-right:auto !important;
   box-sizing:border-box !important;}
 
-/* Bio band: the gradient card spans the viewport, its content sits in a
-   1200px column; the photo strip rides the same column's left edge. */
 #cdb .cdb-bio-card{
   padding-left:max(0px, calc((100% - 1200px) / 2)) !important;
   padding-right:max(0px, calc((100% - 1200px) / 2)) !important;
@@ -53,7 +44,6 @@
 #cdb .cdb-card:hover{transform:translateY(-4px);}
 
 @media (max-width:900px){
-  /* Post cards become horizontal rows: 120px thumbnail beside the copy. */
   #cdb .cdb-post-card > div{
     display:grid !important;grid-template-columns:120px 1fr !important;}
   #cdb .cdb-post-card > div > div:first-child{
@@ -90,7 +80,6 @@
   #cdb [style*="font-size: 34px"],
   #cdb [style*="font-size:34px"]{font-size:30px !important;line-height:1.06 !important;}
 
-  /* Pills scroll sideways instead of wrapping. */
   #cdb .cdb-pills{
     overflow-x:auto !important;flex-wrap:nowrap !important;
     -webkit-overflow-scrolling:touch;scrollbar-width:none;
@@ -98,7 +87,6 @@
   #cdb .cdb-pills::-webkit-scrollbar{display:none;}
   #cdb .cdb-pills > a{flex:0 0 auto !important;white-space:nowrap !important;}
 
-  /* Bio band collapses to one column; the cutout shrinks to a 116px strip. */
   #cdb .cdb-bio-card{grid-template-columns:minmax(0,1fr) !important;}
   #cdb .cdb-bio-spacer{display:none !important;}
   #cdb .cdb-bio-photo{
@@ -111,7 +99,6 @@
   #cdb .cdb-bio-copy{
     padding:24px 20px 24px 124px !important;min-height:200px !important;}
 
-  /* Sticky bar: title shortens, CTA hugs the right edge. */
   #cdb [style*="position: sticky"][style*="bottom: 0px"],
   #cdb [style*="position:sticky"][style*="bottom:0px"]{
     flex-direction:row !important;padding:12px 20px !important;

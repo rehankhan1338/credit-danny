@@ -3,11 +3,6 @@
 import { useEffect } from "react";
 import { prefersReduce } from "./reduce";
 
-/**
- * Simple class-toggle reveal (main.js module 12). Falls back to showing
- * everything at once when IntersectionObserver is unavailable or motion is
- * reduced, and force-reveals anything still hidden after 8s.
- */
 export default function Reveal({
   sel,
   inClass,
@@ -40,8 +35,6 @@ export default function Reveal({
     );
     els.forEach((el) => io.observe(el));
 
-    /* Last-resort guard: anything still hidden once the page has settled is
-       shown outright. */
     const t = window.setTimeout(() => {
       els.forEach((el) => el.classList.add(inClass));
     }, 8000);

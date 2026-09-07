@@ -6,17 +6,11 @@ import { prefersReduce } from "@/components/behaviors/reduce";
 type RevealEl = HTMLElement & { __delay?: number };
 type TrackEl = HTMLElement & { __idle?: number };
 
-/**
- * Port of assets/js/pages/index.js — the home page's reveal cascade
- * (section children, staggered, with the safety sweep) and the results
- * carousel (autoplay, two arrows, one card per swipe).
- */
 export default function HomeEffects() {
   useEffect(() => {
     const reduce = prefersReduce();
     const cleanups: Array<() => void> = [];
 
-    /* ---- the reveal cascade ---- */
     if (!reduce && "IntersectionObserver" in window) {
       const skip = (el: Element) => {
         const tag = el.tagName;
@@ -41,8 +35,6 @@ export default function HomeEffects() {
         el.style.transform = "translateY(30px)";
         el.style.willChange = "opacity, transform";
       });
-      /* HIDDEN NOW, TRANSITION LATER: one forced reflow settles the hidden
-         state before the transition exists (see original notes). */
       void document.body.offsetHeight;
       targets.forEach(([el]) => {
         el.style.transition =
@@ -71,8 +63,6 @@ export default function HomeEffects() {
       );
       targets.forEach(([el]) => io.observe(el));
 
-      /* Safety sweep: at the bottom show whatever is left; `top < h` and
-         nothing else (see original measurements). */
       let ticking = false;
       const sweep = () => {
         ticking = false;
@@ -98,8 +88,6 @@ export default function HomeEffects() {
       };
       window.addEventListener("scroll", onScroll, { passive: true });
       window.addEventListener("resize", onScroll);
-      /* A tick, not just scroll events: the page keeps growing under the
-         reveal. Stops when done, gives up after 30s. */
       let ticks = 0;
       const tick = window.setInterval(() => {
         sweep();
@@ -114,7 +102,6 @@ export default function HomeEffects() {
       });
     }
 
-    /* ---- the results carousel: autoplay, two arrows, one card per swipe ---- */
     const track = document.querySelector<TrackEl>('[data-track="results"]');
     if (track && track.firstElementChild) {
       let driving = false;
@@ -128,7 +115,6 @@ export default function HomeEffects() {
         const p = pitch();
         const max = track.scrollWidth - track.clientWidth;
         let to = track.scrollLeft + dir * p;
-        /* Wrap at both ends rather than stalling against the edge. */
         if (to > max + 2) to = 0;
         else if (to < -2) to = max;
         driving = true;
@@ -161,7 +147,6 @@ export default function HomeEffects() {
         b.addEventListener("click", fn);
         cleanups.push(() => b.removeEventListener("click", fn));
       });
-      /* Autoplay yields to the reader. */
       const onScrollTrack = () => {
         if (driving) return;
         pause();
@@ -183,7 +168,6 @@ export default function HomeEffects() {
       });
     }
 
-    /* ---- the jump-rail scrollspy: light the pill for the section in view ---- */
     const jumpNav = document.querySelector<HTMLElement>(".cd-jump");
     if (jumpNav) {
       const rail = jumpNav.querySelector<HTMLElement>(".cd-jump-rail");
@@ -197,7 +181,6 @@ export default function HomeEffects() {
         let active: HTMLAnchorElement | null = null;
         let spyTick = false;
         const center = (link: HTMLAnchorElement) => {
-          /* On phones the rail overflows sideways; keep the lit pill visible. */
           if (!rail || rail.scrollWidth <= rail.clientWidth + 2) return;
           rail.scrollTo({
             left: link.offsetLeft - (rail.clientWidth - link.offsetWidth) / 2,
@@ -206,7 +189,6 @@ export default function HomeEffects() {
         };
         const update = () => {
           spyTick = false;
-          /* Active = the last section whose top has passed under the sticky rail. */
           const line = jumpNav.getBoundingClientRect().bottom + 8;
           let best: HTMLAnchorElement | null = null;
           let bestTop = -Infinity;

@@ -11,7 +11,6 @@ import OttoSeo from "@/components/OttoSeo";
 import TrustindexWidget from "@/components/TrustindexWidget";
 import HtmlClass from "@/components/HtmlClass";
 
-/** Server-side rendered on every request (SSR); blog routes stay on ISR. */
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {

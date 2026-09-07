@@ -1,12 +1,3 @@
-/**
- * Browser console sweep: loads every route in headless Chrome via CDP and
- * reports console errors/warnings and uncaught exceptions (hydration
- * mismatches surface here as React errors #418/#423/#425 or
- * "Hydration failed" messages).
- *
- * Usage: node scripts/verify-console.mjs [baseUrl]
- * Requires Chrome at the default Windows install path or CHROME env var.
- */
 import { spawn } from "node:child_process";
 
 const BASE = process.argv[2] || "http://localhost:3100";
@@ -24,8 +15,6 @@ const ROUTES = [
   "/hard-inquiry-removal-when-its-possible/",
 ];
 
-/* Third-party noise we don't own (ad blockers off, but remote scripts may
-   still warn); everything is reported, only these are non-fatal. */
 const THIRD_PARTY = /(wistia|getclicky|googletagmanager|facebook|fbevents|trustindex|msgsndr|link\.creditdanny|searchatlas|leadconnectorhq)/i;
 
 const chrome = spawn(CHROME, [
@@ -67,7 +56,7 @@ async function cdp(pathname) {
   send("Log.enable");
   send("Page.enable");
   send("Page.navigate", { url: BASE + pathname });
-  await new Promise((r) => setTimeout(r, 6000)); // load + hydrate + first effects
+  await new Promise((r) => setTimeout(r, 6000));
   ws.close();
   await fetch(`http://127.0.0.1:${PORT}/json/close/${tab.id}`);
   return messages;
@@ -80,8 +69,6 @@ for (const route of ROUTES) {
     const own = msgs.filter(
       (m) =>
         !THIRD_PARTY.test((m.text || "") + (m.url || "")) &&
-        // benign Chrome advisory triggered by Next's route prefetching:
-        // resources are preloaded for the NEXT navigation, not this paint
         !/was preloaded using link preload but not used/i.test(m.text || "")
     );
     const hydration = msgs.filter((m) => /hydrat|minified react error #(418|423|425)/i.test(m.text || ""));
