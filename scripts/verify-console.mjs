@@ -11,7 +11,12 @@ const ROUTES = [
   "/get-started/", "/home-buying-blueprint/", "/mentorship/", "/mentorship-apply/",
   "/plans/", "/privacy-policy/", "/sponsorship/", "/sponsorship-apply/",
   "/team/", "/terms-and-conditions/", "/transformations/",
-  "/category/credit-insights/",
+  "/accelerator-confirmation/", "/blueprint-application-received/", "/consult-next-steps/",
+  "/documents-received/", "/documents-upload/", "/form-submission-thanks/",
+  "/mentorship-confirmed/", "/sponsorship-confirmation/", "/credit-education/",
+  "/credit-repair/", "/5kgiveaway/",
+  "/category/credit-insights/", "/category/mortgage-insights/",
+  "/category/mortgage-repair-and-prep/", "/blog/", "/5kgiveaway-confirmed/",
   "/hard-inquiry-removal-when-its-possible/",
 ];
 

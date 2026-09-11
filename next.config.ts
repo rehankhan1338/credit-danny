@@ -32,6 +32,7 @@ const nextConfig: NextConfig = {
       { source: "/index.html", destination: "/", permanent: true },
 
       { source: "/5kgiveaway-entry.html", destination: "/5kgiveaway-entry/", permanent: true },
+      { source: "/5kgiveaway-confirmed.html", destination: "/5kgiveaway-confirmed/", permanent: true },
       { source: "/about.html", destination: "/about/", permanent: true },
       { source: "/accelerator.html", destination: "/accelerator/", permanent: true },
       { source: "/accelerator-application.html", destination: "/accelerator-application/", permanent: true },
@@ -49,6 +50,19 @@ const nextConfig: NextConfig = {
       { source: "/team.html", destination: "/team/", permanent: true },
       { source: "/terms-and-conditions.html", destination: "/terms-and-conditions/", permanent: true },
       { source: "/transformations.html", destination: "/transformations/", permanent: true },
+      { source: "/accelerator-confirmation.html", destination: "/accelerator-confirmation/", permanent: true },
+      { source: "/blueprint-application-received.html", destination: "/blueprint-application-received/", permanent: true },
+      { source: "/consult-next-steps.html", destination: "/consult-next-steps/", permanent: true },
+      { source: "/documents-received.html", destination: "/documents-received/", permanent: true },
+      { source: "/documents-upload.html", destination: "/documents-upload/", permanent: true },
+      { source: "/form-submission-thanks.html", destination: "/form-submission-thanks/", permanent: true },
+      { source: "/mentorship-confirmed.html", destination: "/mentorship-confirmed/", permanent: true },
+      { source: "/sponsorship-confirmation.html", destination: "/sponsorship-confirmation/", permanent: true },
+      { source: "/credit-education.html", destination: "/credit-education/", permanent: true },
+      { source: "/credit-repair.html", destination: "/credit-repair/", permanent: true },
+      { source: "/5kgiveaway.html", destination: "/5kgiveaway/", permanent: true },
+      // Old / mistyped confirmation URL that never existed as a page: send it to the real one.
+      { source: "/sponsorship-confirmed/", destination: "/sponsorship-confirmation/", permanent: false },
 
       { source: "/mentorship/apply.html", destination: "/mentorship-apply/", permanent: true },
       { source: "/mentorship/apply/", destination: "/mentorship-apply/", permanent: true },

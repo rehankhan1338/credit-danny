@@ -9,6 +9,7 @@ const ENTRIES: Array<[loc: string, lastmod: string]> = [
   ["https://creditdanny.com/transformations/", "2026-08-12T15:33:12+00:00"],
   ["https://creditdanny.com/about/", "2026-08-12T15:33:07+00:00"],
   ["https://creditdanny.com/mentorship/", "2026-08-06T03:04:24+00:00"],
+  ["https://creditdanny.com/5kgiveaway/", "2026-08-22T01:12:02+00:00"],
 ];
 
 export const dynamic = "force-static";

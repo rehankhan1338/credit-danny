@@ -155,8 +155,10 @@ div#blur {
    three sections whose art intentionally overflows their box — content-visibility
    implies paint containment, which would clip that overflow. contain-intrinsic-size
    keeps the scrollbar stable by estimating unrendered sections, remembering real
-   heights once seen. */
-section:not(#apply):not([data-screen-label="Proof band"]):not([data-screen-label="Chapter 04 Elevating others"]):not(:has(wistia-player, .wistia_embed, iframe, [data-track])) {
+   heights once seen. Also excluded: the .cf-pad sections of the short confirmation /
+   thank-you pages (documents-received etc.), whose lifted cards sit flush against a
+   zero-padding section bottom — paint containment cut their box-shadow off. */
+section:not(#apply):not(.cf-pad):not([data-screen-label="Proof band"]):not([data-screen-label="Chapter 04 Elevating others"]):not(:has(wistia-player, .wistia_embed, iframe, [data-track])) {
   content-visibility: auto;
   contain-intrinsic-size: auto 800px;
 }

@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 const HTML_TO_ROUTE: Record<string, string> = {
   "/index.html": "/",
   "/5kgiveaway-entry.html": "/5kgiveaway-entry/",
+  "/5kgiveaway-confirmed.html": "/5kgiveaway-confirmed/",
   "/about.html": "/about/",
   "/accelerator.html": "/accelerator/",
   "/accelerator-application.html": "/accelerator-application/",
@@ -23,11 +24,23 @@ const HTML_TO_ROUTE: Record<string, string> = {
   "/team.html": "/team/",
   "/terms-and-conditions.html": "/terms-and-conditions/",
   "/transformations.html": "/transformations/",
+  "/accelerator-confirmation.html": "/accelerator-confirmation/",
+  "/blueprint-application-received.html": "/blueprint-application-received/",
+  "/consult-next-steps.html": "/consult-next-steps/",
+  "/documents-received.html": "/documents-received/",
+  "/documents-upload.html": "/documents-upload/",
+  "/form-submission-thanks.html": "/form-submission-thanks/",
+  "/mentorship-confirmed.html": "/mentorship-confirmed/",
+  "/sponsorship-confirmation.html": "/sponsorship-confirmation/",
+  "/credit-education.html": "/credit-education/",
+  "/credit-repair.html": "/credit-repair/",
+  "/5kgiveaway.html": "/5kgiveaway/",
 };
 
 const OWNED_ROUTES = new Set([
   "/",
   "/5kgiveaway-entry/",
+  "/5kgiveaway-confirmed/",
   "/about/",
   "/accelerator/",
   "/accelerator-application/",
@@ -46,7 +59,21 @@ const OWNED_ROUTES = new Set([
   "/team/",
   "/terms-and-conditions/",
   "/transformations/",
+  "/accelerator-confirmation/",
+  "/blueprint-application-received/",
+  "/consult-next-steps/",
+  "/documents-received/",
+  "/documents-upload/",
+  "/form-submission-thanks/",
+  "/mentorship-confirmed/",
+  "/sponsorship-confirmation/",
+  "/credit-education/",
+  "/credit-repair/",
+  "/5kgiveaway/",
   "/category/credit-insights/",
+  "/category/mortgage-insights/",
+  "/category/mortgage-repair-and-prep/",
+  "/blog/",
 ]);
 
 function finalUrlFor(pathname: string): string | null {
@@ -72,7 +99,7 @@ function finalUrlFor(pathname: string): string | null {
 }
 
 const WP_ORIGIN = process.env.WP_ORIGIN || "https://creditdanny.com";
-const WP_KEEP = new Set(["/blog/", "/feed/", "/comments/", "/5kgiveaway-confirmed/"]);
+const WP_KEEP = new Set(["/feed/", "/comments/"]);
 const OWNED_FILES = new Set(["/robots.txt", "/page-sitemap.xml"]);
 
 export function proxy(request: NextRequest) {

@@ -15,11 +15,9 @@ export default function NotFound() {
         <Link href="/" style={{ fontFamily: '"Podium Sharp", Impact, sans-serif', textTransform: "uppercase", textDecoration: "none", background: "rgb(12, 112, 195)", color: "#fff", padding: "11px 22px", borderRadius: 8, boxShadow: "0 0 24px rgba(12,112,195,.55)", fontSize: 16 }}>
           Back to Home
         </Link>
-        {/* /blog/ is WordPress-proxied, not a Next route — full navigation by design */}
-        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-        <a href="/blog/" style={{ fontFamily: '"Podium Sharp", Impact, sans-serif', textTransform: "uppercase", textDecoration: "none", background: "transparent", color: "#fff", border: "2px solid rgba(255,255,255,.6)", padding: "9px 22px", borderRadius: 8, fontSize: 16 }}>
+        <Link href="/blog/" style={{ fontFamily: '"Podium Sharp", Impact, sans-serif', textTransform: "uppercase", textDecoration: "none", background: "transparent", color: "#fff", border: "2px solid rgba(255,255,255,.6)", padding: "9px 22px", borderRadius: 8, fontSize: 16 }}>
           Visit the Blog
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ export type WpPost = {
   title: { rendered: string };
   excerpt: { rendered: string };
   content: { rendered: string };
+  categories?: number[];
   _embedded?: {
     "wp:featuredmedia"?: Array<{
       source_url?: string;
@@ -95,4 +96,69 @@ export function longDate(iso: string): string {
 
 export function shortDate(iso: string): string {
   return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+
+/** Every published post, newest first (the site has well under 100). */
+export async function getAllPosts(): Promise<WpPost[]> {
+  return wpFetch<WpPost[]>(`/posts?per_page=100&orderby=date&order=desc&_embed=wp:featuredmedia`);
+}
+
+export async function getAllCategories(): Promise<WpCategory[]> {
+  return wpFetch<WpCategory[]>(`/categories?per_page=100&_fields=id,count,name,slug`);
+}
+
+/* ------------------------------------------------------------------------- */
+/* Paged archive fetching + card mapping (used by archives and /api/posts).   */
+/* ------------------------------------------------------------------------- */
+
+import type { CardPost } from "@/lib/blog-card";
+
+export type PostsPage = { posts: WpPost[]; total: number };
+
+/**
+ * One page of published posts, newest first, optionally scoped to a category.
+ * `total` comes from WordPress's X-WP-Total header so callers know whether
+ * more remain without fetching everything.
+ */
+export async function getPostsPage(opts: { categoryId?: number; offset: number; perPage: number }): Promise<PostsPage> {
+  const qs = new URLSearchParams({
+    per_page: String(opts.perPage),
+    offset: String(opts.offset),
+    orderby: "date",
+    order: "desc",
+    _embed: "wp:featuredmedia",
+  });
+  if (opts.categoryId) qs.set("categories", String(opts.categoryId));
+  const res = await fetch(`${WP_ORIGIN}/wp-json/wp/v2/posts?${qs}`, {
+    headers: { Accept: "application/json", ...authHeaders() },
+    next: { revalidate: WP_REVALIDATE_SECONDS },
+  });
+  if (!res.ok) throw new Error(`WP REST ${res.status} for /posts?${qs}`);
+  const posts = (await res.json()) as WpPost[];
+  const total = Number(res.headers.get("x-wp-total") ?? posts.length);
+  return { posts, total: Number.isFinite(total) ? total : posts.length };
+}
+
+/** Name of the post's first real category (skips "Uncategorized"). */
+export function categoryLabel(post: WpPost, byId: Map<number, WpCategory>): string {
+  for (const id of post.categories ?? []) {
+    const cat = byId.get(id);
+    if (cat && cat.slug !== "uncategorized") return cat.name;
+  }
+  return "Credit Insights";
+}
+
+export function toCardPost(post: WpPost, label: string): CardPost {
+  return {
+    id: post.id,
+    href: postPath(post),
+    title: stripHtml(post.title.rendered),
+    excerpt: stripHtml(post.excerpt.rendered),
+    imageLarge: featuredImage(post, "large"),
+    imageMedium: featuredImage(post, "medium_large"),
+    label: label.toUpperCase(),
+    longDate: longDate(post.date),
+    shortDate: shortDate(post.date),
+    minutes: readingMinutes(post.content.rendered),
+  };
 }
