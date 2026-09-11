@@ -61,6 +61,7 @@ const nextConfig: NextConfig = {
       { source: "/credit-education.html", destination: "/credit-education/", permanent: true },
       { source: "/credit-repair.html", destination: "/credit-repair/", permanent: true },
       { source: "/5kgiveaway.html", destination: "/5kgiveaway/", permanent: true },
+      { source: "/site-map.html", destination: "/site-map/", permanent: true },
       // Old / mistyped confirmation URL that never existed as a page: send it to the real one.
       { source: "/sponsorship-confirmed/", destination: "/sponsorship-confirmation/", permanent: false },
 

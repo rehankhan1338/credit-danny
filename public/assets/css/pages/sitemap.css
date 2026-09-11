@@ -1,0 +1,108 @@
+/* =============================================================================
+   Credit Danny — page styles: /site-map/ (internal reference)
+   Copied from the live theme template's inline <style>; font URLs made local
+   (podium + Poppins @font-face already ship via style.css / google-fonts.css),
+   and bare html/body/a rules scoped to body.cd-sitemap because page CSS is
+   global and persists across client-side navigations.
+   ========================================================================== */
+body.cd-sitemap{
+  --sm-black:#000;--sm-white:#fff;
+  --sm-blue-900:#00063a;--sm-blue-700:#005c97;--sm-blue-600:#0c70c3;--sm-blue-400:#00adee;
+  --sm-font-display:"podium","Poppins",Impact,"Arial Narrow",sans-serif;
+  --sm-font-body:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+@keyframes cd-sm-rise{from{opacity:0;transform:translateY(26px);filter:blur(5px)}
+  to{opacity:1;transform:none;filter:none}}
+@keyframes cd-sm-pulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(0,173,238,.6),
+  0 0 6px 1px rgba(0,173,238,.7)}50%{transform:scale(1.25);
+  box-shadow:0 0 0 5px rgba(0,173,238,0),0 0 10px 2px rgba(0,173,238,.9)}}
+body.cd-sitemap{margin:0;padding:0;background:var(--sm-black);color:var(--sm-white);
+  font-family:var(--sm-font-body);-webkit-font-smoothing:antialiased;}
+.sm-page,.sm-page *,.sm-page *::before,.sm-page *::after{box-sizing:border-box;}
+.sm-page a{color:inherit;text-decoration:none;}
+
+.sm-page{min-height:100vh;display:flex;flex-direction:column;
+  background:linear-gradient(220deg,var(--sm-black) 28%,var(--sm-blue-700) 98%);}
+.sm-top{padding:38px 40px 0;text-align:center;}
+.sm-top img{height:34px;width:auto;display:inline-block;}
+.sm-main{flex:1;padding:56px 40px 90px;max-width:1180px;margin:0 auto;width:100%;}
+
+.sm-eyebrow{display:inline-flex;align-items:center;gap:9px;padding:9px 18px;
+  border:1px solid rgba(255,255,255,.22);border-radius:999px;font-size:12px;
+  font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(255,255,255,.86);animation:cd-sm-rise .6s cubic-bezier(.22,1,.36,1) both;}
+.sm-eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--sm-blue-400);
+  display:block;animation:cd-sm-pulse 2s ease-in-out infinite;}
+.sm-h1{margin:26px 0 0;font-family:var(--sm-font-display);font-weight:400;color:var(--sm-white);
+  font-size:clamp(40px,6vw,84px);line-height:.9;text-transform:uppercase;
+  text-shadow:rgba(12,112,195,.35) 0 8px 60px;
+  animation:cd-sm-rise .7s cubic-bezier(.22,1,.36,1) .06s both;}
+.sm-h1 span{color:var(--sm-blue-600);}
+.sm-lede{margin:20px 0 0;max-width:700px;font-size:16px;line-height:1.75;
+  color:rgba(255,255,255,.72);text-wrap:balance;
+  animation:cd-sm-rise .7s cubic-bezier(.22,1,.36,1) .16s both;}
+
+.sm-intro{text-align:center;}
+.sm-intro .sm-lede{margin-left:auto;margin-right:auto;}
+
+.sm-total{display:inline-flex;align-items:baseline;gap:11px;margin:22px 0 0;
+  font-family:var(--sm-font-body);font-size:12px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5);
+  animation:cd-sm-rise .7s cubic-bezier(.22,1,.36,1) .24s both;}
+.sm-total span{font-family:var(--sm-font-display);font-size:22px;font-weight:700;
+  letter-spacing:.01em;line-height:1;color:var(--sm-blue-400);
+  font-variant-numeric:tabular-nums;}
+
+/* ---- the tree ---------------------------------------------------------- */
+.sm-groups{margin-top:54px;columns:3;column-gap:26px;}
+.sm-groups > *{break-inside:avoid;margin:0 0 26px;display:block;width:100%;}
+@media (max-width:1180px){ .sm-groups{columns:2;} }
+.sm-group{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;padding:26px 26px 20px;backdrop-filter:blur(18px);
+  animation:cd-sm-rise .6s cubic-bezier(.22,1,.36,1) both;}
+.sm-group h2{margin:0;font-family:var(--sm-font-display);font-size:24px;font-weight:400;
+  letter-spacing:.02em;text-transform:uppercase;color:var(--sm-white);line-height:1.2;}
+.sm-group p.sm-note{margin:6px 0 0;font-size:13px;line-height:1.6;
+  color:rgba(255,255,255,.5);}
+.sm-list{list-style:none;margin:18px 0 0;padding:0;}
+.sm-list ul{list-style:none;margin:8px 0 0 0;padding:0 0 0 20px;
+  border-left:1px solid rgba(255,255,255,.14);}
+.sm-item{padding:9px 0;border-top:1px solid rgba(255,255,255,.07);}
+.sm-list > .sm-item:first-child{border-top:0;}
+.sm-item a.sm-link{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  color:var(--sm-blue-400);transition:color .18s ease;}
+.sm-item a.sm-link:hover{color:var(--sm-white);}
+.sm-title{font-size:15px;font-weight:600;}
+.sm-path{font-size:12px;color:rgba(255,255,255,.42);word-break:break-all;
+  transition:color .18s ease;}
+.sm-item a.sm-link:hover .sm-path{color:rgba(255,255,255,.7);}
+.sm-tag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:3px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.2);
+  color:rgba(255,255,255,.55);white-space:nowrap;}
+.sm-tag.is-home{border-color:rgba(0,173,238,.45);background:rgba(0,173,238,.14);
+  color:var(--sm-blue-400);
+  color:color-mix(in srgb, var(--sm-blue-400) 60%, var(--sm-white));}
+.sm-plain{opacity:.62;}
+.sm-plain .sm-title{color:var(--sm-white);margin-right:6px;}
+.sm-count{float:right;font-size:12px;font-weight:600;color:rgba(255,255,255,.45);
+  font-family:var(--sm-font-body);}
+
+/* ---- footer ------------------------------------------------------------ */
+.sm-foot{background:var(--sm-black);padding:44px 40px;}
+.sm-foot div{max-width:1280px;margin:0 auto;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;
+  color:rgba(255,255,255,.38);}
+.sm-foot a{transition:color .18s ease;}
+.sm-foot a:hover{color:rgba(255,255,255,.75);}
+
+@media (prefers-reduced-motion:reduce){
+  .sm-eyebrow,.sm-eyebrow i,.sm-h1,.sm-lede,.sm-total,.sm-group{animation:none !important;}
+}
+@media (max-width:900px){
+  .sm-top{padding:26px 20px 0;}
+  .sm-main{padding:40px 20px 64px;}
+  .sm-foot{padding:34px 20px;}
+  .sm-groups{columns:1;}
+  .sm-groups > *{margin-bottom:18px;}
+  .sm-foot div{justify-content:center;text-align:center;}
+}

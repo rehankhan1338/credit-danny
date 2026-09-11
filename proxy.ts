@@ -35,6 +35,7 @@ const HTML_TO_ROUTE: Record<string, string> = {
   "/credit-education.html": "/credit-education/",
   "/credit-repair.html": "/credit-repair/",
   "/5kgiveaway.html": "/5kgiveaway/",
+  "/site-map.html": "/site-map/",
 };
 
 const OWNED_ROUTES = new Set([
@@ -70,6 +71,7 @@ const OWNED_ROUTES = new Set([
   "/credit-education/",
   "/credit-repair/",
   "/5kgiveaway/",
+  "/site-map/",
   "/category/credit-insights/",
   "/category/mortgage-insights/",
   "/category/mortgage-repair-and-prep/",
